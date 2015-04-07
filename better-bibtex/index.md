@@ -113,7 +113,7 @@ Submission to Addons.Mozilla.Org is off the table -- AMO moves *much* to slow fo
 <script type="text/javascript">
 
   if (window.location.hash.trim() == '#xpi') {
-    window.location = 'https://zotplus.github.io/better-bibtex/zotero-better-bibtex-{% include better-bibtex-version.html %}.xpi';
+    window.location = 'https://github.com/ZotPlus/zotero-better-bibtex/releases/download/{% include better-bibtex-version.html %}/zotero-better-bibtex-{% include better-bibtex-version.html %}.xpi';
   }
 
 </script>
