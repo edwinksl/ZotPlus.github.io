@@ -76,7 +76,7 @@ The Better BibTeX [configuration pane](Customized-Exports.html) can be found und
 # Installation (one-time)
 
 After installation, the plugin will auto-update to newer releases. Install by downloading the [latest
-version](https://zotplus.github.io/better-bibtex/zotero-better-bibtex-{% include better-bibtex-version.html %}.xpi)
+version](https://github.com/ZotPlus/zotero-better-bibtex/releases/download/{% include better-bibtex-version.html %}/zotero-better-bibtex-{% include better-bibtex-version.html %}.xpi)
 (**{% include better-bibtex-version.html %}**).
 If you are not prompted with a Firefox installation dialog then double-click the
 downloaded xpi; Firefox ought to start and present you with the installation dialog.
