@@ -8,8 +8,7 @@ task :default do
 end
 
 task :publish do
-  sh "git checkout master"
-  sh "git pull origin master"
+  sh "git pull"
   sh "git add ."
   msg = []
   Dir['_includes/*version.html'].each{|version|
@@ -19,5 +18,5 @@ task :publish do
   }
   msg = msg.join(' / ')
   sh "git commit -m '#{msg}'"
-  sh "git push origin master"
+  sh "git push"
 end
