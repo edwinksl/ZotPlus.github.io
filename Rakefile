@@ -8,8 +8,9 @@ task :default do
 end
 
 task :publish do
-  puts `git pull`
-  puts `git add .` 
+  sh "git checkout master"
+  sh "git pull origin master"
+  sh "git add ."
   msg = []
   Dir['_includes/*version.html'].each{|version|
     project = File.basename(version, File.extname(version)).sub(/-version$/, '')
@@ -17,6 +18,6 @@ task :publish do
     msg << "#{project} #{version}"
   }
   msg = msg.join(' / ')
-  puts `git commit -m '#{msg}'`
-  puts `git push`
+  sh "git commit -m '#{msg}'"
+  sh "git push origin master"
 end
