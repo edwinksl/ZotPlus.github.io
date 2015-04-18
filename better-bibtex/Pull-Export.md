@@ -1,7 +1,17 @@
 ---
 layout: default
-title: Pull Export
+title: Push/Pull Export
 ---
+
+# Push Export
+
+When exporting using Better Bib(La)Tex you will be offered a new export option: Keep Updated. Checking this option
+registers the export for automation; any changes to the collection after you've completed the current export (it only works for collections,
+sorry) will trigger an automatic re-export to update the bib file. You review/remove exports from the BBT preferences.
+While I've gone to some lengths to make sure performance is OK, don't go overboard with the number of auto-exports you
+have going.
+
+# Pull Export
 You can fetch your library as part of your build, using curl (for example by using the included zoterobib.yaml arara
 rule), or with a BiblaTeX remote statement like
 \addbibresource[location=remote]{http://localhost:23119/better-bibtex/collection?/0/8CV58ZVD.biblatex}.  For Zotero

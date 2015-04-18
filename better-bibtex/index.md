@@ -65,6 +65,7 @@ If you'd really just rather hand-code your LaTeX constructs, BBT makes that poss
   be created to mirror these. During export, collections will be added to the export as explicit jabref groups.
 * **Fixes date field exports**: export dates like 'forthcoming' as 'forthcoming' instead of empty.
 * **[Pull export](Pull-Export)** from the embedded webserver
+* **[Automated export](Pull-Export)** of collections to keep your .bib files all fresh
 * Automatic **[journal abbreviation](Citation-Keys.html)** to bring BibTeX export on par with the Word integration
 * Preliminary scholarly markdown support through integration with [Zotero Citations for Atom](https://atom.io/packages/zotero-citations)
 * Spectacular must-see support for scholarly markdown with auto-complete citations for [Adobe Brackets](https://github.com/baig/brackets-zotero) by Wasif Hasan Baig
