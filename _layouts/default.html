@@ -47,7 +47,7 @@
               <li><a href="https://github.com/ZotPlus/zotero-{{ project }}/zipball/master" class="button">ZIP</a></li>
               <li><a href="https://github.com/ZotPlus/zotero-{{ project }}/tarball/master" class="button">TAR</a></li>
               {% assign xpi = project | append: '-version.html' %}
-              <li><a href="/{{ project }}/zotero-{{ project }}-{% include {{xpi}} %}.xpi" class="button">XPI</a></li>
+              <li><a href="https://github.com/ZotPlus/zotero-{{ project }}/releases/download/{% include {{xpi}} %}/zotero-{{ project }}-{% include {{xpi}} %}.xpi" class="button">XPI</a></li>
             </ul>
           </div>
         {% endunless %}
