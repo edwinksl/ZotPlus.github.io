@@ -1,3 +1,5 @@
+---
+---
 <?xml version="1.0"?>
 <RDF:RDF xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
   <RDF:Description about="urn:mozilla:extension:better-bibtex@iris-advies.com">
@@ -5,13 +7,13 @@
       <RDF:Seq>
         <RDF:li>
           <RDF:Description>
-            <em:version>0.9.6</em:version>
+            <em:version>{% include better-bibtex-version.html %}</em:version>
             <em:targetApplication>
               <RDF:Description>
                 <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
                 <em:minVersion>17.0</em:minVersion>
                 <em:maxVersion>23.*</em:maxVersion>
-                <em:updateLink>https://github.com/ZotPlus/zotero-better-bibtex/releases/download/0.9.6/zotero-better-bibtex-0.9.6.xpi</em:updateLink>
+                <em:updateLink>https://github.com/ZotPlus/zotero-better-bibtex/releases/download/{% include better-bibtex-version.html %}/zotero-better-bibtex-{% include better-bibtex-version.html %}.xpi</em:updateLink>
                 <em:updateInfoURL>https://zotplus.github.io/better-bibtex</em:updateInfoURL>
               </RDF:Description>
             </em:targetApplication>
@@ -20,7 +22,7 @@
                 <em:id>zotero@chnm.gmu.edu</em:id>
                 <em:minVersion>3.0</em:minVersion>
                 <em:maxVersion>4.0.*</em:maxVersion>
-                <em:updateLink>https://github.com/ZotPlus/zotero-better-bibtex/releases/download/0.9.6/zotero-better-bibtex-0.9.6.xpi</em:updateLink>
+                <em:updateLink>https://github.com/ZotPlus/zotero-better-bibtex/releases/download/{% include better-bibtex-version.html %}/zotero-better-bibtex-{% include better-bibtex-version.html %}.xpi</em:updateLink>
                 <em:updateInfoURL>https://zotplus.github.io/better-bibtex</em:updateInfoURL>
               </RDF:Description>
             </em:targetApplication>
