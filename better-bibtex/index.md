@@ -101,10 +101,6 @@ prefer fuzzy ones over missed ones.
 
 # Plans
 
-* Automated background export (#70): IN TESTING
-  * Caching (required to keep performance acceptable): DONE
-  * GUI for it all: DONE
-  * Automated export: DONE
 * add "citekey" field to reference editor
 * sync citekey cleanly without abusing the "extra" field
 * faster journal abbreviator using the [LTWA](http://www.issn.org/services/online-services/access-to-the-ltwa/)

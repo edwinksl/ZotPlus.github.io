@@ -5,6 +5,7 @@ title: Customized Exports
 The Better BibTeX configuration pane can be found under the regular Zotero preferences pane, tab 'Better Bib(La)TeX'.
 Through the configuration pane of BBT you can customize the BibTeX file that will be exported:
 
+* **Automated background exports**. Tick 'keep updated' during export, and that's that.
 * **Unicode conversion**: the default is to retain unicode characters on export for BibLaTeX, and to convert to LaTeX
   commands (where possible) for BibTeX. You can specify whether you want to retain this default, or whether you want BBT
   to always export translating to LaTeX commands, or never to do this translation.
