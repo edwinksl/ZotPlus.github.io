@@ -4,14 +4,8 @@ title: Bug reports
 ---
 <script type="text/javascript">
 
-function createCookie(name,value,days) {
-    if (days) {
-        var date = new Date();
-        date.setTime(date.getTime()+(days*24*60*60*1000));
-        var expires = "; expires="+date.toGMTString();
-    }
-    else var expires = "";
-    document.cookie = name+"="+value+expires+"; path=/";
+function createCookie(name,value) {
+    document.cookie = name + '=' + value + ';expires=Fri, 31 Dec 9999 23:59:59 GMT;path=/';
 }
 
 function readCookie(name) {
