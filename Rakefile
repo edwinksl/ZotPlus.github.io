@@ -18,9 +18,9 @@ task :publish do
   }
   msg = msg.join(' / ')
   sh "git commit -m '#{msg}'"
-  if ENV['GITHUB_TOKEN']
-    sh "git push --force --quiet 'https://#{ENV['GITHUB_TOKEN']}@github.com/ZotPlus/ZotPlus.github.io.git' master:master > /dev/null 2>&1"
-  else
+  #if ENV['GITHUB_TOKEN']
+  #  sh "git push --force --quiet 'https://#{ENV['GITHUB_TOKEN']}@github.com/ZotPlus/ZotPlus.github.io.git' master:master > /dev/null 2>&1"
+  #else
     sh "git push"
-  end
+  #end
 end
