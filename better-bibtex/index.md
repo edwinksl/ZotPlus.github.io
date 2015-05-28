@@ -11,6 +11,12 @@ listed as one of the choices. If nothing else, you could keep your existing work
 LaTeX &lt;-&gt; unicode translation on im-and export. Over and above this improvement, it addresses the following
 issues in Zotero:
 
+BBT works from [BibTeXing](http://ctan.cs.uu.nl/biblio/bibtex/base/btxdoc.pdf) and [Tame the
+BeaST](http://www.lsv.ens-cachan.fr/~markey/BibTeX/doc/ttb_en.pdf) for BibTeX, and
+[The Biblatex Package](http://ctan.mirrorcatalogs.com/macros/latex/contrib/biblatex/doc/biblatex.pdf) for BibLaTeX, but
+since there isn't really a definitive manual for either format that is universally followed by Bib(La)TeX
+editors/processors, I'm pragmatic about implementing what works.
+
 ## Citation keys
 
 Zotero citations keys are fully auto-generated, using an algorithm that usually generates unique keys. For serious LaTeX
@@ -106,6 +112,7 @@ prefer fuzzy ones over missed ones.
 * faster journal abbreviator using the [LTWA](http://www.issn.org/services/online-services/access-to-the-ltwa/)
 
 Submission to Addons.Mozilla.Org is off the table -- AMO moves *much* to slow for my sometimes daily releases.
+
 
 <script type="text/javascript">
 
