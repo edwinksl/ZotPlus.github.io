@@ -121,7 +121,7 @@ Submission to Addons.Mozilla.Org is off the table -- AMO moves *much* to slow fo
       window.location = 'https://github.com/ZotPlus/zotero-better-bibtex/releases/download/{% include better-bibtex-version.html %}/zotero-better-bibtex-{% include better-bibtex-version.html %}.xpi';
       break;
     case '#debug':
-      window.location = 'https://drive.google.com/open?id=0B8tW4NMPfEosfkFETUV0V2l0N3NHZHEyQk5SUm03TjZmS1RoVmlBTmdHclUtcTRzZ2VHclU&authuser=0';
+      window.location = 'https://drive.google.com/a/iris-advies.com/folderview?id=0B8tW4NMPfEosfkFETUV0V2l0N3NHZHEyQk5SUm03TjZmS1RoVmlBTmdHclUtcTRzZ2VHclU&usp=drive_web#list';
       break;
   }
 
