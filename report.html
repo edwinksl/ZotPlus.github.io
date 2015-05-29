@@ -4,45 +4,25 @@ title: Bug reports
 ---
 <script type="text/javascript">
 
-function createCookie(name,value) {
-    document.cookie = name + '=' + value + ';expires=Fri, 31 Dec 9999 23:59:59 GMT;path=/';
-}
-
-function readCookie(name) {
-    var nameEQ = name + "=";
-    var ca = document.cookie.split(';');
-    for(var i=0;i < ca.length;i++) {
-        var c = ca[i];
-        while (c.charAt(0)==' ') c = c.substring(1,c.length);
-        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
-    }
-    return null;
-}
-
   // Call this code when the page is done loading.
   $(function() {
 
-    var key = readCookie('key');
-    if (key) {
-      try {
-        $('#privkey').val(JSON.parse(key));
-      } catch (e) {}
-    }
+    try {
+      $('#privkey').val(localStorage['zotplus.key'].trim());
+    } catch (e) {}
 
     // Run a quick encryption/decryption when they click.
     $('#decrypt').click(function() {
 
-      var key = $('#privkey').val();
-
       if ($('#store').prop('checked')) {
-        createCookie('key', JSON.stringify(key));
+        localStorage['zotplus.key'] = $('#privkey').val();
       }
 
       // Encrypt with the public key...
       var encrypted = window.location.hash.substr(1);
       // Decrypt with the private key...
       var decrypt = new JSEncrypt();
-      decrypt.setPrivateKey(key);
+      decrypt.setPrivateKey($('#privkey').val().trim());
       var decrypted = decrypt.decrypt(encrypted);
 
       window.location = decrypted;
