@@ -1,7 +1,6 @@
 ---
 layout: default
 title: ASCII rename
-weight: 10
 ---
 
 zotero-ascii-rename

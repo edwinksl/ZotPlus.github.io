@@ -26,7 +26,11 @@ task :navigation do
       begin
         fm = YAML.load_file(md)
         p = fm['weight'].to_i
-        pos = "#{p}".rjust(3, '0') if w > 0
+        if w > 0
+          pos = "#{p}".rjust(3, '0')
+        elsif fm['title'].to_s != ''
+          pos = fm['title'].strip
+        end
       rescue
       end
     end

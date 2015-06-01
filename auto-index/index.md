@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Auto Index
-weight: 10
 ---
 zotero-auto-index
 =================

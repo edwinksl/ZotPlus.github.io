@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Report Customizer
-weight: 10
 ---
 # Zotero Report Customizer
 

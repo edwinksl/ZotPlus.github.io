@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Link local files
-weight: 10
 ---
 zotero-link-local-files
 =======================

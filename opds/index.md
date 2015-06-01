@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Zotero OPDS server
-weight: 10
 ---
 
 # Zotero: OPDS server

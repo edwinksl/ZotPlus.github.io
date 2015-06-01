@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Better BibTeX
-weight: 10
 ---
 # Zotero: Better Bib(La)TeX (BBT) [![Build Status](https://travis-ci.org/ZotPlus/zotero-better-bibtex.svg?branch=master)](https://travis-ci.org/ZotPlus/zotero-better-bibtex)
 

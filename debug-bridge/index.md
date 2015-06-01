@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Debug Bridge
-weight: 10
 ---
 
 # Zotero Debug Bridge
