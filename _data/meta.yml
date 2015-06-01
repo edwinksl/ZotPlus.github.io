@@ -11,9 +11,20 @@
     project:
       slug: 
       title: Zotero++
+  - title: Support
+    url: "/support.html"
+    project:
+      slug: 
+      title: Zotero++
 "/pdf.html":
   title: pdf
   url: "/pdf.html"
+  project:
+    slug: 
+    title: Zotero++
+"/support.html":
+  title: Support
+  url: "/support.html"
   project:
     slug: 
     title: Zotero++
@@ -36,56 +47,72 @@
     slug: better-bibtex
     title: Better BibTeX
   pages:
-  - title: Citation Keys
-    url: "/better-bibtex/Citation-Keys.html"
-    project:
-      slug: better-bibtex
-      title: Better BibTeX
-  - title: Customized Exports
-    url: "/better-bibtex/Customized-Exports.html"
-    project:
-      slug: better-bibtex
-      title: Better BibTeX
   - title: Push/Pull Export
     url: "/better-bibtex/Pull-Export.html"
     project:
       slug: better-bibtex
       title: Better BibTeX
-  - title: Support Request Guidelines
-    url: "/better-bibtex/Support-Request-Guidelines.html"
+  - title: Citation Keys
+    url: "/better-bibtex/citation-keys.html"
     project:
       slug: better-bibtex
       title: Better BibTeX
-"/better-bibtex/Citation-Keys.html":
-  title: Citation Keys
-  url: "/better-bibtex/Citation-Keys.html"
-  project:
-    slug: better-bibtex
-    title: Better BibTeX
-"/better-bibtex/Customized-Exports.html":
-  title: Customized Exports
-  url: "/better-bibtex/Customized-Exports.html"
-  project:
-    slug: better-bibtex
-    title: Better BibTeX
+  - title: Customized Exports
+    url: "/better-bibtex/export.html"
+    project:
+      slug: better-bibtex
+      title: Better BibTeX
+  - title: Going hardcore; Zotero as a BibTeX manager
+    url: "/better-bibtex/hardcore.html"
+    project:
+      slug: better-bibtex
+      title: Better BibTeX
+  - title: Niceties
+    url: "/better-bibtex/niceties.html"
+    project:
+      slug: better-bibtex
+      title: Better BibTeX
+  - title: Unicode problems
+    url: "/better-bibtex/unicode.html"
+    project:
+      slug: better-bibtex
+      title: Better BibTeX
 "/better-bibtex/Pull-Export.html":
   title: Push/Pull Export
   url: "/better-bibtex/Pull-Export.html"
   project:
     slug: better-bibtex
     title: Better BibTeX
-"/better-bibtex/Support-Request-Guidelines.html":
-  title: Support Request Guidelines
-  url: "/better-bibtex/Support-Request-Guidelines.html"
+"/better-bibtex/citation-keys.html":
+  title: Citation Keys
+  url: "/better-bibtex/citation-keys.html"
   project:
     slug: better-bibtex
     title: Better BibTeX
-"/debug-bridge/index.html":
-  title: Debug Bridge
-  url: "/debug-bridge/index.html"
+"/better-bibtex/export.html":
+  title: Customized Exports
+  url: "/better-bibtex/export.html"
   project:
-    slug: debug-bridge
-    title: Debug Bridge
+    slug: better-bibtex
+    title: Better BibTeX
+"/better-bibtex/hardcore.html":
+  title: Going hardcore; Zotero as a BibTeX manager
+  url: "/better-bibtex/hardcore.html"
+  project:
+    slug: better-bibtex
+    title: Better BibTeX
+"/better-bibtex/niceties.html":
+  title: Niceties
+  url: "/better-bibtex/niceties.html"
+  project:
+    slug: better-bibtex
+    title: Better BibTeX
+"/better-bibtex/unicode.html":
+  title: Unicode problems
+  url: "/better-bibtex/unicode.html"
+  project:
+    slug: better-bibtex
+    title: Better BibTeX
 "/link-local-files/index.html":
   title: Link local files
   url: "/link-local-files/index.html"

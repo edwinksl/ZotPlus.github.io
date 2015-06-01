@@ -1,7 +1,8 @@
 ---
-layout: default
 title: Customized Exports
 ---
+# Customized Exports
+
 The Better BibTeX configuration pane can be found under the regular Zotero preferences pane, tab 'Better Bib(La)TeX'.
 Through the configuration pane of BBT you can customize the BibTeX file that will be exported:
 

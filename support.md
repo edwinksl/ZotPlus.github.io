@@ -1,23 +1,13 @@
 ---
-layout: default
-title: Support Request Guidelines
+title: Support
 ---
-#  Support Request Guidelines
+
+# Getting support for the ZotPlus plugins
 
 Before all else, ***thank you for taking the time for submitting an issue***, and I'm sorry that I've probably
 interrupted your flow.
-
-## Known problems
-
-Before submitting an issue, please make sure this isn't a known problem. Known problems are either already on my radar,
-or there are problems preventing me from implementing a fix.
-
-* **Odd characters after import**. Zotero doesn't seem to handle importing of non-utf8 files particularly gracefully. If
-  you're coming from JabRef, please verify in JabRef using file-database properties that your bibliography is saved in utf-8
-  format before importing.
-
-## Submitting an issue - please read carefully
-
+Your report matters to me. I love hearing my software helps you, and it pains me
+to know that things aren't working for you.
 If you have any questions on the use of the plugin, please do not hesitate to file a GitHub issue to ask for help. If
 you're reporting a bug in the plugin, please take a moment to glance through the Support Request Guidelines; it will
 make sure I get your problem fixed as quick as possible. Clear bug reports commonly have time-to-fix of 10 minutes. The
@@ -25,15 +15,31 @@ guidelines are very detailed, perhaps to the point of being off-putting, but ple
 simply express my ideal bug submission. I of course prefer very clearly documented issue reports over fuzzy ones, but I
 prefer fuzzy ones over missed ones.
 
-My time is extremely limited for a number of very great reasons (you shall have to trust me on this). Because of this, I
-cannot accept bug reports or support requests on anything but the latest version, currently at **{% include better-bibtex-version.html %}**.
+Unfortunately, however, my time is extremely limited for a number of very great reasons (you shall have to trust me on this). Because of this, I
+cannot accept bug reports or support requests on anything but the latest version, currently at:
+
+* [ASCII Rename](https://github.com/ZotPlus/zotero-{% include ascii-rename-version.html %}/issues) {% include ascii-rename-version.html %}
+* [Auto-index](https://github.com/ZotPlus/zotero-{% include auto-index-version.html %}/issues) {% include auto-index-version.html %}
+* [Better BibTeX](https://github.com/ZotPlus/zotero-{% include better-bibtex-version.html %}/issues) {% include better-bibtex-version.html %}
+* [Link local files](https://github.com/ZotPlus/zotero-{% include link-local-files-version.html %}/issues) {% include link-local-files-version.html %}
+* [OPDS Server](https://github.com/ZotPlus/zotero-{% include opds-version.html %}/issues) {% include opds-version.html %}
+* [Report Customizer](https://github.com/ZotPlus/zotero-{% include report-customizer-version.html %}/issues) {% include report-customizer-version.html %}
+
+If you submit an issue report, please include the version that you
+are on. By the time I get to your issue, the latest version might
+have bumped up already, and you will have to upgrade (you might
+have auto-upgraded already however) and re-verify that your issue
+still exists. Apologies for the inconvenience, but such
+are the breaks.
+
+## Better BibTeX
 
 * You can send off an error report by choosing `Report ZotPlus Errors` from the gear menu. Post the resulting url in a
   github issue.
 * You can send off an error report for a specific collection or (selection of) items that fails to export by selecting those, right-clicking
   and choosing `Report ZotPlus Errors`
 
-That in itself will in many cases give me what I need. Don't forget to copy the generated ID to paste it into the github
+That in itself will in many cases give me what I need. Don't forget to copy the generated public ID to paste it into the github
 issue; you cannot call it up later (although you can just so it again). Still, if you want a faster fix:
 
 * **Please include *specifics* of what doesn't work**. I use this plugin every day myself, so "it doesn't work" is trivially

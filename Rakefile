@@ -37,6 +37,8 @@ task :navigation do
 
     File.join(d, pos).sub(/^\.\//, '')
   }.each{|md|
+    next if File.dirname(md) == 'debug-bridge'
+
     fm = nil
     begin
       fm = YAML.load_file(md)

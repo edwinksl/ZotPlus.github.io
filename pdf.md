@@ -1,5 +1,4 @@
 ---
-layout: default
 Title: State of PDF annotation on Android
 ---
 

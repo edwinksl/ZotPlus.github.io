@@ -1,5 +1,4 @@
 ---
-layout: default
 title: Zotero OPDS server
 ---
 
@@ -11,7 +10,7 @@ Sync your articles with any e-reader that supports OPDS. Currently supports grou
 
 You can register a dynamic dns name from providers such as DuckDns or Hopper.pw, which will automatically point to your
 local (not necessarily public) IP adres. **BE AWARE** that if you point this to a non-routable address you are in
-princple susceptible to a DNS re-binding attack. I think the risks in this particular case are minimal, as no secrets
+princple susceptible to a [DNS re-binding attack](http://en.wikipedia.org/wiki/DNS_rebinding). I think the risks in this particular case are minimal, as no secrets
 are passing over the wire, but I'm not an expert. My home router (Fritz!Box) refused to map such addresses unless I
 specifically gave it permission.
 
@@ -31,4 +30,4 @@ For standalone Zotero, do the following:
 4. Choose .xpi that you've just downloaded, click 'Install'
 5. Restart Zotero
 
-
+If you experience any problems, or are unclear on how to use it, I'll be glad to [help](/support.html).

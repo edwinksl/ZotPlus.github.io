@@ -1,7 +1,32 @@
 ---
-layout: default
 title: Citation Keys
 ---
+
+## Citation keys
+
+Zotero citations keys are fully auto-generated, using an algorithm that usually generates unique keys. For serious LaTeX
+users, this presents the following problems:
+
+* If a non-unique key is generated, which one gets postfixed with a distinguishing character is essentially
+  non-deterministic.
+* The keys are *always* auto-generated, so if you correct a typo in the author name, the key might change
+* You can't see the citation keys until you export them
+
+For a LaTeX author, the citation keys have their own meaning, fully separate from the other reference data, even if
+people usually pick a naming scheme related to them. As the citation key is *the* piece of data that connects your
+bibliography, this is a piece of data you want to have control over. BBT offers you this control:
+
+* Set your own, fixed **[citation keys](Citation-Keys.html)**
+* Stable **[citation keys](Citation-Keys.html)**, without key clashes. BBT generates citation keys that take into
+* account other existing keys in your library
+  in a deterministic way, regardless of what part of your library you export, or the order in which you do it.
+* Drag and drop LaTeX citations to your favorite LaTeX editor
+* Generate citation keys from JabRef patterns
+* Shows both pinned (fixed) citation keys and dynamically generated ones in the reference list view
+* Add other custom BibLaTeX fields
+* Scan your AUX files to get a list of references specifically for your article (and incidentally list missing
+  references) by importing it.
+
 BBT offers you control over your citation keys.
 
 # Set your own, fixed citation keys
