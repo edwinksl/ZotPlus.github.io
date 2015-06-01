@@ -2,13 +2,13 @@
 - title: Zotero++
   url: "/index.html"
   project:
-    slug: ''
+    slug: 
     title: Zotero++
   pages:
   - title: pdf
     url: "/pdf.html"
     project:
-      slug: ''
+      slug: 
       title: Zotero++
 - title: ASCII rename
   url: "/ascii-rename/index.html"

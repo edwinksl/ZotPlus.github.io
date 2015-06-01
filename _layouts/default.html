@@ -28,7 +28,7 @@
       <div id="banner">
         <span id="logo"></span>
 
-        {% unless project.slug == '' %}
+        {% if project.slug %}
           <a href="https://github.com/ZotPlus/zotero-{{ project.slug }}" class="button fork"><strong>View On GitHub</strong></a>
           <div class="downloads">
             <span>Downloads:</span>
@@ -39,7 +39,7 @@
               <li><a href="https://github.com/ZotPlus/zotero-{{ project.slug }}/releases/download/{% include {{xpi}} %}/zotero-{{ project.slug }}-{% include {{xpi}} %}.xpi" class="button">XPI</a></li>
             </ul>
           </div>
-        {% endunless %}
+        {% endif %}
       </div><!-- end banner -->
 
     <div class="wrapper">
@@ -48,18 +48,18 @@
         <h1>ZotPlus</h1>
         <ul class="root">
           {% for p in site.data.nav %}
-            {% if p.project.slug == '' %}
+            {% unless p.project.slug %}
               <li><a {% if p.project.slug == project.slug %}class="active"{% endif %} href="{{ p.url }}">{{ p.title }}</a></li>
-            {% endif %}
+            {% endunless %}
           {% endfor %}
         </ul>
 
         <h1>Projects</h1>
         <ul class="projects">
           {% for p in site.data.nav %}
-            {% unless p.project.slug == '' %}
+            {% if p.project.slug %}
               <li><a {% if p.project.slug == project.slug %}class="active"{% endif %} href="{{ p.url }}">{{ p.title }}</a></li>
-            {% endunless %}
+            {% endif %}
           {% endfor %}
         </ul>
 

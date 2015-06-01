@@ -3,19 +3,19 @@
   title: Zotero++
   url: "/index.html"
   project:
-    slug: ''
+    slug: 
     title: Zotero++
   pages:
   - title: pdf
     url: "/pdf.html"
     project:
-      slug: ''
+      slug: 
       title: Zotero++
 "/pdf.html":
   title: pdf
   url: "/pdf.html"
   project:
-    slug: ''
+    slug: 
     title: Zotero++
 "/ascii-rename/index.html":
   title: ASCII rename

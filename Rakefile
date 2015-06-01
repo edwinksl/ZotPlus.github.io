@@ -49,6 +49,7 @@ task :navigation do
         'slug' => url.sub(/index.html$/, '').gsub('/', ''),
         'title' => title
       }
+      project['slug'] = nil if project['slug'] == ''
     end
 
     if File.basename(md) == 'index.md'
