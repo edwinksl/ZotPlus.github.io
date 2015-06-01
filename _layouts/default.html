@@ -1,24 +1,13 @@
-{% assign project = page.url | remove_first: '/' | split: '/' | first %}
-{% assign project_url = project | prepend: '/' | append: '/' %}
-{% assign project_name = 'ZotPlus' %}
-{% assign conditional_project_name = 'ZotPlus' %}
-{% assign sorted_pages = site.pages | sort: 'weight', 'last' %}
-
-{% for p in sorted_pages %}
-  {% if p.url contains project_url and p.url contains '/index.html' %}
-    {% unless page.url contains project_url and page.url contains '/index.html' %}
-      {% assign conditional_project_name = p.title %}
-    {% endunless %}
-    {% assign project_name = p.title %}
-  {% endif %}
-{% endfor %}
+{% assign current = site.data.meta[page.url] %}
+{% assign project = current.project %}
+{% assign pages = current.pages %}
 
 <!doctype html>
 <html>
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>{{ page.title }} - {{ conditional_project_name }}</title>
+    <title>{{ page.title }} - {{ project.title }}</title>
     <link rel="stylesheet" href="/stylesheets/styles.css">
     <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -32,22 +21,22 @@
   </head>
   <body>
       <header>
-        <h1>{{ conditional_project_name }} - {{ page.title }}</h1>
+        <h1>{{ project.title }} - {{ page.title }}</h1>
         <p></p>
       </header>
 
       <div id="banner">
         <span id="logo"></span>
 
-        {% unless project contains '.' %}
-          <a href="https://github.com/ZotPlus/zotero-{{ project }}" class="button fork"><strong>View On GitHub</strong></a>
+        {% unless project.slug == '' %}
+          <a href="https://github.com/ZotPlus/zotero-{{ project.slug }}" class="button fork"><strong>View On GitHub</strong></a>
           <div class="downloads">
             <span>Downloads:</span>
             <ul>
-              <li><a href="https://github.com/ZotPlus/zotero-{{ project }}/zipball/master" class="button">ZIP</a></li>
-              <li><a href="https://github.com/ZotPlus/zotero-{{ project }}/tarball/master" class="button">TAR</a></li>
-              {% assign xpi = project | append: '-version.html' %}
-              <li><a href="https://github.com/ZotPlus/zotero-{{ project }}/releases/download/{% include {{xpi}} %}/zotero-{{ project }}-{% include {{xpi}} %}.xpi" class="button">XPI</a></li>
+              <li><a href="https://github.com/ZotPlus/zotero-{{ project.slug }}/zipball/master" class="button">ZIP</a></li>
+              <li><a href="https://github.com/ZotPlus/zotero-{{ project.slug }}/tarball/master" class="button">TAR</a></li>
+              {% assign xpi = project.slug | append: '-version.html' %}
+              <li><a href="https://github.com/ZotPlus/zotero-{{ project.slug }}/releases/download/{% include {{xpi}} %}/zotero-{{ project.slug }}-{% include {{xpi}} %}.xpi" class="button">XPI</a></li>
             </ul>
           </div>
         {% endunless %}
@@ -58,32 +47,30 @@
 
         <h1>ZotPlus</h1>
         <ul class="root">
-          {% for p in sorted_pages %}
-            {% assign path = p.url | remove_first: '/' | split: '/' %}
-            {% if path.size == 1 %}
-              <li><a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">{{ p.title }}</a></li>
+          {% for p in site.data.nav %}
+            {% if p.project.slug == '' %}
+              <li><a {% if p.project.slug == project.slug %}class="active"{% endif %} href="{{ p.url }}">{{ p.title }}</a></li>
             {% endif %}
           {% endfor %}
         </ul>
 
         <h1>Projects</h1>
         <ul class="projects">
-          {% for p in sorted_pages %}
-            {% assign path = p.url | remove_first: '/' | split: '/' %}
-            {% if path.size > 1 and path.last == 'index.html' %}
-              <li><a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">{{ p.title }}</a></li>
-            {% endif %}
+          {% for p in site.data.nav %}
+            {% unless p.project.slug == '' %}
+              <li><a {% if p.project.slug == project.slug %}class="active"{% endif %} href="{{ p.url }}">{{ p.title }}</a></li>
+            {% endunless %}
           {% endfor %}
         </ul>
 
-        <h2>{{ project_name }}</h2>
-        <ul class="pages">
-          {% for p in sorted_pages %}
-            {% if p.url contains project_url %}
+        {% if pages %}
+          <h2>{{ project.title }}</h2>
+          <ul class="pages">
+            {% for p in pages %}
               <li><a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">{{ p.title }}</a></li>
-            {% endif %}
-          {% endfor %}
-        </ul>
+            {% endfor %}
+          </ul>
+        {% endif %}
 
         <h3>{{ page.title }}</h2>
         <ul class="current-page"></ul>

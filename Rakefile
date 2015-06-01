@@ -8,6 +8,10 @@ task :default do
   puts "jekyll serve"
 end
 
+def clone(obj)
+  return Marshal.load(Marshal.dump(obj))
+end
+
 task :navigation do
   nav = []
   project = nil
@@ -40,21 +44,27 @@ task :navigation do
     title = File.basename(md, File.extname(md)).gsub(/-/, ' ') if title.to_s == ''
 
     url = "/#{md}".sub(/\.md$/, '.html')
-    project = title if File.basename(md) == 'index.md'
+    if File.basename(md) == 'index.md'
+      project = {
+        'slug' => url.sub(/index.html$/, '').gsub('/', ''),
+        'title' => title
+      }
+    end
 
     if File.basename(md) == 'index.md'
-      nav << {'title' => title, 'url' => url, 'project' => project}
+      nav << {'title' => title, 'url' => url, 'project' => clone(project)}
     else
       nav[-1]['pages'] ||= []
-      nav[-1]['pages'] << {'title' => title, 'url' => url, 'project' => project}
+      nav[-1]['pages'] << {'title' => title, 'url' => url, 'project' => clone(project)}
     end
   }
 
   meta = {}
   nav.each{|n|
-    meta[n['url']] = { 'project' => n['project'] }
+    meta[n['url']] = clone(n)
+
     (n['pages'] || []).each{|p|
-      meta[p['url']] = { 'project' => p['project'] }
+      meta[p['url']] = clone(p)
     }
   }
 

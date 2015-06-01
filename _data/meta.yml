@@ -1,27 +1,106 @@
 ---
 "/index.html":
-  project: Zotero++
+  title: Zotero++
+  url: "/index.html"
+  project:
+    slug: ''
+    title: Zotero++
+  pages:
+  - title: pdf
+    url: "/pdf.html"
+    project:
+      slug: ''
+      title: Zotero++
 "/pdf.html":
-  project: Zotero++
+  title: pdf
+  url: "/pdf.html"
+  project:
+    slug: ''
+    title: Zotero++
 "/ascii-rename/index.html":
-  project: ASCII rename
+  title: ASCII rename
+  url: "/ascii-rename/index.html"
+  project:
+    slug: ascii-rename
+    title: ASCII rename
 "/auto-index/index.html":
-  project: Auto Index
+  title: Auto Index
+  url: "/auto-index/index.html"
+  project:
+    slug: auto-index
+    title: Auto Index
 "/better-bibtex/index.html":
-  project: Better BibTeX
+  title: Better BibTeX
+  url: "/better-bibtex/index.html"
+  project:
+    slug: better-bibtex
+    title: Better BibTeX
+  pages:
+  - title: Citation Keys
+    url: "/better-bibtex/Citation-Keys.html"
+    project:
+      slug: better-bibtex
+      title: Better BibTeX
+  - title: Customized Exports
+    url: "/better-bibtex/Customized-Exports.html"
+    project:
+      slug: better-bibtex
+      title: Better BibTeX
+  - title: Push/Pull Export
+    url: "/better-bibtex/Pull-Export.html"
+    project:
+      slug: better-bibtex
+      title: Better BibTeX
+  - title: Support Request Guidelines
+    url: "/better-bibtex/Support-Request-Guidelines.html"
+    project:
+      slug: better-bibtex
+      title: Better BibTeX
 "/better-bibtex/Citation-Keys.html":
-  project: Better BibTeX
+  title: Citation Keys
+  url: "/better-bibtex/Citation-Keys.html"
+  project:
+    slug: better-bibtex
+    title: Better BibTeX
 "/better-bibtex/Customized-Exports.html":
-  project: Better BibTeX
+  title: Customized Exports
+  url: "/better-bibtex/Customized-Exports.html"
+  project:
+    slug: better-bibtex
+    title: Better BibTeX
 "/better-bibtex/Pull-Export.html":
-  project: Better BibTeX
+  title: Push/Pull Export
+  url: "/better-bibtex/Pull-Export.html"
+  project:
+    slug: better-bibtex
+    title: Better BibTeX
 "/better-bibtex/Support-Request-Guidelines.html":
-  project: Better BibTeX
+  title: Support Request Guidelines
+  url: "/better-bibtex/Support-Request-Guidelines.html"
+  project:
+    slug: better-bibtex
+    title: Better BibTeX
 "/debug-bridge/index.html":
-  project: Debug Bridge
+  title: Debug Bridge
+  url: "/debug-bridge/index.html"
+  project:
+    slug: debug-bridge
+    title: Debug Bridge
 "/link-local-files/index.html":
-  project: Link local files
+  title: Link local files
+  url: "/link-local-files/index.html"
+  project:
+    slug: link-local-files
+    title: Link local files
 "/opds/index.html":
-  project: Zotero OPDS server
+  title: Zotero OPDS server
+  url: "/opds/index.html"
+  project:
+    slug: opds
+    title: Zotero OPDS server
 "/report-customizer/index.html":
-  project: Report Customizer
+  title: Report Customizer
+  url: "/report-customizer/index.html"
+  project:
+    slug: report-customizer
+    title: Report Customizer

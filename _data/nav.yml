@@ -1,42 +1,68 @@
 ---
 - title: Zotero++
   url: "/index.html"
-  project: Zotero++
+  project:
+    slug: ''
+    title: Zotero++
   pages:
   - title: pdf
     url: "/pdf.html"
-    project: Zotero++
+    project:
+      slug: ''
+      title: Zotero++
 - title: ASCII rename
   url: "/ascii-rename/index.html"
-  project: ASCII rename
+  project:
+    slug: ascii-rename
+    title: ASCII rename
 - title: Auto Index
   url: "/auto-index/index.html"
-  project: Auto Index
+  project:
+    slug: auto-index
+    title: Auto Index
 - title: Better BibTeX
   url: "/better-bibtex/index.html"
-  project: Better BibTeX
+  project:
+    slug: better-bibtex
+    title: Better BibTeX
   pages:
   - title: Citation Keys
     url: "/better-bibtex/Citation-Keys.html"
-    project: Better BibTeX
+    project:
+      slug: better-bibtex
+      title: Better BibTeX
   - title: Customized Exports
     url: "/better-bibtex/Customized-Exports.html"
-    project: Better BibTeX
+    project:
+      slug: better-bibtex
+      title: Better BibTeX
   - title: Push/Pull Export
     url: "/better-bibtex/Pull-Export.html"
-    project: Better BibTeX
+    project:
+      slug: better-bibtex
+      title: Better BibTeX
   - title: Support Request Guidelines
     url: "/better-bibtex/Support-Request-Guidelines.html"
-    project: Better BibTeX
+    project:
+      slug: better-bibtex
+      title: Better BibTeX
 - title: Debug Bridge
   url: "/debug-bridge/index.html"
-  project: Debug Bridge
+  project:
+    slug: debug-bridge
+    title: Debug Bridge
 - title: Link local files
   url: "/link-local-files/index.html"
-  project: Link local files
+  project:
+    slug: link-local-files
+    title: Link local files
 - title: Zotero OPDS server
   url: "/opds/index.html"
-  project: Zotero OPDS server
+  project:
+    slug: opds
+    title: Zotero OPDS server
 - title: Report Customizer
   url: "/report-customizer/index.html"
-  project: Report Customizer
+  project:
+    slug: report-customizer
+    title: Report Customizer
