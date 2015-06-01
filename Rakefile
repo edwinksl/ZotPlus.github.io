@@ -2,13 +2,70 @@ require 'rake'
 require 'yaml'
 require 'fileutils'
 require 'rbconfig'
+require 'pp'
 
 task :default do
   puts "jekyll serve"
 end
 
+task :navigation do
+  nav = []
+  project = nil
+  Dir['**/*.md'].sort_by{|md|
+    pos = File.basename(md)
+    d = File.dirname(md)
+    d = '000' if d == '.'
+
+    if pos == 'index.md'
+      pos = '000'
+    else
+      begin
+        fm = YAML.load_file(md)
+        p = fm['weight'].to_i
+        pos = "#{p}".rjust(3, '0') if w > 0
+      rescue
+      end
+    end
+
+    File.join(d, pos).sub(/^\.\//, '')
+  }.each{|md|
+    fm = nil
+    begin
+      fm = YAML.load_file(md)
+    rescue
+      fm = nil
+    end
+
+    title = fm ? fm['title'] : nil
+    title = File.basename(md, File.extname(md)).gsub(/-/, ' ') if title.to_s == ''
+
+    url = "/#{md}".sub(/\.md$/, '.html')
+    project = title if File.basename(md) == 'index.md'
+
+    if File.basename(md) == 'index.md'
+      nav << {'title' => title, 'url' => url, 'project' => project}
+    else
+      nav[-1]['pages'] ||= []
+      nav[-1]['pages'] << {'title' => title, 'url' => url, 'project' => project}
+    end
+  }
+
+  meta = {}
+  nav.each{|n|
+    meta[n['url']] = { 'project' => n['project'] }
+    (n['pages'] || []).each{|p|
+      meta[p['url']] = { 'project' => p['project'] }
+    }
+  }
+
+  FileUtils.mkdir_p '_data'
+  open('_data/nav.yml', 'w'){|f| f.write(nav.to_yaml) }
+  open('_data/meta.yml', 'w'){|f| f.write(meta.to_yaml) }
+end
+
 task :publish do
   sh "git pull"
+  Rake::Task["navigation"].invoke
   sh "git add ."
   msg = []
   Dir['_includes/*version.html'].each{|version|
