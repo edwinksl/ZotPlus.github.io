@@ -25,10 +25,10 @@
         <h1>
           {% if project.title == page.title %}
             {% unless project.title == root.title %}
-              {{ root.title }} -
+              {{ root.title }}
             {% endunless %}
           {% else %}
-            {{ project.title }} -
+            {{ project.title }}
           {% endif %}
           {{ page.title }}
         </h1>
