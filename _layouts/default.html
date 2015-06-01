@@ -1,3 +1,4 @@
+{% assign root = site.data.meta['/index.html'] %}
 {% assign current = site.data.meta[page.url] %}
 {% assign project = current.project %}
 {% assign pages = current.pages %}
@@ -21,7 +22,16 @@
   </head>
   <body>
       <header>
-        <h1>{{ project.title }} {% unless project.title == page.title %} - {{ page.title }} {% endunless %}</h1>
+        <h1>
+          {% if project.title == page.title %}
+            {% unless project.title == root.title %}
+              {{ root.title }} -
+            {% endunless %}
+          {% else %}
+            {{ project.title }} -
+          {% endif %}
+          {{ page.title }}
+        </h1>
         <p></p>
       </header>
 
