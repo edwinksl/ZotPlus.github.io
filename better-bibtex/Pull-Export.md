@@ -5,8 +5,7 @@ title: Push/Pull Export
 # Push Export
 
 When exporting using Better Bib(La)Tex you will be offered a new export option: Keep Updated. Checking this option
-registers the export for automation; any changes to the collection after you've completed the current export (it only works for collections,
-sorry) will trigger an automatic re-export to update the bib file. You review/remove exports from the BBT preferences.
+registers the export for automation; any changes to the collection after you've completed the current export will trigger an automatic re-export to update the bib file. You can review/remove exports from the BBT preferences.
 While I've gone to some lengths to make sure performance is OK, don't go overboard with the number of auto-exports you
 have going.
 
