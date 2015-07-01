@@ -18,12 +18,12 @@ prefer fuzzy ones over missed ones.
 Unfortunately, however, my time is extremely limited for a number of very great reasons (you shall have to trust me on this). Because of this, I
 cannot accept bug reports or support requests on anything but the latest version, currently at:
 
-* [ASCII Rename](https://github.com/ZotPlus/zotero-{% include ascii-rename-version.html %}/issues) {% include ascii-rename-version.html %}
-* [Auto-index](https://github.com/ZotPlus/zotero-{% include auto-index-version.html %}/issues) {% include auto-index-version.html %}
-* [Better BibTeX](https://github.com/ZotPlus/zotero-{% include better-bibtex-version.html %}/issues) {% include better-bibtex-version.html %}
-* [Link local files](https://github.com/ZotPlus/zotero-{% include link-local-files-version.html %}/issues) {% include link-local-files-version.html %}
-* [OPDS Server](https://github.com/ZotPlus/zotero-{% include opds-version.html %}/issues) {% include opds-version.html %}
-* [Report Customizer](https://github.com/ZotPlus/zotero-{% include report-customizer-version.html %}/issues) {% include report-customizer-version.html %}
+* [ASCII Rename](https://github.com/ZotPlus/zotero-ascii-rename-{% include ascii-rename-version.html %}/issues) {% include ascii-rename-version.html %}
+* [Auto-index](https://github.com/ZotPlus/zotero-auto-index-{% include auto-index-version.html %}/issues) {% include auto-index-version.html %}
+* [Better BibTeX](https://github.com/ZotPlus/zotero-better-bibtex-{% include better-bibtex-version.html %}/issues) {% include better-bibtex-version.html %}
+* [Link local files](https://github.com/ZotPlus/zotero-link-local-files-{% include link-local-files-version.html %}/issues) {% include link-local-files-version.html %}
+* [OPDS Server](https://github.com/ZotPlus/zotero-opds-{% include opds-version.html %}/issues) {% include opds-version.html %}
+* [Report Customizer](https://github.com/ZotPlus/zotero-report-customizer-{% include report-customizer-version.html %}/issues) {% include report-customizer-version.html %}
 
 If you submit an issue report, please include the version that you
 are on. By the time I get to your issue, the latest version might
