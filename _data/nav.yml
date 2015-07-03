@@ -31,6 +31,11 @@
     slug: better-bibtex
     title: Better BibTeX
   pages:
+  - title: CHANGELOG
+    url: "/better-bibtex/CHANGELOG.html"
+    project:
+      slug: better-bibtex
+      title: Better BibTeX
   - title: Push/Pull Export
     url: "/better-bibtex/Pull-Export.html"
     project:

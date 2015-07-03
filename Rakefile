@@ -3,6 +3,8 @@ require 'yaml'
 require 'fileutils'
 require 'rbconfig'
 require 'pp'
+require 'shellwords'
+require 'tempfile'
 
 task :default do
   puts "jekyll serve"
@@ -80,7 +82,18 @@ task :navigation do
   open('_data/meta.yml', 'w'){|f| f.write(meta.to_yaml) }
 end
 
-task :publish do
+file 'better-bibtex/CHANGELOG.md' => '_includes/better-bibtex-version.html' do |t|
+  ENV['CHANGELOG_GITHUB_TOKEN'] = ENV['GITHUB_TOKEN'] if ENV['CHANGELOG_GITHUB_TOKEN'].to_s == ''
+  open(t.name, 'w'){|f| f.write("---\ntitle: CHANGELOG\n---\n") }
+  Tempfile.create('changelog') do |tmp|
+    sh "github_changelog_generator -u ZotPlus -p zotero-better-bibtex -o  #{Shellwords.escape(tmp.path)}"
+    open(t.name, 'a'){|f|
+      f << open(tmp.path).read
+    }
+  end
+end
+
+task :publish => 'better-bibtex/CHANGELOG.md' do
   sh "git pull"
   Rake::Task["navigation"].invoke
   sh "git add ."
