@@ -92,7 +92,7 @@ file 'better-bibtex/CHANGELOG.md' => '_includes/better-bibtex-version.html' do |
   end
 end
 
-task :publish => 'better-bibtex/CHANGELOG.md' do
+task :publish do
   sh "git pull"
   Rake::Task["navigation"].invoke
   sh "git add ."
