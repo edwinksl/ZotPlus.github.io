@@ -83,7 +83,6 @@ task :navigation do
 end
 
 file 'better-bibtex/CHANGELOG.md' => '_includes/better-bibtex-version.html' do |t|
-  ENV['CHANGELOG_GITHUB_TOKEN'] = ENV['GITHUB_TOKEN'] if ENV['CHANGELOG_GITHUB_TOKEN'].to_s == ''
   open(t.name, 'w'){|f| f.write("---\ntitle: CHANGELOG\n---\n") }
   Tempfile.create('changelog') do |tmp|
     sh "github_changelog_generator -u ZotPlus -p zotero-better-bibtex -o  #{Shellwords.escape(tmp.path)}"
