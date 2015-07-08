@@ -3,6 +3,10 @@ title: CHANGELOG
 ---
 # Change Log
 
+## [0.14.13](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.14.13) (2015-07-08)
+
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.14.12...0.14.13)
+
 ## [0.14.12](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.14.12) (2015-07-08)
 
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.14.11...0.14.12)
