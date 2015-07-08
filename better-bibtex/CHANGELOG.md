@@ -3,6 +3,46 @@ title: CHANGELOG
 ---
 # Change Log
 
+## [0.14.12](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.14.12) (2015-07-08)
+
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.14.11...0.14.12)
+
+**Implemented enhancements:**
+
+- Handling Jr. in generated cite keys [\#236](https://github.com/ZotPlus/zotero-better-bibtex/issues/236)
+
+## [0.14.11](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.14.11) (2015-07-08)
+
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.14.10...0.14.11)
+
+**Fixed bugs:**
+
+- "Report ZotPlus errors" for item does not work [\#234](https://github.com/ZotPlus/zotero-better-bibtex/issues/234)
+
+## [0.14.10](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.14.10) (2015-07-06)
+
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.14.9...0.14.10)
+
+## [0.14.9](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.14.9) (2015-07-06)
+
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.14.8...0.14.9)
+
+**Fixed bugs:**
+
+- Automatic export when idle triggered immediately at every change [\#232](https://github.com/ZotPlus/zotero-better-bibtex/issues/232)
+
+## [0.14.8](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.14.8) (2015-07-06)
+
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.14.7...0.14.8)
+
+## [0.14.7](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.14.7) (2015-07-05)
+
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.14.6...0.14.7)
+
+**Implemented enhancements:**
+
+- increase maximum log size [\#233](https://github.com/ZotPlus/zotero-better-bibtex/issues/233)
+
 ## [0.14.6](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.14.6) (2015-07-03)
 
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.14.5...0.14.6)
