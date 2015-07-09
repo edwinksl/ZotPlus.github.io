@@ -112,7 +112,10 @@ BBT adds a few fields, flags and filter functions that JabRef (perhaps wisely) d
 - `condense`: this replaces spaces in the value passed in. You can specify what to replace it with by adding it as a
   parameter, e.g `condense,_` will replace spaces with underscores. **Parameters should not contain spaces** unless you
   want the spaces in the value passed in to be replaced with those spaces in the parameter
-- `skipwords`: filters out common words like 'of', 'the', ...
+- `skipwords`: filters out common words like 'of', 'the', ... the list of words can be seen and changed by going into
+  `about:config` under the key `extensions.zotero.translators.better-bibtex.skipWords` as a comma-separated,
+  case-insensitive list of words. Note that this filter is always applied if you use `title` (which is different from
+  `Title`) or `shorttitle`.
 - `select`: selects words from the value passed in. The format is `select,start,number` (1-based), so `select,1,4`
   would select the first four words. It is important to note that `select' works only on values that have the words
   separated by whitespace, so the caveat below applies.
@@ -126,7 +129,8 @@ table above, which give you the values from Zotero without any changes.
 
 Example: should you want to mimic Zotero's original key generation (even though having underscores in your keys is not
 handled gracefully by all versions of LaTeX's bibliography processors), you could use
-`[auth:fold:lower]_[Title:nopunct:skipwords:select,1,1:lower]_[year]`
+`[auth:fold:lower]_[Title:nopunct:skipwords:select,1,1:lower]_[year]`. If you want to strip words like 'Jr.' from names,
+you could use something like `[auth:nopunct:skipwords:fold]` after adding `jr` to the skipWords list.
 
 # Generation of stable keys, and syncing
 
