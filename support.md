@@ -22,7 +22,7 @@ cannot accept bug reports or support requests on anything but the latest version
 * [Auto-index](https://github.com/ZotPlus/zotero-auto-index/issues) {% include auto-index-version.html %}
 * [Better BibTeX](https://github.com/ZotPlus/zotero-better-bibtex/issues) {% include better-bibtex-version.html %}
 * [Link local files](https://github.com/ZotPlus/zotero-link-local-files/issues) {% include link-local-files-version.html %}
-* [OPDS Server](https://github.com/ZotPlus/zotero-opds/issues) {% include opds-version.html %}
+* [OPDS Server](https://github.com/retorquere/zotero-opds/issues) {% include opds-version.html %}
 * [Report Customizer](https://github.com/ZotPlus/zotero-report-customizer/issues) {% include report-customizer-version.html %}
 
 If you submit an issue report, please include the version that you

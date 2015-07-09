@@ -21,7 +21,7 @@ editors/processors, I'm pragmatic about implementing what works.
 
 # Configuration
 
-The Better BibTeX [configuration pane](exports.html) can be found under the regular Zotero preferences pane, tab 'Better Bib(La)TeX'.
+The Better BibTeX configuration pane can be found under the regular Zotero preferences pane, tab 'Better Bib(La)TeX'.
 
 # Installation (one-time)
 
