@@ -5,7 +5,7 @@ title: Niceties
 
 * Integration with **[Report Customizer](citation-keys.html)**
 * Integration with **[Zotfile](citation-keys.html)**
-* **[Customized exports](exports.html)**
+* **[Customized exports](customized-exports.html)**
 * **Jabref groups import/export**: During import, if JabRef explicit (not dynamic) groups are present, collections will
   be created to mirror these. During export, collections will be added to the export as explicit jabref groups.
 * **Fixes date field exports**: export dates like 'forthcoming' as 'forthcoming' instead of empty.
