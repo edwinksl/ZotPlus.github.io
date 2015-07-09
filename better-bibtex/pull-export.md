@@ -31,8 +31,8 @@ You can add options to the export as URL parameters:
 * `&exportNotes=[true|false]`
 * `&useJournalAbbreviation=[true|false]`
 
-Zotero needs to be running and the [embedded server needs to be enabled](customized-exports.html) for this to work.
+Zotero needs to be running and the [embedded server needs to be enabled](export.html) for this to work.
 
 # Recursive collection export
 
-The pull export will export child collections when the [recursive option](customized-exports.html) is enabled.
+The pull export will export child collections when the [recursive option](export.html) is enabled.
