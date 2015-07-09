@@ -3,6 +3,14 @@ title: CHANGELOG
 ---
 # Change Log
 
+## [Unreleased](https://github.com/ZotPlus/zotero-better-bibtex/tree/HEAD)
+
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.14.13...HEAD)
+
+**Fixed bugs:**
+
+- Single-field author entries with commas generate invalid BibTex [\#235](https://github.com/ZotPlus/zotero-better-bibtex/issues/235)
+
 ## [0.14.13](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.14.13) (2015-07-08)
 
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.14.12...0.14.13)
