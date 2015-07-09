@@ -36,11 +36,6 @@
     project:
       slug: better-bibtex
       title: Better BibTeX
-  - title: Push/Pull Export
-    url: "/better-bibtex/Pull-Export.html"
-    project:
-      slug: better-bibtex
-      title: Better BibTeX
   - title: Citation Keys
     url: "/better-bibtex/citation-keys.html"
     project:
@@ -58,6 +53,11 @@
       title: Better BibTeX
   - title: Niceties
     url: "/better-bibtex/niceties.html"
+    project:
+      slug: better-bibtex
+      title: Better BibTeX
+  - title: Push/Pull Export
+    url: "/better-bibtex/pull-export.html"
     project:
       slug: better-bibtex
       title: Better BibTeX

@@ -52,11 +52,6 @@
     project:
       slug: better-bibtex
       title: Better BibTeX
-  - title: Push/Pull Export
-    url: "/better-bibtex/Pull-Export.html"
-    project:
-      slug: better-bibtex
-      title: Better BibTeX
   - title: Citation Keys
     url: "/better-bibtex/citation-keys.html"
     project:
@@ -77,6 +72,11 @@
     project:
       slug: better-bibtex
       title: Better BibTeX
+  - title: Push/Pull Export
+    url: "/better-bibtex/pull-export.html"
+    project:
+      slug: better-bibtex
+      title: Better BibTeX
   - title: Unicode problems
     url: "/better-bibtex/unicode.html"
     project:
@@ -85,12 +85,6 @@
 "/better-bibtex/CHANGELOG.html":
   title: CHANGELOG
   url: "/better-bibtex/CHANGELOG.html"
-  project:
-    slug: better-bibtex
-    title: Better BibTeX
-"/better-bibtex/Pull-Export.html":
-  title: Push/Pull Export
-  url: "/better-bibtex/Pull-Export.html"
   project:
     slug: better-bibtex
     title: Better BibTeX
@@ -115,6 +109,12 @@
 "/better-bibtex/niceties.html":
   title: Niceties
   url: "/better-bibtex/niceties.html"
+  project:
+    slug: better-bibtex
+    title: Better BibTeX
+"/better-bibtex/pull-export.html":
+  title: Push/Pull Export
+  url: "/better-bibtex/pull-export.html"
   project:
     slug: better-bibtex
     title: Better BibTeX
