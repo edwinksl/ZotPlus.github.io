@@ -45,3 +45,9 @@ instead of the one usually inferred from the Zotero reference type. You can use 
 You can fix the citation key for a reference to a value of your choosing by adding the text `bibtex: [your citekey]`
 anywhere in the "extra" field of the reference.
 
+Note that the default biblatex styles do not seem to support origdate; you can find possible solutions for this at Stack
+Exchange
+[here](http://tex.stackexchange.com/questions/142999/the-proper-way-to-cite-the-earliest-publication-date-in-brackets-followed-by)
+and
+[here](http://tex.stackexchange.com/questions/55859/getting-origyear-to-work-in-biblatex).
+
