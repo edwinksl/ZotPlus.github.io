@@ -57,6 +57,11 @@
     project:
       slug: better-bibtex
       title: Better BibTeX
+  - title: Collected Notes
+    url: "/better-bibtex/collected-notes.html"
+    project:
+      slug: better-bibtex
+      title: Better BibTeX
   - title: Customized Exports
     url: "/better-bibtex/export.html"
     project:
@@ -91,6 +96,12 @@
 "/better-bibtex/citation-keys.html":
   title: Citation Keys
   url: "/better-bibtex/citation-keys.html"
+  project:
+    slug: better-bibtex
+    title: Better BibTeX
+"/better-bibtex/collected-notes.html":
+  title: Collected Notes
+  url: "/better-bibtex/collected-notes.html"
   project:
     slug: better-bibtex
     title: Better BibTeX
