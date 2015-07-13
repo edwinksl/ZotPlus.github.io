@@ -3,9 +3,27 @@ title: CHANGELOG
 ---
 # Change Log
 
-## [Unreleased](https://github.com/ZotPlus/zotero-better-bibtex/tree/HEAD)
+## [0.14.16](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.14.16) (2015-07-13)
 
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.14.13...HEAD)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.14.15...0.14.16)
+
+## [0.14.15](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.14.15) (2015-07-13)
+
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.14.14...0.14.15)
+
+**Implemented enhancements:**
+
+- Ability to handle original publication date [\#237](https://github.com/ZotPlus/zotero-better-bibtex/issues/237)
+
+## [0.14.14](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.14.14) (2015-07-13)
+
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.14.13...0.14.14)
+
+**Implemented enhancements:**
+
+- Output "Collected Notes" in TeX [\#239](https://github.com/ZotPlus/zotero-better-bibtex/issues/239)
+
+- Extended debugging too verbose? [\#238](https://github.com/ZotPlus/zotero-better-bibtex/issues/238)
 
 **Fixed bugs:**
 
