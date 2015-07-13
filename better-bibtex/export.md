@@ -38,6 +38,10 @@ your key names or values. If you need more flexibility, you can use the [JSON5](
 The marker for these fields can be either `bibtex`, `biblatex` or `biblatexdata`, but when importing BibTeX files with
 fields not supported by Zotero, the `bibtex` marker will be used.
 
+The final way to add fields is by using `{:original-date: 1856}`. These fields will not only be exported to Bib(La)TeX,
+but will also be [picked up](https://forums.zotero.org/discussion/3673/original-date-of-publication/) by the Zotero
+Bibliography manager, even though not all Zotero styles yet support this.
+
 If you add a field called `referencetype` using either of these methods, that value will be used as the reference type
 instead of the one usually inferred from the Zotero reference type. You can use this to create, for example,
 `@customa{citekeyhere, ....}` type references.
