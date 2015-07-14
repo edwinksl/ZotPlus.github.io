@@ -3,6 +3,14 @@ title: CHANGELOG
 ---
 # Change Log
 
+## [0.14.17](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.14.17) (2015-07-14)
+
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.14.16...0.14.17)
+
+**Implemented enhancements:**
+
+- Cleaner HTML-\>LaTeX converter [\#240](https://github.com/ZotPlus/zotero-better-bibtex/issues/240)
+
 ## [0.14.16](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.14.16) (2015-07-13)
 
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.14.15...0.14.16)
