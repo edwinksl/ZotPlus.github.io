@@ -3,6 +3,46 @@ title: CHANGELOG
 ---
 # Change Log
 
+## [1.0.5](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.0.5) (2015-07-14)
+
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.0.4...1.0.5)
+
+**Fixed bugs:**
+
+- Collected Notes: line-breaks on empty line makes LaTeX sad [\#244](https://github.com/ZotPlus/zotero-better-bibtex/issues/244)
+
+## [1.0.4](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.0.4) (2015-07-14)
+
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.0.3...1.0.4)
+
+**Implemented enhancements:**
+
+- Display auto-export timestamps in user locale [\#243](https://github.com/ZotPlus/zotero-better-bibtex/issues/243)
+
+## [1.0.3](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.0.3) (2015-07-14)
+
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.0.2...1.0.3)
+
+**Fixed bugs:**
+
+- " conditions;" picked up as HTML entity [\#242](https://github.com/ZotPlus/zotero-better-bibtex/issues/242)
+
+## [1.0.2](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.0.2) (2015-07-14)
+
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.0.1...1.0.2)
+
+**Implemented enhancements:**
+
+- Show time of last auto-export in auto-export status [\#241](https://github.com/ZotPlus/zotero-better-bibtex/issues/241)
+
+## [1.0.1](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.0.1) (2015-07-14)
+
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.0.0...1.0.1)
+
+## [1.0.0](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.0.0) (2015-07-14)
+
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.14.17...1.0.0)
+
 ## [0.14.17](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.14.17) (2015-07-14)
 
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.14.16...0.14.17)
