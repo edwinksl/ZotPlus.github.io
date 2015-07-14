@@ -3,6 +3,32 @@ title: CHANGELOG
 ---
 # Change Log
 
+## [1.0.8](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.0.8) (2015-07-14)
+
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.0.7...1.0.8)
+
+**Fixed bugs:**
+
+- "Report Error including references" does not include references [\#247](https://github.com/ZotPlus/zotero-better-bibtex/issues/247)
+
+## [1.0.7](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.0.7) (2015-07-14)
+
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.0.6...1.0.7)
+
+**Fixed bugs:**
+
+- Export failure for items that have related references [\#248](https://github.com/ZotPlus/zotero-better-bibtex/issues/248)
+
+## [1.0.6](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.0.6) (2015-07-14)
+
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.0.5...1.0.6)
+
+**Fixed bugs:**
+
+- xref should not be escaped [\#246](https://github.com/ZotPlus/zotero-better-bibtex/issues/246)
+
+- Better Bib\(La\)TeX export: square brackets [\#245](https://github.com/ZotPlus/zotero-better-bibtex/issues/245)
+
 ## [1.0.5](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.0.5) (2015-07-14)
 
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.0.4...1.0.5)
