@@ -134,7 +134,7 @@ The default pattern aims to mimic Zotero's original key generation (even though 
 handled gracefully by all versions of LaTeX's bibliography processors) in order to ease migration from exports generated
 by the stock Zotero Bib(La)TeX exporters:
 
-> [auth:fold:lower]_[Title:nopunct:skipwords:select,1,1:lower]_[year][0]
+> [auth:fold:lower]\_[Title:nopunct:skipwords:select,1,1:lower]\_[year][0]
 
 
 # Generation of stable keys, and syncing
