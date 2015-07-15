@@ -101,6 +101,8 @@ BBT adds a few fields, flags and filter functions that JabRef (perhaps wisely) d
   full journal title, use `PublicationTitle`. `journal` returns the same as `JournalAbbreviation`, if set; if not
   set, and 'automatic journal abbreviation' is enabled in the BBT settings, will use the same abbreviation filter Zotero
   uses in the wordprocessor integration. You might want to use the `nopunct` filter (see below) on this.
+- `0`: a pseudo-function that sets the citekey disambiguation postfix to numeric (1, 2, etc) rather than alphabetic (a,
+  b, c). Must appear at the very end of the pattern.
 
 ### Flags
 
@@ -129,7 +131,7 @@ table above, which give you the values from Zotero without any changes.
 
 Example: should you want to mimic Zotero's original key generation (even though having underscores in your keys is not
 handled gracefully by all versions of LaTeX's bibliography processors), you could use
-`[auth:fold:lower]_[Title:nopunct:skipwords:select,1,1:lower]_[year]`. If you want to strip words like 'Jr.' from names,
+`[auth:fold:lower]_[Title:nopunct:skipwords:select,1,1:lower]_[year][0]`. If you want to strip words like 'Jr.' from names,
 you could use something like `[auth:nopunct:skipwords:fold]` after adding `jr` to the skipWords list.
 
 # Generation of stable keys, and syncing
