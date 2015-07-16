@@ -130,8 +130,8 @@ BBT adds a few fields, flags and filter functions that JabRef (perhaps wisely) d
 whitespace and thereby make these filter functions sort of useless. You will in general want to use the fields from the
 table above, which give you the values from Zotero without any changes.
 
-The default pattern aims to mimic Zotero's original key generation (even though having underscores in your keys is not
-handled gracefully by all versions of LaTeX's bibliography processors) in order to ease migration from exports generated
+The default pattern aims to replicate Zotero's original key generation (even though having underscores in your keys is not
+handled gracefully by all versions of LaTeX's bibliography processors) in order to ease migration from existing exports generated
 by the stock Zotero Bib(La)TeX exporters:
 
 > [auth:fold:lower]\_[Title:nopunct:skipwords:select,1,1:lower]\_[year][0]
