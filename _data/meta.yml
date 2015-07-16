@@ -47,7 +47,7 @@
     slug: better-bibtex
     title: Better BibTeX
   pages:
-  - title: CHANGELOG
+  - title: Change log
     url: "/better-bibtex/CHANGELOG.html"
     project:
       slug: better-bibtex
@@ -88,7 +88,7 @@
       slug: better-bibtex
       title: Better BibTeX
 "/better-bibtex/CHANGELOG.html":
-  title: CHANGELOG
+  title: Change log
   url: "/better-bibtex/CHANGELOG.html"
   project:
     slug: better-bibtex

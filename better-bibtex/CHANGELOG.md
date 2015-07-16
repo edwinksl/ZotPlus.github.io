@@ -1,7 +1,19 @@
 ---
-title: CHANGELOG
+title: Change log
 ---
 # Change Log
+
+## [1.0.9](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.0.9) (2015-07-16)
+
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.0.8...1.0.9)
+
+**Implemented enhancements:**
+
+- Allow numeric postfix for key disambiguation [\#250](https://github.com/ZotPlus/zotero-better-bibtex/issues/250)
+
+**Fixed bugs:**
+
+- Error when generating cite key with "editor" [\#249](https://github.com/ZotPlus/zotero-better-bibtex/issues/249)
 
 ## [1.0.8](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.0.8) (2015-07-14)
 

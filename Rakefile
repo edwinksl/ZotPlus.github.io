@@ -82,11 +82,13 @@ task :navigation do
   open('_data/meta.yml', 'w'){|f| f.write(meta.to_yaml) }
 end
 
-file 'better-bibtex/CHANGELOG.md' => '_includes/better-bibtex-version.html' do |t|
-  open(t.name, 'w'){|f| f.write("---\ntitle: CHANGELOG\n---\n") }
+task :changelogs do
+  sh "git pull"
+
+  open('better-bibtex/CHANGELOG.md', 'w'){|f| f.write("---\ntitle: Change log\n---\n") }
   Tempfile.create('changelog') do |tmp|
     sh "github_changelog_generator -u ZotPlus -p zotero-better-bibtex -o  #{Shellwords.escape(tmp.path)}"
-    open(t.name, 'a'){|f|
+    open('better-bibtex/CHANGELOG.md', 'a'){|f|
       f << open(tmp.path).read
     }
   end
