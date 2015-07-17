@@ -3,6 +3,22 @@ title: Change log
 ---
 # Change Log
 
+## [1.0.11](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.0.11) (2015-07-17)
+
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.0.10...1.0.11)
+
+## [1.0.10](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.0.10) (2015-07-17)
+
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.0.9...1.0.10)
+
+**Implemented enhancements:**
+
+- Citation Key not produced [\#252](https://github.com/ZotPlus/zotero-better-bibtex/issues/252)
+
+**Fixed bugs:**
+
+- Text that legally contains the text of HTML entities such as "&nbsp;" triggers an overzealous decoding second-guesser [\#253](https://github.com/ZotPlus/zotero-better-bibtex/issues/253)
+
 ## [1.0.9](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.0.9) (2015-07-16)
 
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.0.8...1.0.9)
