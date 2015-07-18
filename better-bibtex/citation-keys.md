@@ -125,6 +125,10 @@ BBT adds a few fields, flags and filter functions that JabRef (perhaps wisely) d
 - `ascii`: removes all non-ascii characters
 - `fold`: tries to replace diacritics with ascii look-alikes.
 - `capitalize`: uppercases the first letter of each word
+- `postfix`: postfixes with its parameter, so `postfix,\_` will add an underscore to the end if, and only if, the value
+  it is supposed to postfix isn't empty
+- `prefix`: prefixes with its parameter, so `prefix,\_` will add an underscore to the front if, and only if, the value
+  it is supposed to prefix isn't empty
 
 *Usage note*: the functions `skipwords`, `capitalize` and `select` rely on whitespaces for word handling. The JabRef functions strip
 whitespace and thereby make these filter functions sort of useless. You will in general want to use the fields from the
