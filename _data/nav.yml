@@ -66,6 +66,11 @@
     project:
       slug: better-bibtex
       title: Better BibTeX
+  - title: Bundled translators
+    url: "/better-bibtex/translators.html"
+    project:
+      slug: better-bibtex
+      title: Better BibTeX
   - title: Unicode problems
     url: "/better-bibtex/unicode.html"
     project:

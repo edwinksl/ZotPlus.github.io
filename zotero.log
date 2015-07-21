@@ -1,0 +1,937 @@
+zotero(3)(+0000000): Using data directory /Users/emile/Library/Application Support/Zotero/Profiles/85s3bvad.default/zotero
+
+zotero(3)(+0000000): IPC: Initializing pipe at /Users/emile/Library/Application Support/Zotero/Profiles/85s3bvad.default/zotero/pipes/1437400641401
+
+zotero(3)(+0000001): Loading in full mode
+
+zotero(3)(+0000000): Opening database 'zotero'
+
+zotero(5)(+0000048): PRAGMA locking_mode=EXCLUSIVE
+
+zotero(5)(+0000002): SELECT version FROM version WHERE schema='system'
+
+zotero(5)(+0000000): SELECT version FROM version WHERE schema='userdata'
+
+zotero(5)(+0000107): SELECT version FROM version WHERE schema='userdata2'
+
+zotero(3)(+0000006): Proxy not required for https://s3.amazonaws.com/zotero.org/proxy-auth
+
+zotero(5)(+0000088): Beginning DB transaction
+
+zotero(3)(+0000000): Beginning Notifier event queue
+
+zotero(3)(+0000002): Updating custom tables
+
+zotero(5)(+0000000): DELETE FROM itemTypesCombined
+
+zotero(5)(+0000001): DELETE FROM fieldsCombined
+
+zotero(5)(+0000000): DELETE FROM itemTypeFieldsCombined
+
+zotero(5)(+0000004): DELETE FROM baseFieldMappingsCombined
+
+zotero(5)(+0000000): INSERT INTO itemTypesCombined SELECT itemTypeID, typeName, display, 0 AS custom FROM itemTypes UNION SELECT customItemTypeID + 10000 AS itemTypeID, typeName, display, 1 AS custom FROM customItemTypes
+
+zotero(5)(+0000004): INSERT INTO fieldsCombined SELECT fieldID, fieldName, NULL AS label, fieldFormatID, 0 AS custom FROM fields UNION SELECT customFieldID + 10000 AS fieldID, fieldName, label, NULL, 1 AS custom FROM customFields
+
+zotero(5)(+0000004): INSERT INTO itemTypeFieldsCombined SELECT itemTypeID, fieldID, hide, orderIndex FROM itemTypeFields UNION SELECT customItemTypeID + 10000 AS itemTypeID, COALESCE(fieldID, customFieldID + 10000) AS fieldID, hide, orderIndex FROM customItemTypeFields
+
+zotero(5)(+0000013): INSERT INTO baseFieldMappingsCombined SELECT itemTypeID, baseFieldID, fieldID FROM baseFieldMappings UNION SELECT customItemTypeID + 10000 AS itemTypeID, baseFieldID, customFieldID + 10000 AS fieldID FROM customBaseFieldMappings
+
+zotero(5)(+0000004): SELECT version FROM version WHERE schema='triggers'
+
+zotero(5)(+0000001): Committing transaction
+
+zotero(3)(+0000006): Resetting Notifier event queue
+
+zotero(5)(+0000001): ATTACH ':memory:' AS 'indexing'
+
+zotero(5)(+0000000): CREATE TABLE indexing.fulltextWords (word NOT NULL)
+
+zotero(3)(+0000001): pdftotext-MacIntel not found -- PDF indexing disabled
+
+zotero(5)(+0000001): SELECT * FROM fulltextItems LIMIT 1
+
+zotero(3)(+0000000): Initializing full-text content ingester idle observer
+
+zotero(3)(+0000000): Opening database 'zotero' for dummy statement
+
+zotero(3)(+0000000): Initializing dummy statement for 'zotero'
+
+zotero(3)(+0000003): Updating custom tables
+
+zotero(5)(+0000000): DELETE FROM itemTypesCombined
+
+zotero(5)(+0000004): DELETE FROM fieldsCombined
+
+zotero(5)(+0000001): DELETE FROM itemTypeFieldsCombined
+
+zotero(5)(+0000004): DELETE FROM baseFieldMappingsCombined
+
+zotero(5)(+0000007): INSERT INTO itemTypesCombined SELECT itemTypeID, typeName, display, 0 AS custom FROM itemTypes UNION SELECT customItemTypeID + 10000 AS itemTypeID, typeName, display, 1 AS custom FROM customItemTypes
+
+zotero(5)(+0000008): INSERT INTO fieldsCombined SELECT fieldID, fieldName, NULL AS label, fieldFormatID, 0 AS custom FROM fields UNION SELECT customFieldID + 10000 AS fieldID, fieldName, label, NULL, 1 AS custom FROM customFields
+
+zotero(5)(+0000004): INSERT INTO itemTypeFieldsCombined SELECT itemTypeID, fieldID, hide, orderIndex FROM itemTypeFields UNION SELECT customItemTypeID + 10000 AS itemTypeID, COALESCE(fieldID, customFieldID + 10000) AS fieldID, hide, orderIndex FROM customItemTypeFields
+
+zotero(5)(+0000006): INSERT INTO baseFieldMappingsCombined SELECT itemTypeID, baseFieldID, fieldID FROM baseFieldMappings UNION SELECT customItemTypeID + 10000 AS itemTypeID, baseFieldID, customFieldID + 10000 AS fieldID FROM customBaseFieldMappings
+
+zotero(3)(+0000004): HTTP GET resource://zotero/schema/renamed-styles.json
+
+zotero(3)(+0000002): IPC: Initializing pipe at /Users/Shared/.zoteroIntegrationPipe_emile
+
+zotero(3)(+0000001): HTTP server listening on  127.0.0.1:23119
+
+zotero(4)(+0000000): Registering observer for [setting] in notifier with hash yr'
+
+zotero(5)(+0000000): Beginning DB transaction
+
+zotero(3)(+0000000): Beginning Notifier event queue
+
+zotero(5)(+0000001): SELECT version FROM version WHERE schema='syncdeletelog'
+
+zotero(5)(+0000000): Committing transaction
+
+zotero(3)(+0000000): Resetting Notifier event queue
+
+zotero(4)(+0000000): Registering observer for all types in notifier with hash IY'
+
+zotero(4)(+0000000): Registering observer for all types in notifier with hash 1H'
+
+zotero(3)(+0000000): Initializing sync idle observer
+
+zotero(3)(+0000001): Registering URIContentListener
+
+zotero(5)(+0000000): SELECT * FROM proxies
+
+zotero(3)(+0000008): Triggering "zotero-loaded" event
+
+zotero(3)(+0000000): Initialized in 568 ms
+
+zotero(3)(+0000005): IPC: Initializing pipe at /Users/emile/Library/Containers/com.microsoft.Word/Data/.zoteroIntegrationPipe
+
+zotero(3)(+0000063): Loading BBT
+
+zotero(3)(+0000032): idle: auto-exporter initialized:
+
+zotero(3)(+0000141): Setting mode to note
+
+zotero(3)(+0000000): Setting mode to note
+
+zotero(3)(+0000000): Setting mode to note
+
+zotero(3)(+0000001): Setting mode to note
+
+zotero(4)(+0000000): Registering observer for [item-tag,setting] in notifier with hash Zs'
+
+zotero(4)(+0000041): Registering observer for [collection,search,share,group,trash,bucket] in notifier with hash IX'
+
+zotero(5)(+0000001): SELECT collectionID AS id, collectionName AS name FROM collections C WHERE parentCollectionID IS NULL AND libraryID IS NULL
+
+zotero(3)(+0000009): Reloading all collections
+
+zotero(5)(+0000000): SELECT ROWID FROM collections
+
+zotero(5)(+0000000): SELECT C.*, (SELECT COUNT(*) FROM collections WHERE parentCollectionID=C.collectionID)!=0 AS hasChildCollections, (SELECT COUNT(*) FROM collectionItems WHERE collectionID=C.collectionID)!=0 AS hasChildItems FROM collections C WHERE 1
+
+zotero(5)(+0000003): SELECT savedSearchID AS id, savedSearchName AS name FROM savedSearches WHERE libraryID IS NULL ORDER BY name COLLATE NOCASE
+
+zotero(5)(+0000004): SELECT collectionID AS id, collectionName AS name FROM collections C WHERE parentCollectionID =1
+
+zotero(5)(+0000000): No child collections of collection 1
+
+zotero(5)(+0000000): SELECT savedSearchID AS id, savedSearchName AS name FROM savedSearches WHERE libraryID IS NULL ORDER BY name COLLATE NOCASE
+
+zotero(5)(+0000001): SELECT fieldName FROM fieldsCombined WHERE fieldName NOT IN ('accessDate', 'date', 'pages', 'section','seriesNumber','issue')
+
+zotero(5)(+0000001): SELECT itemTypeID AS id, typeName AS name, custom FROM itemTypesCombined
+
+zotero(1)(+0000001): Invalid item type nsfReviewer
+
+zotero(1)(+0000000): Invalid item type nsfReviewer
+
+zotero(5)(+0000000): SELECT DISTINCT fieldID FROM baseFieldMappingsCombined
+
+zotero(2)(+0000001): String not found for searchConditions.dateAdded
+
+zotero(5)(+0000000): SELECT * FROM fieldFormats
+
+zotero(5)(+0000000): SELECT * FROM fieldsCombined
+
+zotero(5)(+0000002): SELECT fieldID, itemTypeID FROM itemTypeFieldsCombined
+
+zotero(5)(+0000004): SELECT DISTINCT baseFieldID FROM baseFieldMappingsCombined
+
+zotero(5)(+0000001): SELECT IT.itemTypeID, F.fieldID AS baseFieldID, BFM.fieldID FROM itemTypesCombined IT LEFT JOIN fieldsCombined F LEFT JOIN baseFieldMappingsCombined BFM ON (IT.itemTypeID=BFM.itemTypeID AND F.fieldID=BFM.baseFieldID)
+
+zotero(5)(+0000030): SELECT DISTINCT baseFieldID FROM baseFieldMappingsCombined
+
+zotero(5)(+0000004): SELECT baseFieldID, fieldID, fieldName FROM baseFieldMappingsCombined JOIN fieldsCombined USING (fieldID)
+
+zotero(2)(+0000001): String not found for searchConditions.url
+
+zotero(2)(+0000000): String not found for searchConditions.rights
+
+zotero(2)(+0000000): String not found for searchConditions.series
+
+zotero(2)(+0000000): String not found for searchConditions.volume
+
+zotero(2)(+0000001): String not found for searchConditions.edition
+
+zotero(2)(+0000000): String not found for searchConditions.place
+
+zotero(2)(+0000000): String not found for searchConditions.publisher
+
+zotero(2)(+0000000): String not found for searchConditions.ISBN
+
+zotero(2)(+0000000): String not found for searchConditions.publicationTitle
+
+zotero(2)(+0000000): String not found for searchConditions.ISSN
+
+zotero(2)(+0000000): String not found for searchConditions.callNumber
+
+zotero(2)(+0000001): String not found for searchConditions.archiveLocation
+
+zotero(2)(+0000000): String not found for searchConditions.extra
+
+zotero(2)(+0000000): String not found for searchConditions.journalAbbreviation
+
+zotero(2)(+0000000): String not found for searchConditions.DOI
+
+zotero(2)(+0000000): String not found for searchConditions.seriesTitle
+
+zotero(2)(+0000000): String not found for searchConditions.seriesText
+
+zotero(2)(+0000000): String not found for searchConditions.code
+
+zotero(2)(+0000000): String not found for searchConditions.session
+
+zotero(2)(+0000000): String not found for searchConditions.legislativeBody
+
+zotero(2)(+0000000): String not found for searchConditions.history
+
+zotero(2)(+0000000): String not found for searchConditions.reporter
+
+zotero(2)(+0000000): String not found for searchConditions.court
+
+zotero(2)(+0000001): String not found for searchConditions.numberOfVolumes
+
+zotero(2)(+0000000): String not found for searchConditions.committee
+
+zotero(2)(+0000000): String not found for searchConditions.assignee
+
+zotero(2)(+0000000): String not found for searchConditions.priorityNumbers
+
+zotero(2)(+0000000): String not found for searchConditions.references
+
+zotero(2)(+0000000): String not found for searchConditions.legalStatus
+
+zotero(2)(+0000000): String not found for searchConditions.codeNumber
+
+zotero(2)(+0000000): String not found for searchConditions.number
+
+zotero(2)(+0000000): String not found for searchConditions.artworkSize
+
+zotero(2)(+0000000): String not found for searchConditions.libraryCatalog
+
+zotero(2)(+0000000): String not found for searchConditions.scale
+
+zotero(2)(+0000000): String not found for searchConditions.meetingName
+
+zotero(2)(+0000000): String not found for searchConditions.runningTime
+
+zotero(2)(+0000000): String not found for searchConditions.version
+
+zotero(2)(+0000000): String not found for searchConditions.system
+
+zotero(2)(+0000000): String not found for searchConditions.conferenceName
+
+zotero(2)(+0000001): String not found for searchConditions.language
+
+zotero(2)(+0000000): String not found for searchConditions.abstractNote
+
+zotero(2)(+0000000): String not found for searchConditions.country
+
+zotero(2)(+0000000): String not found for searchConditions.applicationNumber
+
+zotero(2)(+0000000): String not found for searchConditions.title
+
+zotero(2)(+0000000): String not found for searchConditions.shortTitle
+
+zotero(2)(+0000000): String not found for searchConditions.numPages
+
+zotero(2)(+0000000): String not found for searchConditions.issuingAuthority
+
+zotero(2)(+0000000): String not found for searchConditions.filingDate
+
+zotero(2)(+0000000): String not found for searchConditions.archive
+
+zotero(2)(+0000000): String not found for searchConditions.accessDate
+
+zotero(2)(+0000001): String not found for searchConditions.date
+
+zotero(2)(+0000000): String not found for searchConditions.pages
+
+zotero(2)(+0000000): String not found for searchConditions.section
+
+zotero(2)(+0000000): String not found for searchConditions.seriesNumber
+
+zotero(2)(+0000000): String not found for searchConditions.issue
+
+zotero(5)(+0000004): SELECT itemID FROM items JOIN deletedItems USING (itemID) WHERE libraryID IS NULL
+
+zotero(5)(+0000002): SELECT groupID FROM groups ORDER BY name COLLATE locale
+
+zotero(5)(+0000004): SELECT S.*, MAX(searchConditionID) AS maxID FROM savedSearches S LEFT JOIN savedSearchConditions USING (savedSearchID) WHERE savedSearchID=? GROUP BY savedSearchID
+
+zotero(5)(+0000000): Binding parameter 1 of type int: 1
+
+zotero(5)(+0000003): SELECT * FROM savedSearchConditions WHERE savedSearchID=? ORDER BY searchConditionID
+
+zotero(5)(+0000001): Binding parameter 1 of type int: 1
+
+zotero(4)(+0000005): Registering observer for [item,collection-item,item-tag,share-items,bucket] in notifier with hash bx'
+
+zotero(3)(+0000000): Refreshing items list
+
+zotero(5)(+0000007): SELECT itemTypeID AS id, typeName AS name, custom FROM itemTypesCombined WHERE display IN (1,2)
+
+zotero(3)(+0000004): Sorting items list by title, firstCreator, date, dateAdded ascending
+
+zotero(3)(+0000001): Sorted items list in 1 ms
+
+zotero(5)(+0000003): SELECT subject FROM relations WHERE predicate != ? UNION SELECT object FROM relations WHERE predicate != ?
+
+zotero(5)(+0000001): Binding parameter 1 of type string: "dc:isReplacedBy"
+
+zotero(5)(+0000000): Binding parameter 2 of type string: "dc:isReplacedBy"
+
+zotero(3)(+0000002): Purged data tables in 3 ms
+
+zotero(3)(+0000054): ZoteroOpenOfficeIntegration: Communication server listening on 127.0.0.1:23116
+
+zotero(3)(+0000000): ZoteroOpenOfficeIntegration: Registering shutdown listener
+
+zotero(5)(+0000003): [better-bibtex] skipwords: ["a","aboard","about","above","across","after","against","al","along","amid","among","an","and","anti","around","as","at","before","behind","below","beneath","beside","besides","between","beyond","but","by","d","das","de","del","der","des","despite","die","do","down","during","ein","eine","einem","einen","einer","eines","el","except","for","from","in","inside","into","is","l","la","las","le","les","like","los","near","nor","of","off","on","onto","or","over","past","per","plus","round","save","since","so","some","than","the","through","to","toward","towards","un","una","unas","under","underneath","une","unlike","uno","unos","until","up","upon","versus","via","while","with","within","without","yet","zu","zum"]
+
+zotero(5)(+0000002): [better-bibtex] flash: Debug mode active
+
+zotero(5)(+0000004): ATTACH ? AS betterbibtex
+
+zotero(5)(+0000000): Binding parameter 1 of type string: "/Users/emile/Library/Application Support/Zotero/Profiles/85s3bvad.default/zotero/betterbibtex.sqlite"
+
+zotero(5)(+0000000): create table if not exists betterbibtex.schema (lock primary key default 'schema' check (lock='schema'), version not null)
+
+zotero(5)(+0000000): insert or ignore into betterbibtex.schema (lock, version) values ('schema', '')
+
+zotero(5)(+0000001): update betterbibtex.schema set version = '' where not version like '%.%.%'
+
+zotero(5)(+0000000): select version from betterbibtex.schema
+
+zotero(5)(+0000000): [better-bibtex] full version: 1.0.15, canonical version: 1.0
+
+zotero(5)(+0000000): [better-bibtex] full version: 1.0.15, canonical version: 1.0
+
+zotero(5)(+0000000): SELECT count(*) FROM betterbibtex.sqlite_master WHERE type='table' and name=?
+
+zotero(5)(+0000000): Binding parameter 1 of type string: "autoexport"
+
+zotero(5)(+0000000): pragma betterbibtex.table_info("autoexport")
+
+zotero(5)(+0000001): update betterbibtex.autoexport set collection = (select 'library:' || libraryID from groups where 'group:' || groupID = collection) where collection like 'group:%'
+
+zotero(5)(+0000000): update betterbibtex.autoexport set collection = 'collection:' || collection where collection <> 'library' and collection not like '%:%'
+
+zotero(5)(+0000000): SELECT name FROM betterbibtex.sqlite_master WHERE type='table' AND name like '-%-'
+
+zotero(5)(+0000000): SELECT name FROM betterbibtex.sqlite_master WHERE type='table' AND name <> 'schema' ORDER BY name
+
+zotero(5)(+0000001): SELECT itemID, citekey, citekeyFormat FROM betterbibtex.keys LIMIT 1
+
+zotero(5)(+0000000): SELECT id, collection, path, exportCharset, exportNotes, translatorID, useJournalAbbreviation, exportedRecursively, status FROM betterbibtex.autoexport LIMIT 1
+
+zotero(5)(+0000000): SELECT itemID, exportCharset, exportNotes, getCollections, translatorID, useJournalAbbreviation, citekey, bibtex, lastaccess FROM betterbibtex.cache LIMIT 1
+
+zotero(5)(+0000000): delete from betterbibtex.keys where not itemID in (select itemID from items)
+
+zotero(5)(+0000000): select k.itemID, k.citekey, k.citekeyFormat, i.libraryID from betterbibtex.keys k join items i on k.itemID = i.itemID
+
+zotero(5)(+0000001): select c.itemID, c.citekey as cached, k.citekey from betterbibtex.cache c join betterbibtex.keys k on c.itemID = k.itemID and c.citekey <> k.citekey
+
+zotero(5)(+0000000): [better-bibtex] cache.load
+
+zotero(5)(+0000000): select itemID, exportCharset, exportNotes, getCollections, translatorID, useJournalAbbreviation, citekey, bibtex from betterbibtex.cache
+
+zotero(5)(+0000001): [better-bibtex] createFile: ["better-bibtex","serialized-items.json"]
+
+zotero(3)(+0000001): serialized.load: 5 items
+
+zotero(5)(+0000000): [better-bibtex] full version: 1.0.15, canonical version: 1.0
+
+zotero(5)(+0000000): [better-bibtex] full version: 1.0.15, canonical version: 1.0
+
+zotero(5)(+0000000): insert or replace into betterbibtex.schema (lock, version) values ('schema', ?)
+
+zotero(5)(+0000000): Binding parameter 1 of type string: "1.0.15"
+
+zotero(5)(+0000008): Beginning DB transaction
+
+zotero(3)(+0000000): Beginning Notifier event queue
+
+zotero(3)(+0000000): Caching fields [title,date,firstCreator]
+
+zotero(5)(+0000000): SELECT I.*, COALESCE(CASE (SELECT COUNT(*) FROM itemCreators IC LEFT JOIN itemTypeCreatorTypes ITCT ON (IC.creatorTypeID=ITCT.creatorTypeID AND ITCT.itemTypeID=I.itemTypeID) WHERE itemID=I.itemID AND primaryField=1) WHEN 0 THEN NULL WHEN 1 THEN (SELECT lastName FROM itemCreators IC NATURAL JOIN creators NATURAL JOIN creatorData LEFT JOIN itemTypeCreatorTypes ITCT ON (IC.creatorTypeID=ITCT.creatorTypeID AND ITCT.itemTypeID=I.itemTypeID) WHERE itemID=I.itemID AND primaryField=1) WHEN 2 THEN (SELECT (SELECT lastName FROM itemCreators IC NATURAL JOIN creators NATURAL JOIN creatorData LEFT JOIN itemTypeCreatorTypes ITCT ON (IC.creatorTypeID=ITCT.creatorTypeID AND ITCT.itemTypeID=I.itemTypeID) WHERE itemID=I.itemID AND primaryField=1 ORDER BY orderIndex LIMIT 1) || ' and ' || (SELECT lastName FROM itemCreators IC NATURAL JOIN creators NATURAL JOIN creatorData LEFT JOIN itemTypeCreatorTypes ITCT ON (IC.creatorTypeID=ITCT.creatorTypeID AND ITCT.itemTypeID=I.itemTypeID) WHERE itemID=I.itemID AND primaryField=1 ORDER BY orderIndex LIMIT 1,1)) ELSE (SELECT (SELECT lastName FROM itemCreators IC NATURAL JOIN creators NATURAL JOIN creatorData LEFT JOIN itemTypeCreatorTypes ITCT ON (IC.creatorTypeID=ITCT.creatorTypeID AND ITCT.itemTypeID=I.itemTypeID) WHERE itemID=I.itemID AND primaryField=1 ORDER BY orderIndex LIMIT 1) || ' et al.' ) END, CASE (SELECT COUNT(*) FROM itemCreators WHERE itemID=I.itemID AND creatorTypeID IN (3)) WHEN 0 THEN NULL WHEN 1 THEN (SELECT lastName FROM itemCreators NATURAL JOIN creators NATURAL JOIN creatorData WHERE itemID=I.itemID AND creatorTypeID IN (3)) WHEN 2 THEN (SELECT (SELECT lastName FROM itemCreators NATURAL JOIN creators NATURAL JOIN creatorData WHERE itemID=I.itemID AND creatorTypeID IN (3) ORDER BY orderIndex LIMIT 1) || ' and ' || (SELECT lastName FROM itemCreators NATURAL JOIN creators NATURAL JOIN creatorData WHERE itemID=I.itemID AND creatorTypeID IN (3) ORDER BY orderIndex LIMIT 1,1) ) ELSE (SELECT (SELECT lastName FROM itemCreators NATURAL JOIN creators NATURAL JOIN creatorData WHERE itemID=I.itemID AND creatorTypeID IN (3) ORDER BY orderIndex LIMIT 1) || ' et al.' ) END, CASE (SELECT COUNT(*) FROM itemCreators WHERE itemID=I.itemID AND creatorTypeID IN (2)) WHEN 0 THEN NULL WHEN 1 THEN (SELECT lastName FROM itemCreators NATURAL JOIN creators NATURAL JOIN creatorData WHERE itemID=I.itemID AND creatorTypeID IN (2)) WHEN 2 THEN (SELECT (SELECT lastName FROM itemCreators NATURAL JOIN creators NATURAL JOIN creatorData WHERE itemID=I.itemID AND creatorTypeID IN (2) ORDER BY orderIndex LIMIT 1) || ' and ' || (SELECT lastName FROM itemCreators NATURAL JOIN creators NATURAL JOIN creatorData WHERE itemID=I.itemID AND creatorTypeID IN (2) ORDER BY orderIndex LIMIT 1,1) ) ELSE (SELECT (SELECT lastName FROM itemCreators NATURAL JOIN creators NATURAL JOIN creatorData WHERE itemID=I.itemID AND creatorTypeID IN (2) ORDER BY orderIndex LIMIT 1) || ' et al.' ) END) AS firstCreator, (SELECT COUNT(*) FROM itemNotes INo WHERE sourceItemID=I.itemID AND INo.itemID NOT IN (SELECT itemID FROM deletedItems)) AS numNotes, (SELECT COUNT(*) FROM itemAttachments IA WHERE sourceItemID=I.itemID AND IA.itemID NOT IN (SELECT itemID FROM deletedItems)) AS numAttachments, (CASE I.itemTypeID WHEN 14 THEN (SELECT sourceItemID FROM itemAttachments IA WHERE IA.itemID=I.itemID) WHEN 1 THEN (SELECT sourceItemID FROM itemNotes INo WHERE INo.itemID=I.itemID) END) AS sourceItemID FROM items I WHERE 1
+
+zotero(5)(+0000004): SELECT fieldID FROM itemTypeFieldsCombined WHERE itemTypeID=13 ORDER BY orderIndex
+
+zotero(5)(+0000001): SELECT * FROM items LIMIT 1
+
+zotero(5)(+0000000): SELECT fieldID FROM itemTypeFieldsCombined WHERE itemTypeID=1 ORDER BY orderIndex
+
+zotero(5)(+0000000): SELECT fieldID FROM itemTypeFieldsCombined WHERE itemTypeID=4 ORDER BY orderIndex
+
+zotero(5)(+0000001): SELECT itemID FROM items
+
+zotero(5)(+0000000): SELECT itemID, fieldID, value FROM itemData NATURAL JOIN itemDataValues WHERE fieldID IN (110,111,112,113,14,96,52,100)
+
+zotero(5)(+0000001): SELECT itemID, title FROM itemNotes WHERE itemID NOT IN (SELECT itemID FROM itemAttachments)
+
+zotero(5)(+0000000): Transaction in progress -- increasing level to 1
+
+zotero(5)(+0000001): CREATE TEMPORARY TABLE tmpSearchResults_WQfbIqJ0 AS SELECT itemID FROM items WHERE itemID NOT IN (SELECT itemID FROM deletedItems UNION SELECT itemID FROM itemNotes WHERE sourceItemID IS NOT NULL AND sourceItemID IN (SELECT itemID FROM deletedItems) UNION SELECT itemID FROM itemAttachments WHERE sourceItemID IS NOT NULL AND sourceItemID IN (SELECT itemID FROM deletedItems) ) AND (itemID IN (SELECT itemID FROM items WHERE libraryID IS NULL)) AND itemID IN (SELECT itemID FROM itemData WHERE (fieldID IN (?,?,?,?) AND valueID IN (SELECT valueID FROM itemDataValues WHERE value LIKE ?)))
+
+zotero(5)(+0000000): Binding parameter 1 of type int: 110
+
+zotero(5)(+0000000): Binding parameter 2 of type int: 111
+
+zotero(5)(+0000001): Binding parameter 3 of type int: 112
+
+zotero(5)(+0000000): Binding parameter 4 of type int: 113
+
+zotero(5)(+0000000): Binding parameter 5 of type string: "%a%"
+
+zotero(5)(+0000001): CREATE INDEX tmpSearchResults_WQfbIqJ0_itemID ON tmpSearchResults_WQfbIqJ0(itemID)
+
+zotero(5)(+0000000): SELECT GROUP_CONCAT(itemID) FROM items WHERE itemID IN (SELECT itemID FROM items WHERE itemID NOT IN (SELECT itemID FROM deletedItems UNION SELECT itemID FROM itemNotes WHERE sourceItemID IS NOT NULL AND sourceItemID IN (SELECT itemID FROM deletedItems) UNION SELECT itemID FROM itemAttachments WHERE sourceItemID IS NOT NULL AND sourceItemID IN (SELECT itemID FROM deletedItems) )) AND (itemID IN (SELECT itemID FROM tmpSearchResults_WQfbIqJ0))
+
+zotero(5)(+0000000): DROP TABLE tmpSearchResults_WQfbIqJ0
+
+zotero(5)(+0000001): Decreasing transaction level to 0
+
+zotero(5)(+0000000): Committing transaction
+
+zotero(3)(+0000000): Resetting Notifier event queue
+
+zotero(5)(+0000006): [better-bibtex] translator.load: Better BibTeX from ["xregexp-all","json5","translator","Better BibTeX.header","Better BibTeX","unicode_translator","he","htmlparser","latex_unicode_mapping","BetterBibTeXBraceBalancer","BetterBibTeXParserSupport","BetterBibTeXParser"]
+
+zotero(3)(+0000004): Sorting items list by title, firstCreator, date, dateAdded ascending
+
+zotero(5)(+0000001): SELECT creatorID, creatorTypeID, orderIndex FROM itemCreators WHERE itemID=? ORDER BY orderIndex
+
+zotero(5)(+0000000): Binding parameter 1 of type int: 3
+
+zotero(5)(+0000000): SELECT COUNT(*) FROM creators WHERE creatorID=?
+
+zotero(5)(+0000000): Binding parameter 1 of type int: 2
+
+zotero(5)(+0000001): SELECT COUNT(*) FROM creators WHERE creatorID=?
+
+zotero(5)(+0000000): Binding parameter 1 of type int: 3
+
+zotero(5)(+0000000): SELECT creatorID, creatorTypeID, orderIndex FROM itemCreators WHERE itemID=? ORDER BY orderIndex
+
+zotero(5)(+0000000): Binding parameter 1 of type int: 4
+
+zotero(5)(+0000000): SELECT creatorTypeID FROM itemTypeCreatorTypes WHERE itemTypeID=? AND primaryField=1
+
+zotero(5)(+0000000): Binding parameter 1 of type int: 4
+
+zotero(3)(+0000000): Loading data for creator 2 in Zotero.Creator.load()
+
+zotero(5)(+0000000): SELECT C.*, CD.* FROM creators C NATURAL JOIN creatorData CD WHERE creatorID=?
+
+zotero(5)(+0000000): Binding parameter 1 of type int: 2
+
+zotero(3)(+0000000): Loading data for creator 3 in Zotero.Creator.load()
+
+zotero(5)(+0000000): SELECT C.*, CD.* FROM creators C NATURAL JOIN creatorData CD WHERE creatorID=?
+
+zotero(5)(+0000001): Binding parameter 1 of type int: 3
+
+zotero(3)(+0000000): Sorted items list in 3 ms
+
+zotero(3)(+0000005): Updating tag selector with current tags
+
+zotero(5)(+0000000): Beginning DB transaction
+
+zotero(3)(+0000000): Beginning Notifier event queue
+
+zotero(5)(+0000000): CREATE TEMPORARY TABLE tmpSearchResults_wL2fXV90 (itemID INT)
+
+zotero(5)(+0000000): INSERT INTO tmpSearchResults_wL2fXV90 SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? 
+
+zotero(5)(+0000001): INSERT INTO tmpSearchResults_wL2fXV90 SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? UNION SELECT ? 
+
+zotero(5)(+0000000): CREATE INDEX tmpSearchResults_wL2fXV90_itemID ON tmpSearchResults_wL2fXV90(itemID)
+
+zotero(5)(+0000001): Committing transaction
+
+zotero(3)(+0000000): Resetting Notifier event queue
+
+zotero(5)(+0000000): SELECT DISTINCT tagID, name, type FROM itemTags NATURAL JOIN tags WHERE itemID IN (SELECT itemID FROM tmpSearchResults_wL2fXV90) 
+
+zotero(4)(+0000002): Registering observer for [collection-item,item-tag,tag,setting] in notifier with hash oS'
+
+zotero(3)(+0000000): Refreshing tags selector
+
+zotero(3)(+0000001): Set tree in 129 ms
+
+zotero(5)(+0000021): SELECT value FROM syncedSettings WHERE setting=? AND libraryID=?
+
+zotero(5)(+0000001): Binding parameter 1 of type string: "tagColors"
+
+zotero(5)(+0000000): Binding parameter 2 of type int: 0
+
+zotero(5)(+0000000): SELECT tagID, name FROM tags WHERE libraryID IS NULL AND type IN (0,1)
+
+zotero(5)(+0000017): [better-bibtex] createFile: ["better-bibtex","translators","Better BibTeX.js"]
+
+zotero(5)(+0000000): [better-bibtex] Saving Better BibTeX to /Users/emile/Library/Application Support/Zotero/Profiles/85s3bvad.default/zotero/better-bibtex/translators/Better BibTeX.js
+
+zotero(5)(+0000007): [better-bibtex] Translator.load header: Better BibTeX {"translatorID":"ca65189f-8815-4afe-8c8b-8c7c15f0edca","label":"Better BibTeX","creator":"Simon Kornblith, Richard Karnesky and Emiliano heyns","target":"bib","minVersion":"2.1.9","maxVersion":"","priority":199,"configOptions":{"getCollections":true},"displayOptions":{"exportNotes":true,"exportFileData":false,"useJournalAbbreviation":false,"Keep updated":false},"inRepository":true,"translatorType":3,"browserSupport":"gcsv","lastUpdated":"2015-07-15 11:42:05"}
+
+zotero(5)(+0000000): SELECT leafName, translatorJSON, code, lastModifiedTime FROM translatorCache
+
+zotero(5)(+0000111): DELETE FROM translatorCache WHERE leafName = ?
+
+zotero(5)(+0000000): Binding parameter 1 of type string: "Better BibTeX.js"
+
+zotero(3)(+0000009): Cached 470 translators in 120 ms
+
+zotero(3)(+0000001): [better-bibtex] Saving translator 'Better BibTeX'
+
+zotero(5)(+0000004): [better-bibtex] translator.load Better BibTeX succeeded
+
+zotero(5)(+0000001): [better-bibtex] translator.load: Better BibLaTeX from ["xregexp-all","json5","translator","Better BibLaTeX.header","Better BibLaTeX","unicode_translator","he","htmlparser","latex_unicode_mapping","BetterBibTeXBraceBalancer"]
+
+zotero(5)(+0000007): [better-bibtex] createFile: ["better-bibtex","translators","Better BibLaTeX.js"]
+
+zotero(5)(+0000000): [better-bibtex] Saving Better BibLaTeX to /Users/emile/Library/Application Support/Zotero/Profiles/85s3bvad.default/zotero/better-bibtex/translators/Better BibLaTeX.js
+
+zotero(5)(+0000003): [better-bibtex] Translator.load header: Better BibLaTeX {"translatorID":"f895aa0d-f28e-47fe-b247-2ea77c6ed583","translatorType":2,"label":"Better BibLaTeX","creator":"Simon Kornblith, Richard Karnesky, Anders Johansson and Emiliano Heyns","target":"bib","minVersion":"2.1.9","maxVersion":null,"priority":50,"inRepository":true,"configOptions":{"getCollections":true},"displayOptions":{"exportNotes":false,"exportFileData":false,"useJournalAbbreviation":false,"Keep updated":false},"lastUpdated":"2015-07-15 11:42:05"}
+
+zotero(3)(+0000000): [better-bibtex] Saving translator 'Better BibLaTeX'
+
+zotero(5)(+0000003): [better-bibtex] translator.load Better BibLaTeX succeeded
+
+zotero(5)(+0000000): [better-bibtex] translator.load: LaTeX Citation from ["xregexp-all","json5","translator","LaTeX Citation.header","LaTeX Citation"]
+
+zotero(5)(+0000003): [better-bibtex] createFile: ["better-bibtex","translators","LaTeX Citation.js"]
+
+zotero(5)(+0000000): [better-bibtex] Saving LaTeX Citation to /Users/emile/Library/Application Support/Zotero/Profiles/85s3bvad.default/zotero/better-bibtex/translators/LaTeX Citation.js
+
+zotero(5)(+0000002): [better-bibtex] Translator.load header: LaTeX Citation {"translatorID":"b4a5ab19-c3a2-42de-9961-07ae484b8cb0","label":"LaTeX Citation","creator":"Emiliano heyns","target":"bib","minVersion":"2.1.9","maxVersion":"","priority":100,"configOptions":{"getCollections":true},"displayOptions":null,"inRepository":true,"translatorType":2,"browserSupport":"gcsv","lastUpdated":"2015-07-14 12:09:22"}
+
+zotero(3)(+0000001): [better-bibtex] Saving translator 'LaTeX Citation'
+
+zotero(5)(+0000002): [better-bibtex] translator.load LaTeX Citation succeeded
+
+zotero(5)(+0000001): [better-bibtex] translator.load: Pandoc Citation from ["xregexp-all","json5","translator","Pandoc Citation.header","Pandoc Citation"]
+
+zotero(5)(+0000003): [better-bibtex] createFile: ["better-bibtex","translators","Pandoc Citation.js"]
+
+zotero(5)(+0000000): [better-bibtex] Saving Pandoc Citation to /Users/emile/Library/Application Support/Zotero/Profiles/85s3bvad.default/zotero/better-bibtex/translators/Pandoc Citation.js
+
+zotero(5)(+0000002): [better-bibtex] Translator.load header: Pandoc Citation {"translatorID":"4c52eb69-e778-4a78-8ca2-4edf024a5074","label":"Pandoc Citation","creator":"Erik Hetzner & Emiliano heyns","target":"bib","minVersion":"2.1.9","maxVersion":"","priority":100,"configOptions":{"getCollections":true},"displayOptions":null,"inRepository":true,"translatorType":2,"browserSupport":"gcsv","lastUpdated":"2015-07-14 12:09:22"}
+
+zotero(3)(+0000001): [better-bibtex] Saving translator 'Pandoc Citation'
+
+zotero(5)(+0000002): [better-bibtex] translator.load Pandoc Citation succeeded
+
+zotero(5)(+0000001): [better-bibtex] translator.load: BetterBibTeX JSON from ["xregexp-all","json5","translator","BetterBibTeX JSON.header","BetterBibTeX JSON"]
+
+zotero(5)(+0000003): [better-bibtex] createFile: ["better-bibtex","translators","BetterBibTeX JSON.js"]
+
+zotero(5)(+0000000): [better-bibtex] Saving BetterBibTeX JSON to /Users/emile/Library/Application Support/Zotero/Profiles/85s3bvad.default/zotero/better-bibtex/translators/BetterBibTeX JSON.js
+
+zotero(5)(+0000002): [better-bibtex] Translator.load header: BetterBibTeX JSON {"translatorID":"36a3b0b5-bad0-4a04-b79b-441c7cef77db","label":"BetterBibTeX JSON","creator":"Emiliano Heyns","target":"json","minVersion":"3.0b3","maxVersion":"","priority":100,"configOptions":{"getCollections":true},"displayOptions":{"exportNotes":true,"exportFileData":false},"inRepository":true,"translatorType":3,"browserSupport":"gcsv","lastUpdated":"2015-07-14 12:09:22"}
+
+zotero(3)(+0000001): [better-bibtex] Saving translator 'BetterBibTeX JSON'
+
+zotero(5)(+0000001): [better-bibtex] translator.load BetterBibTeX JSON succeeded
+
+zotero(5)(+0000001): [better-bibtex] translator.load: BibTeXAuxScanner from ["xregexp-all","json5","translator","BibTeXAuxScanner.header","BibTeXAuxScanner"]
+
+zotero(5)(+0000003): [better-bibtex] createFile: ["better-bibtex","translators","BibTeXAuxScanner.js"]
+
+zotero(5)(+0000001): [better-bibtex] Saving BibTeXAuxScanner to /Users/emile/Library/Application Support/Zotero/Profiles/85s3bvad.default/zotero/better-bibtex/translators/BibTeXAuxScanner.js
+
+zotero(5)(+0000002): [better-bibtex] Translator.load header: BibTeXAuxScanner {"translatorID":"0af8f14d-9af7-43d9-a016-3c5df3426c98","label":"BibTeX AUX Scanner","creator":"Emiliano heyns","target":"aux","minVersion":"2.1.9","maxVersion":"","priority":399,"inRepository":true,"translatorType":1,"browserSupport":"gcsv","lastUpdated":"2015-07-14 12:09:22"}
+
+zotero(3)(+0000001): [better-bibtex] Saving translator 'BibTeX AUX Scanner'
+
+zotero(5)(+0000002): [better-bibtex] translator.load BibTeXAuxScanner succeeded
+
+zotero(5)(+0000002): [better-bibtex] translator.load: Collected Notes from ["xregexp-all","json5","translator","Collected Notes.header","Collected Notes","unicode_translator","he","htmlparser","latex_unicode_mapping"]
+
+zotero(5)(+0000009): [better-bibtex] createFile: ["better-bibtex","translators","Collected Notes.js"]
+
+zotero(5)(+0000000): [better-bibtex] Saving Collected Notes to /Users/emile/Library/Application Support/Zotero/Profiles/85s3bvad.default/zotero/better-bibtex/translators/Collected Notes.js
+
+zotero(5)(+0000003): [better-bibtex] Translator.load header: Collected Notes {"translatorID":"be78e3e1-c0b7-4bb6-affb-2d0bc1c19958","label":"Collected Notes","creator":"Emiliano heyns","target":"tex","minVersion":"2.1.9","maxVersion":"","priority":100,"configOptions":{"getCollections":true},"displayOptions":{"Keep updated":false},"inRepository":true,"translatorType":2,"browserSupport":"gcsv","lastUpdated":"2015-07-15 11:42:05"}
+
+zotero(3)(+0000001): [better-bibtex] Saving translator 'Collected Notes'
+
+zotero(5)(+0000002): [better-bibtex] translator.load Collected Notes succeeded
+
+zotero(5)(+0000001): SELECT leafName, translatorJSON, code, lastModifiedTime FROM translatorCache
+
+zotero(5)(+0000013): Beginning DB transaction
+
+zotero(3)(+0000000): Beginning Notifier event queue
+
+zotero(5)(+0000000): REPLACE INTO translatorCache VALUES (?, ?, ?, ?)
+
+zotero(5)(+0000001): Binding parameter 1 of type string: "Better BibLaTeX.js"
+
+zotero(5)(+0000000): Binding parameter 2 of type string: "{
+	"translatorID": "f895aa0d-f28e-47fe-b247-2ea77c6ed583",
+	"translatorType": 2,
+	"label": "Better BibLaTeX",
+	"creator": "Simon Kornblith, Richard Karnesky, Anders Johansson and Emiliano Heyns",
+	"target": "bib",
+	"minVersion": "2.1.9",
+	"maxVersion": null,
+	"priority": 50,
+	"inRepository": true,
+	"configOptions": {
+		"getCollections": true
+	},
+	"displayOptions": {
+		"exportNotes": false,
+		"exportFileData": false,
+		"useJournalAbbreviation": false,
+		"Keep updated": false
+	},
+	"lastUpdated": "2015-07-15 11:42:05"
+}
+"
+
+zotero(5)(+0000000): Binding parameter 3 of type NULL
+
+zotero(5)(+0000000): Binding parameter 4 of type int64: 1437400642000
+
+zotero(5)(+0000001): REPLACE INTO translatorCache VALUES (?, ?, ?, ?)
+
+zotero(5)(+0000000): Binding parameter 1 of type string: "Better BibTeX.js"
+
+zotero(5)(+0000000): Binding parameter 2 of type string: "{
+	"translatorID": "ca65189f-8815-4afe-8c8b-8c7c15f0edca",
+	"label": "Better BibTeX",
+	"creator": "Simon Kornblith, Richard Karnesky and Emiliano heyns",
+	"target": "bib",
+	"minVersion": "2.1.9",
+	"maxVersion": "",
+	"priority": 199,
+	"configOptions": {
+		"getCollections": true
+	},
+	"displayOptions": {
+		"exportNotes": true,
+		"exportFileData": false,
+		"useJournalAbbreviation": false,
+		"Keep updated": false
+	},
+	"inRepository": true,
+	"translatorType": 3,
+	"browserSupport": "gcsv",
+	"lastUpdated": "2015-07-15 11:42:05"
+}
+"
+
+zotero(5)(+0000000): Binding parameter 3 of type NULL
+
+zotero(5)(+0000000): Binding parameter 4 of type int64: 1437400642000
+
+zotero(5)(+0000000): REPLACE INTO translatorCache VALUES (?, ?, ?, ?)
+
+zotero(5)(+0000000): Binding parameter 1 of type string: "BetterBibTeX JSON.js"
+
+zotero(5)(+0000000): Binding parameter 2 of type string: "{
+	"translatorID": "36a3b0b5-bad0-4a04-b79b-441c7cef77db",
+	"label": "BetterBibTeX JSON",
+	"creator": "Emiliano Heyns",
+	"target": "json",
+	"minVersion": "3.0b3",
+	"maxVersion": "",
+	"priority": 100,
+	"configOptions": {
+		"getCollections": true
+	},
+	"displayOptions": {
+		"exportNotes": true,
+		"exportFileData": false
+	},
+	"inRepository": true,
+	"translatorType": 3,
+	"browserSupport": "gcsv",
+	"lastUpdated": "2015-07-14 12:09:22"
+}
+"
+
+zotero(5)(+0000000): Binding parameter 3 of type NULL
+
+zotero(5)(+0000000): Binding parameter 4 of type int64: 1437400642000
+
+zotero(5)(+0000001): REPLACE INTO translatorCache VALUES (?, ?, ?, ?)
+
+zotero(5)(+0000000): Binding parameter 1 of type string: "BibTeX AUX Scanner.js"
+
+zotero(5)(+0000001): Binding parameter 2 of type string: "{
+	"translatorID": "0af8f14d-9af7-43d9-a016-3c5df3426c98",
+	"label": "BibTeX AUX Scanner",
+	"creator": "Emiliano heyns",
+	"target": "aux",
+	"minVersion": "2.1.9",
+	"maxVersion": "",
+	"priority": 399,
+	"inRepository": true,
+	"translatorType": 1,
+	"browserSupport": "gcsv",
+	"lastUpdated": "2015-07-14 12:09:22"
+}
+"
+
+zotero(5)(+0000000): Binding parameter 3 of type NULL
+
+zotero(5)(+0000000): Binding parameter 4 of type int64: 1437400642000
+
+zotero(5)(+0000003): REPLACE INTO translatorCache VALUES (?, ?, ?, ?)
+
+zotero(5)(+0000000): Binding parameter 1 of type string: "Collected Notes.js"
+
+zotero(5)(+0000000): Binding parameter 2 of type string: "{
+	"translatorID": "be78e3e1-c0b7-4bb6-affb-2d0bc1c19958",
+	"label": "Collected Notes",
+	"creator": "Emiliano heyns",
+	"target": "tex",
+	"minVersion": "2.1.9",
+	"maxVersion": "",
+	"priority": 100,
+	"configOptions": {
+		"getCollections": true
+	},
+	"displayOptions": {
+		"Keep updated": false
+	},
+	"inRepository": true,
+	"translatorType": 2,
+	"browserSupport": "gcsv",
+	"lastUpdated": "2015-07-15 11:42:05"
+}
+"
+
+zotero(5)(+0000000): Binding parameter 3 of type NULL
+
+zotero(5)(+0000000): Binding parameter 4 of type int64: 1437400642000
+
+zotero(5)(+0000013): REPLACE INTO translatorCache VALUES (?, ?, ?, ?)
+
+zotero(5)(+0000000): Binding parameter 1 of type string: "LaTeX Citation.js"
+
+zotero(5)(+0000000): Binding parameter 2 of type string: "{
+	"translatorID": "b4a5ab19-c3a2-42de-9961-07ae484b8cb0",
+	"label": "LaTeX Citation",
+	"creator": "Emiliano heyns",
+	"target": "bib",
+	"minVersion": "2.1.9",
+	"maxVersion": "",
+	"priority": 100,
+	"configOptions": {
+		"getCollections": true
+	},
+	"displayOptions": null,
+	"inRepository": true,
+	"translatorType": 2,
+	"browserSupport": "gcsv",
+	"lastUpdated": "2015-07-14 12:09:22"
+}
+"
+
+zotero(5)(+0000000): Binding parameter 3 of type NULL
+
+zotero(5)(+0000000): Binding parameter 4 of type int64: 1437400642000
+
+zotero(5)(+0000008): REPLACE INTO translatorCache VALUES (?, ?, ?, ?)
+
+zotero(5)(+0000000): Binding parameter 1 of type string: "Pandoc Citation.js"
+
+zotero(5)(+0000000): Binding parameter 2 of type string: "{
+	"translatorID": "4c52eb69-e778-4a78-8ca2-4edf024a5074",
+	"label": "Pandoc Citation",
+	"creator": "Erik Hetzner & Emiliano heyns",
+	"target": "bib",
+	"minVersion": "2.1.9",
+	"maxVersion": "",
+	"priority": 100,
+	"configOptions": {
+		"getCollections": true
+	},
+	"displayOptions": null,
+	"inRepository": true,
+	"translatorType": 2,
+	"browserSupport": "gcsv",
+	"lastUpdated": "2015-07-14 12:09:22"
+}
+"
+
+zotero(5)(+0000000): Binding parameter 3 of type NULL
+
+zotero(5)(+0000000): Binding parameter 4 of type int64: 1437400642000
+
+zotero(5)(+0000016): Committing transaction
+
+zotero(3)(+0000001): Resetting Notifier event queue
+
+zotero(3)(+0000004): Cached 471 translators in 63 ms
+
+zotero(4)(+0000001): Registering observer for [item] in notifier with hash oH'
+
+zotero(4)(+0000000): Registering observer for [collection] in notifier with hash bt'
+
+zotero(4)(+0000000): Registering observer for [collection-item] in notifier with hash rP'
+
+zotero(3)(+0000000): BBT loaded
+
+zotero(5)(+0000758): SELECT tagID, name FROM tags WHERE tagID IN (SELECT tagID FROM itemTags WHERE itemID=?)
+
+zotero(5)(+0000000): Binding parameter 1 of type int: 3
+
+zotero(5)(+0000024): SELECT tagID, name FROM tags WHERE tagID IN (SELECT tagID FROM itemTags WHERE itemID=?)
+
+zotero(5)(+0000000): Binding parameter 1 of type int: 4
+
+zotero(5)(+0000002): SELECT tagID, name FROM tags WHERE tagID IN (SELECT tagID FROM itemTags WHERE itemID=?)
+
+zotero(5)(+0000000): Binding parameter 1 of type int: 1
+
+zotero(5)(+0000125): SELECT fieldID, value FROM itemData NATURAL JOIN itemDataValues WHERE itemID=?
+
+zotero(5)(+0000000): Binding parameter 1 of type int: 3
+
+zotero(5)(+0000002): SELECT IA.itemID FROM itemAttachments IA NATURAL JOIN items I LEFT JOIN itemData ID ON (IA.itemID=ID.itemID AND fieldID=1) LEFT JOIN itemDataValues IDV ON (ID.valueID=IDV.valueID) WHERE sourceItemID=? AND linkMode NOT IN (?) AND IA.itemID NOT IN (SELECT itemID FROM deletedItems) ORDER BY mimeType='application/pdf' DESC, value=? DESC, dateAdded ASC
+
+zotero(5)(+0000000): Binding parameter 1 of type int: 3
+
+zotero(5)(+0000000): Binding parameter 2 of type int: 3
+
+zotero(5)(+0000000): Binding parameter 3 of type string: "http://www.sciencedirect.com/science/article/pii/0092640X85900166"
+
+zotero(5)(+0000001): SELECT fieldID, value FROM itemData NATURAL JOIN itemDataValues WHERE itemID=?
+
+zotero(5)(+0000000): Binding parameter 1 of type int: 4
+
+zotero(5)(+0000001): SELECT IA.itemID FROM itemAttachments IA NATURAL JOIN items I LEFT JOIN itemData ID ON (IA.itemID=ID.itemID AND fieldID=1) LEFT JOIN itemDataValues IDV ON (ID.valueID=IDV.valueID) WHERE sourceItemID=? AND linkMode NOT IN (?) AND IA.itemID NOT IN (SELECT itemID FROM deletedItems) ORDER BY mimeType='application/pdf' DESC, value=? DESC, dateAdded ASC
+
+zotero(5)(+0000000): Binding parameter 1 of type int: 4
+
+zotero(5)(+0000000): Binding parameter 2 of type int: 3
+
+zotero(5)(+0000000): Binding parameter 3 of type string: "http://www.sciencedirect.com/science/article/pii/0092640X85900166"
+
+zotero(5)(+0000001): SELECT fieldID, value FROM itemData NATURAL JOIN itemDataValues WHERE itemID=?
+
+zotero(5)(+0000000): Binding parameter 1 of type int: 1
+
+zotero(5)(+0000000): SELECT IA.itemID FROM itemAttachments IA NATURAL JOIN items I LEFT JOIN itemData ID ON (IA.itemID=ID.itemID AND fieldID=1) LEFT JOIN itemDataValues IDV ON (ID.valueID=IDV.valueID) WHERE sourceItemID=? AND linkMode NOT IN (?) AND IA.itemID NOT IN (SELECT itemID FROM deletedItems) ORDER BY mimeType='application/pdf' DESC, value=? DESC, dateAdded ASC
+
+zotero(5)(+0000000): Binding parameter 1 of type int: 1
+
+zotero(5)(+0000000): Binding parameter 2 of type int: 3
+
+zotero(5)(+0000001): Binding parameter 3 of type string: "http://zotero.org/support/quick_start_guide"
+
+zotero(3)(+0000104): No general proxy or PAC file found -- assuming direct connection
+
+zotero(4)(+0000000): Sync not enabled -- skipping auto-sync
+
+zotero(5)(+0003133): SELECT version FROM version WHERE schema='delete'
+
+zotero(5)(+0000000): SELECT version FROM version WHERE schema=?
+
+zotero(5)(+0000000): Binding parameter 1 of type string: "translators"
+
+zotero(3)(+0000001): Installed translators are up-to-date with translators.zip
+
+zotero(5)(+0000001): SELECT version FROM version WHERE schema='delete'
+
+zotero(5)(+0000001): SELECT version FROM version WHERE schema=?
+
+zotero(5)(+0000000): Binding parameter 1 of type string: "styles"
+
+zotero(3)(+0000000): Installed styles are up-to-date with styles.zip
+
+zotero(5)(+0000001): SELECT version FROM version WHERE schema='lastcheck'
+
+zotero(4)(+0000000): Not enough time since last update -- not checking repository
+
+zotero(3)(+0000001): Setting repository check interval to 78531 seconds
+
+zotero(5)(+0089353): [better-bibtex] idle: idle
+
+zotero(3)(+0000000): [better-bibtex] export cache: flushing 0 changes
+
+zotero(5)(+0000001): Beginning DB transaction
+
+zotero(3)(+0000000): Beginning Notifier event queue
+
+zotero(5)(+0000000): delete from betterbibtex.cache where lastaccess < datetime('now','-1 month')
+
+zotero(5)(+0000000): Committing transaction
+
+zotero(3)(+0000001): Resetting Notifier event queue
+
+zotero(5)(+0000000): Beginning DB transaction
+
+zotero(3)(+0000000): Beginning Notifier event queue
+
+zotero(5)(+0000000): insert or replace into betterbibtex.keys (itemID, citekey, citekeyFormat) values (?, ?, ?)
+
+zotero(5)(+0000001): Binding parameter 1 of type int: 3
+
+zotero(5)(+0000000): Binding parameter 2 of type string: "Yeh1985"
+
+zotero(5)(+0000001): Binding parameter 3 of type NULL
+
+zotero(5)(+0000012): insert or replace into betterbibtex.keys (itemID, citekey, citekeyFormat) values (?, ?, ?)
+
+zotero(5)(+0000000): Binding parameter 1 of type int: 4
+
+zotero(5)(+0000001): Binding parameter 2 of type string: "Yeh1985"
+
+zotero(5)(+0000000): Binding parameter 3 of type NULL
+
+zotero(5)(+0000001): insert or replace into betterbibtex.keys (itemID, citekey, citekeyFormat) values (?, ?, ?)
+
+zotero(5)(+0000000): Binding parameter 1 of type int: 1
+
+zotero(5)(+0000000): Binding parameter 2 of type string: "centerforhistoryandnewmedia_zotero"
+
+zotero(5)(+0000000): Binding parameter 3 of type string: "[auth:fold:lower][Title:fold:nopunct:skipwords:select,1,1:lower:prefix,_][year:prefix,_][0]"
+
+zotero(5)(+0000001): Committing transaction
+
+zotero(3)(+0000008): Resetting Notifier event queue
+
+zotero(5)(+0000000): [better-bibtex] auto.process: started (idle), idle: true
+
+zotero(5)(+0000000): select * from betterbibtex.autoexport ae where status like 'pending%'
+
+zotero(5)(+0000001): [better-bibtex] auto.process: no pending jobs
+
+zotero(3)(+0000000): Checking for unprocessed full-text content
+
+zotero(5)(+0000001): SELECT itemID FROM fulltextItems WHERE synced=2
+
+zotero(3)(+0000002): No unprocessed full-text content found
+

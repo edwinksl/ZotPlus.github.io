@@ -82,6 +82,11 @@
     project:
       slug: better-bibtex
       title: Better BibTeX
+  - title: Bundled translators
+    url: "/better-bibtex/translators.html"
+    project:
+      slug: better-bibtex
+      title: Better BibTeX
   - title: Unicode problems
     url: "/better-bibtex/unicode.html"
     project:
@@ -126,6 +131,12 @@
 "/better-bibtex/pull-export.html":
   title: Push/Pull Export
   url: "/better-bibtex/pull-export.html"
+  project:
+    slug: better-bibtex
+    title: Better BibTeX
+"/better-bibtex/translators.html":
+  title: Bundled translators
+  url: "/better-bibtex/translators.html"
   project:
     slug: better-bibtex
     title: Better BibTeX
