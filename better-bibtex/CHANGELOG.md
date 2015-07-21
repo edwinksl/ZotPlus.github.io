@@ -3,6 +3,30 @@ title: Change log
 ---
 # Change Log
 
+## [1.0.19](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.0.19) (2015-07-20)
+
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.0.18...1.0.19)
+
+**Implemented enhancements:**
+
+- Parsing extra variables from CSL notes [\#260](https://github.com/ZotPlus/zotero-better-bibtex/issues/260)
+
+## [1.0.18](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.0.18) (2015-07-20)
+
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.0.17...1.0.18)
+
+## [1.0.17](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.0.17) (2015-07-20)
+
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.0.16...1.0.17)
+
+**Implemented enhancements:**
+
+- Add pandoc-compatible CSL-JSON auto-export [\#259](https://github.com/ZotPlus/zotero-better-bibtex/issues/259)
+
+**Fixed bugs:**
+
+- System menus disappear under Zotero Standalone [\#256](https://github.com/ZotPlus/zotero-better-bibtex/issues/256)
+
 ## [1.0.16](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.0.16) (2015-07-20)
 
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.0.15...1.0.16)
