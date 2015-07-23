@@ -123,7 +123,8 @@ BBT adds a few fields, flags and filter functions that JabRef (perhaps wisely) d
   would select the first four words. It is important to note that `select' works only on values that have the words
   separated by whitespace, so the caveat below applies.
 - `ascii`: removes all non-ascii characters
-- `fold`: tries to replace diacritics with ascii look-alikes.
+- `fold`: tries to replace diacritics with ascii look-alikes. Removes non-ascii characters it cannot match
+- `alphanum`: clears out everything but unicode alphanumeric characters (unicode character classes `L` and `N`)
 - `capitalize`: uppercases the first letter of each word
 - `postfix`: postfixes with its parameter, so `postfix,\_` will add an underscore to the end if, and only if, the value
   it is supposed to postfix isn't empty
