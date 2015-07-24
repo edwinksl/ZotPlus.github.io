@@ -6,7 +6,7 @@ title: Cite As You Write
 Good news for TeXnicians and those down with Mark (aka Markdown, RST, whatnot): this is the time to go pester the author
 of your favorite editor for Zotero integration! This is hot off the press, so there *will* be bugs. Here's how it works:
 
-BBT now exposes (if you have HTTP export on in the preferences) an URL at http://localhost:23119/cayw. The url accepts
+BBT now exposes (if you have HTTP export on in the preferences) an URL at http://localhost:23119/better-bibtex/cayw. The url accepts
 the following URL parameters:
 
 * `citeprefix`, default empty, for text to put before the full citation.
@@ -16,7 +16,8 @@ the following URL parameters:
 * `separator`, default `,`, for text to put between citekeys
 * `clipboard`, default empty, where any non-empty value will copy the results to the clipboard
 
-So if you call up [http://localhost:23119/cayw?keyprefix=%40&citeprefix=%5B&citepostfix=%5D&clipboard=yes](http://localhost:23119/cayw?keyprefix=%40&citeprefix=%5B&citepostfix=%5D&clipboard=yes), the Zotero citation picker will pop up. If you then select two references that happen to have cite keys `adams2001` and `brigge2002`, then
+So if you call up
+[http://localhost:23119/better-bibtex/cayw?keyprefix=%40&citeprefix=%5B&citepostfix=%5D&clipboard=yes](http://localhost:23119/better-bibtex/cayw?keyprefix=%40&citeprefix=%5B&citepostfix=%5D&clipboard=yes), the Zotero citation picker will pop up. If you then select two references that happen to have cite keys `adams2001` and `brigge2002`, then
 
 * the response body will be `[@adams2001,brigge2002]`, and
 * `[@adams2001,brigge2002]` will be left on the clipboard
