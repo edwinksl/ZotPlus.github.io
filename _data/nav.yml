@@ -36,6 +36,11 @@
     project:
       slug: better-bibtex
       title: Better BibTeX
+  - title: Cite As You Write
+    url: "/better-bibtex/cayw.html"
+    project:
+      slug: better-bibtex
+      title: Better BibTeX
   - title: Citation Keys
     url: "/better-bibtex/citation-keys.html"
     project:

@@ -52,6 +52,11 @@
     project:
       slug: better-bibtex
       title: Better BibTeX
+  - title: Cite As You Write
+    url: "/better-bibtex/cayw.html"
+    project:
+      slug: better-bibtex
+      title: Better BibTeX
   - title: Citation Keys
     url: "/better-bibtex/citation-keys.html"
     project:
@@ -95,6 +100,12 @@
 "/better-bibtex/CHANGELOG.html":
   title: Change log
   url: "/better-bibtex/CHANGELOG.html"
+  project:
+    slug: better-bibtex
+    title: Better BibTeX
+"/better-bibtex/cayw.html":
+  title: Cite As You Write
+  url: "/better-bibtex/cayw.html"
   project:
     slug: better-bibtex
     title: Better BibTeX
