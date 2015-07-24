@@ -3,6 +3,36 @@ title: Change log
 ---
 # Change Log
 
+## [Unreleased](https://github.com/ZotPlus/zotero-better-bibtex/tree/HEAD)
+
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.1.0...HEAD)
+
+**Closed issues:**
+
+- Cite As You Write for text-based editors [\#270](https://github.com/ZotPlus/zotero-better-bibtex/issues/270)
+
+## [1.1.0](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.1.0) (2015-07-23)
+
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.0.19...1.1.0)
+
+**Implemented enhancements:**
+
+- Prioritize translator over contributor for generating citation key [\#267](https://github.com/ZotPlus/zotero-better-bibtex/issues/267)
+
+**Fixed bugs:**
+
+- Colon not allowed in citation key format [\#268](https://github.com/ZotPlus/zotero-better-bibtex/issues/268)
+
+- Diacritics stripped from keys regardless of `ascii` or `fold` filters [\#266](https://github.com/ZotPlus/zotero-better-bibtex/issues/266)
+
+- Ignore HTML tags when generating citation key [\#264](https://github.com/ZotPlus/zotero-better-bibtex/issues/264)
+
+- Parsed CSL variables from notes are supplied with extra keys [\#262](https://github.com/ZotPlus/zotero-better-bibtex/issues/262)
+
+**Merged pull requests:**
+
+- Expand default skipwords list [\#265](https://github.com/ZotPlus/zotero-better-bibtex/pull/265) ([adunning](https://github.com/adunning))
+
 ## [1.0.19](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.0.19) (2015-07-20)
 
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.0.18...1.0.19)
