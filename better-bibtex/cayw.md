@@ -16,8 +16,7 @@ the following URL parameters:
 * `separator`, default `,`, for text to put between citekeys
 * `clipboard`, default empty, where any non-empty value will copy the results to the clipboard
 
-So if you call up http://localhost:23119/cayw?keyprefix=%40&citeprefix=%5B&citepostfix=%5D&clipboard=yes, the Zotero citation picker
-will pop up. If you then select two references that happen to have cite keys `adams2001` and `brigge2002`, then
+So if you call up [http://localhost:23119/cayw?keyprefix=%40&citeprefix=%5B&citepostfix=%5D&clipboard=yes](http://localhost:23119/cayw?keyprefix=%40&citeprefix=%5B&citepostfix=%5D&clipboard=yes), the Zotero citation picker will pop up. If you then select two references that happen to have cite keys `adams2001` and `brigge2002`, then
 
 * the response body will be `[@adams2001,brigge2002]`, and
 * `[@adams2001,brigge2002]` will be left on the clipboard
