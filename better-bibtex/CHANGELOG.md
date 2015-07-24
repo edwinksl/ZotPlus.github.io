@@ -7,7 +7,7 @@ title: Change log
 
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.1.0...1.1.1)
 
-**Closed issues:**
+**Implemented enhancements:**
 
 - Cite As You Write for text-based editors [\#270](https://github.com/ZotPlus/zotero-better-bibtex/issues/270)
 
