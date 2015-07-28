@@ -3,6 +3,52 @@ title: Change log
 ---
 # Change Log
 
+## [1.2.2](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.2) (2015-07-28)
+
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.1...1.2.2)
+
+**Fixed bugs:**
+
+- referencetype= does not work [\#278](https://github.com/ZotPlus/zotero-better-bibtex/issues/278)
+
+- BBT fails to start when invalid cite key pattern is configured [\#276](https://github.com/ZotPlus/zotero-better-bibtex/issues/276)
+
+## [1.2.1](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.1) (2015-07-28)
+
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.0...1.2.1)
+
+## [1.2.0](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.0) (2015-07-27)
+
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.1.3...1.2.0)
+
+**Fixed bugs:**
+
+- \#274 requires a key rescan to be sure. [\#275](https://github.com/ZotPlus/zotero-better-bibtex/issues/275)
+
+## [1.1.3](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.1.3) (2015-07-27)
+
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.1.2...1.1.3)
+
+**Implemented enhancements:**
+
+- "Generate / Clear BibTex key" should not change "modified" date \(and warn on bulk changes\) [\#273](https://github.com/ZotPlus/zotero-better-bibtex/issues/273)
+
+**Fixed bugs:**
+
+- URL escaping in BibLaTeX \(not BibTeX!\) [\#271](https://github.com/ZotPlus/zotero-better-bibtex/issues/271)
+
+## [1.1.2](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.1.2) (2015-07-27)
+
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.1.1...1.1.2)
+
+**Implemented enhancements:**
+
+- Allow parameter escaping in citekey pattern so a colon can be used [\#272](https://github.com/ZotPlus/zotero-better-bibtex/issues/272)
+
+**Fixed bugs:**
+
+- Keys with numeric disambiguator are not unique [\#274](https://github.com/ZotPlus/zotero-better-bibtex/issues/274)
+
 ## [1.1.1](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.1.1) (2015-07-24)
 
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.1.0...1.1.1)
