@@ -38,7 +38,7 @@ Put the following in a text file and make it executable:
 ```
 #!/bin/bash
 
-curl -o /dev/null localhost:23119/better-bibtex/cayw?keyprefix=@&clipboard=yes
+curl -o /dev/null http://localhost:23119/better-bibtex/cayw?keyprefix=@&clipboard=yes
 ```
 
 then configure Scrivener to call this script as your bibliography command (cmd-Y)
