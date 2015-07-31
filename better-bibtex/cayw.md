@@ -33,15 +33,21 @@ OSX, haven't tried anything else yet).
 
 ### Picking references
 
-Put the following in a text file and make it executable:
+Put the following in a text file (e.g. `zotpick`) and make it executable:
 
     #!/bin/bash
     
     curl -o /dev/null http://localhost:23119/better-bibtex/cayw?keyprefix=@&clipboard=yes
 
-then configure Scrivener to call this script as your bibliography command (cmd-Y)
+Now download
+[appify](https://gist.githubusercontent.com/dwallraff/5d0e37b0dc969a8c5ff5/raw/e655c82025076ffc23113e501ae6f21272c7ee21/appify)
+and make it executable. Run
 
-### Pandoc
+    appify zotpick
+
+and it will create an app based on the above script. Now configure Scrivener to call this new app as your bibliography command (cmd-Y)
+
+### Setting up Pandoc
 
 Install `Mac Installer 4.7.1` and `Mac Support` from the [MultiMarkdown](http://fletcherpenney.net/multimarkdown/download/) site
 
@@ -50,10 +56,13 @@ Move `~/Library/Application Support/MultiMarkdown/bin/mmd-xslt` to `~/Library/Ap
 Install [ZoTXT](https://bitbucket.org/egh/zotxt), both the Zotero extension and the command line script.
 
 Create a new file `~/Library/Application Support/MultiMarkdown/bin/mmd-xslt`, with the following contents:
-```
-#!/bin/bash
-pandoc -F pandoc-zotxt -F pandoc-citeproc --from markdown --to html
-```
 
+    #!/bin/bash
+    pandoc -F pandoc-zotxt -F pandoc-citeproc --from markdown --to html
+
+You can pick whatever you want for the output format (passed with the `--to` parameter) as long as [pandoc supports
+it](http://pandoc.org/README.html) 
+(Scrivener however wants the output to be written to stdout, so perhaps the
+[caveat](http://pandoc.org/demo/example19/Using-pandoc.html) for some output format applies).
 In Scrivener, in the compile dialog, `MultiMarkdown -> Web Page (.html)`, select `All Options`, and under
 `Compatibility`, select `Use XSLT post-processing`.
