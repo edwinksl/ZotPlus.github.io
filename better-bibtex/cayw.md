@@ -37,6 +37,7 @@ Put the following in a text file and make it executable:
 
 ```
 #!/bin/bash
+
 curl -o /dev/null localhost:23119/better-bibtex/cayw?keyprefix=@&clipboard=yes
 ```
 
