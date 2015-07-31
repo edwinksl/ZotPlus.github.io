@@ -28,3 +28,33 @@ will probably want to bind to a hotkey, either system-wide (which is going to be
 do the job, and for Linux you could give [IronAHK](https://github.com/polyethene/IronAHK) or
 [autokey](https://code.google.com/p/autokey/) a shot), or application-specific (I know Cmd-Y works for Scrivener on
 OSX, haven't tried anything else yet).
+
+## Scrivener 2.0 for Mac
+
+### Picking references
+
+Put the following in a text file and make it executable:
+
+```
+#!/bin/bash
+curl -o /dev/null localhost:23119/better-bibtex/cayw?keyprefix=@&clipboard=yes
+```
+
+then configure Scrivener to call this script as your bibliography command (cmd-Y)
+
+### Pandoc
+
+Install `Mac Installer 4.7.1` and `Mac Support` from the [MultiMarkdown](http://fletcherpenney.net/multimarkdown/download/) site
+
+Move `~/Library/Application Support/MultiMarkdown/bin/mmd-xslt` to `~/Library/Application Support/MultiMarkdown/bin/mmd-xslt.bak`.
+
+Install [ZoTXT](https://bitbucket.org/egh/zotxt), both the Zotero extension and the command line script.
+
+Create a new file `~/Library/Application Support/MultiMarkdown/bin/mmd-xslt`, with the following contents:
+```
+#!/bin/bash
+pandoc -F pandoc-zotxt -F pandoc-citeproc --from markdown --to html
+```
+
+In Scrivener, in the compile dialog, `MultiMarkdown -> Web Page (.html)`, select `All Options`, and under
+`Compatibility`, select `Use XSLT post-processing`.
