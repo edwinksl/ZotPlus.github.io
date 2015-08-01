@@ -33,7 +33,7 @@ OSX, haven't tried anything else yet).
 
 ### Picking references
 
-Download [zotpick.app](zotpick.zip), and configure Scrivener to call this zotpick as your bibliography command (cmd-Y).
+Download [zotpick.app](zotpick.zip), and configure Scrivener to call this as your bibliography command (cmd-Y).
 Before first use, double-click `zotpick.app`, and make sure you see no complaints from the security manager.
 
 ### Setting up Pandoc
