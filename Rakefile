@@ -120,5 +120,6 @@ task :zotpick do
     FileUtils.rm_rf('zotpick.app')
     sh "#{appify} #{zotpick}"
     sh "zip -r zotpick.zip zotpick.app/"
+    FileUtils.rm_rf('zotpick.app')
   }
 end
