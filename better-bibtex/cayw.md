@@ -42,7 +42,7 @@ Install `Mac Installer 4.7.1` and `Mac Support` from the [MultiMarkdown](http://
 
 Move `~/Library/Application Support/MultiMarkdown/bin/mmd-xslt` to `~/Library/Application Support/MultiMarkdown/bin/mmd-xslt.bak`.
 
-Install [ZoTXT](https://bitbucket.org/egh/zotxt), both the Zotero extension and the command line script.
+[Install ZoTXT](https://bitbucket.org/egh/zotxt), both the Zotero extension and the command line script.
 
 Create a new file `~/Library/Application Support/MultiMarkdown/bin/mmd-xslt`, with the following contents:
 
