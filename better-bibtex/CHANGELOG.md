@@ -3,6 +3,25 @@ title: Change log
 ---
 # Change Log
 
+## [Unreleased](https://github.com/ZotPlus/zotero-better-bibtex/tree/HEAD)
+
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.5...HEAD)
+
+**Merged pull requests:**
+
+- Fix typo stature-\>statute \(zotero item type\) [\#284](https://github.com/ZotPlus/zotero-better-bibtex/pull/284) ([gracile-fr](https://github.com/gracile-fr))
+
+## [1.2.5](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.5) (2015-07-31)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.4...1.2.5)
+
+**Fixed bugs:**
+
+- Zotero's bookSection is always converted to @inbook, never @incollection [\#282](https://github.com/ZotPlus/zotero-better-bibtex/issues/282)
+
+**Merged pull requests:**
+
+- Prettier generate/clear keys confirm dialog [\#283](https://github.com/ZotPlus/zotero-better-bibtex/pull/283) ([gracile-fr](https://github.com/gracile-fr))
+
 ## [1.2.4](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.4) (2015-07-31)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.3...1.2.4)
 
