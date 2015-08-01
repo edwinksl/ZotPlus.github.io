@@ -5,6 +5,7 @@ require 'rbconfig'
 require 'pp'
 require 'shellwords'
 require 'tempfile'
+require 'open-uri'
 
 task :default do
   puts "jekyll serve"
@@ -107,4 +108,17 @@ task :publish do
   msg = msg.join(' / ')
   sh "git commit -m '#{msg}'"
   sh "git push"
+end
+
+task :zotpick do
+  Dir.chdir('better-bibtex'){
+    appify = './osx/appify'
+    zotpick = 'osx/zotpick.sh'
+    open(appify, 'w'){|f| f.write(open('https://gist.githubusercontent.com/dwallraff/5d0e37b0dc969a8c5ff5/raw/e655c82025076ffc23113e501ae6f21272c7ee21/appify').read) }
+    FileUtils.chmod('+x', appify)
+    FileUtils.rm_rf('zotpick.zip')
+    FileUtils.rm_rf('zotpick.app')
+    sh "#{appify} #{zotpick}"
+    sh "zip -r zotpick.zip zotpick.app/"
+  }
 end

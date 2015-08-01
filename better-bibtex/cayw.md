@@ -33,19 +33,7 @@ OSX, haven't tried anything else yet).
 
 ### Picking references
 
-Put the following in a text file (e.g. `zotpick`) and make it executable:
-
-    #!/bin/bash
-    
-    curl http://localhost:23119/better-bibtex/cayw?keyprefix=@ | pbcopy
-
-Now download
-[appify](https://gist.githubusercontent.com/dwallraff/5d0e37b0dc969a8c5ff5/raw/e655c82025076ffc23113e501ae6f21272c7ee21/appify)
-and make it executable. Run
-
-    appify zotpick
-
-and it will create an app based on the above script. Now configure Scrivener to call this new app as your bibliography command (cmd-Y)
+Download [zotpick.app](zotpick.zip), and configure Scrivener to call this zotpick as your bibliography command (cmd-Y)
 
 ### Setting up Pandoc
 
