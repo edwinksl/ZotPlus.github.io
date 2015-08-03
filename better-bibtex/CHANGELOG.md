@@ -15,7 +15,7 @@ title: Change log
 
 **Fixed bugs:**
 
-- after latest update all my citation keys cannot be looked up [\#286](https://github.com/ZotPlus/zotero-better-bibtex/issues/286)
+- Default folding no longer applied, changing all keys with diacritics [\#286](https://github.com/ZotPlus/zotero-better-bibtex/issues/286)
 
 ## [1.2.7](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.7) (2015-08-01)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.6...1.2.7)
