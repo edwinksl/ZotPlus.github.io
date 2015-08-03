@@ -3,9 +3,29 @@ title: Change log
 ---
 # Change Log
 
-## [Unreleased](https://github.com/ZotPlus/zotero-better-bibtex/tree/HEAD)
+## [1.2.9](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.9) (2015-08-03)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.8...1.2.9)
 
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.5...HEAD)
+**Merged pull requests:**
+
+- Fix book -\> mvbook \(multi-volume book\) export [\#288](https://github.com/ZotPlus/zotero-better-bibtex/pull/288) ([gracile-fr](https://github.com/gracile-fr))
+
+## [1.2.8](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.8) (2015-08-02)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.7...1.2.8)
+
+**Fixed bugs:**
+
+- after latest update all my citation keys cannot be looked up [\#286](https://github.com/ZotPlus/zotero-better-bibtex/issues/286)
+
+## [1.2.7](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.7) (2015-08-01)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.6...1.2.7)
+
+## [1.2.6](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.6) (2015-08-01)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.5...1.2.6)
+
+**Fixed bugs:**
+
+- Auto-Export with "keep updated" not updated after new mapping  [\#285](https://github.com/ZotPlus/zotero-better-bibtex/issues/285)
 
 **Merged pull requests:**
 
