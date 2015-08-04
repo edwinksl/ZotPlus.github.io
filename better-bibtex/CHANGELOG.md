@@ -3,6 +3,20 @@ title: Change log
 ---
 # Change Log
 
+## [1.2.11](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.11) (2015-08-04)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.10...1.2.11)
+
+**Fixed bugs:**
+
+- Collected Notes: Ignore unexpected HTML tags [\#291](https://github.com/ZotPlus/zotero-better-bibtex/issues/291)
+
+## [1.2.10](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.10) (2015-08-04)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.9...1.2.10)
+
+**Fixed bugs:**
+
+- "Collected Notes" sometimes misses notes [\#290](https://github.com/ZotPlus/zotero-better-bibtex/issues/290)
+
 ## [1.2.9](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.9) (2015-08-03)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.8...1.2.9)
 
@@ -109,7 +123,7 @@ title: Change log
 **Fixed bugs:**
 
 - Colon not allowed in citation key format [\#268](https://github.com/ZotPlus/zotero-better-bibtex/issues/268)
-- Diacritics stripped from keys regardless of `ascii` or `fold` filters [\#266](https://github.com/ZotPlus/zotero-better-bibtex/issues/266)
+- Diacritics stripped from keys regardless of presence of `ascii` or `fold` filters [\#266](https://github.com/ZotPlus/zotero-better-bibtex/issues/266)
 - Ignore HTML tags when generating citation key [\#264](https://github.com/ZotPlus/zotero-better-bibtex/issues/264)
 - Parsed CSL variables from notes are supplied with extra keys [\#262](https://github.com/ZotPlus/zotero-better-bibtex/issues/262)
 
