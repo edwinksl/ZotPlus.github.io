@@ -3,6 +3,20 @@ title: Change log
 ---
 # Change Log
 
+## [1.2.13](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.13) (2015-08-06)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.12...1.2.13)
+
+**Implemented enhancements:**
+
+- More CSL-BibTeX field mappings \(to get to exclude parts of date \(day or month\) from export for certain fields\) [\#293](https://github.com/ZotPlus/zotero-better-bibtex/issues/293)
+
+## [1.2.12](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.12) (2015-08-05)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.11...1.2.12)
+
+**Fixed bugs:**
+
+- Collected Notes: itemized/enumerated lists are not closed. [\#292](https://github.com/ZotPlus/zotero-better-bibtex/issues/292)
+
 ## [1.2.11](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.11) (2015-08-04)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.10...1.2.11)
 
