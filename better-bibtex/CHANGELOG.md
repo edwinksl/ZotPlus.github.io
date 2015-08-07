@@ -3,6 +3,31 @@ title: Change log
 ---
 # Change Log
 
+## [1.2.16](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.16) (2015-08-07)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.15...HEAD)
+
+**Fixed bugs:**
+
+- Numbers confuse capital-preservation [\#295](https://github.com/ZotPlus/zotero-better-bibtex/issues/295)
+
+## [1.2.15](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.15) (2015-08-07)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.14...1.2.15)
+
+**Fixed bugs:**
+
+- Unchecking 'Force citation key to ASCII' replaces contents of citation key format [\#297](https://github.com/ZotPlus/zotero-better-bibtex/issues/297)
+
+**Merged pull requests:**
+
+- Correct association of folding preference. [\#298](https://github.com/ZotPlus/zotero-better-bibtex/pull/298) ([adunning](https://github.com/adunning))
+
+## [1.2.14](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.14) (2015-08-06)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.13...1.2.14)
+
+**Fixed bugs:**
+
+- Spaces not stripped from citation keys [\#294](https://github.com/ZotPlus/zotero-better-bibtex/issues/294)
+
 ## [1.2.13](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.13) (2015-08-06)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.12...1.2.13)
 
