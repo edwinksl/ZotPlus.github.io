@@ -59,3 +59,14 @@ issue; you cannot call it up later (although you can just so it again). Still, i
 * **If your problem pertains to BBT interfering with other plugins** (which wouldn't be the first time), and this interference
   has something to do with importing, you ***must*** include a sample file that triggers the issue. I know it may seem
   that "any file triggers it" -- I need a *specific* file that does so I know we're looking at the same problem.
+
+## Providing test cases
+
+If you have a problem, right-clicking on a reference that exhibits the problem and selecting `Report ZotPlus Error` will send me a ready-to-use
+testcase, inclusing your currents settings. If you are generously donating code, and happen to include a testcase
+(always appreciated!) the test runner expects any BibTeX matching files to:
+
+* Include a collection named after the name of the test file that holds the references. You get this if you export your
+  whole library, and your whole library just happens to consist only of your test references.
+* The BibTeX fields to be sorted, and
+* The `timestamp` field of the reference to be `{2015-02-24 12:14:36 +0100}`
