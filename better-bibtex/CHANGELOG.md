@@ -3,12 +3,23 @@ title: Change log
 ---
 # Change Log
 
-## [1.2.16](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.16) (2015-08-07)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.15...HEAD)
+## [1.2.17](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.17) (2015-08-08)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.16...1.2.17)
+
+**Implemented enhancements:**
+
+- Escape chars in field are unnecessarily added by BBT [\#296](https://github.com/ZotPlus/zotero-better-bibtex/issues/296)
 
 **Fixed bugs:**
 
 - Numbers confuse capital-preservation [\#295](https://github.com/ZotPlus/zotero-better-bibtex/issues/295)
+
+**Merged pull requests:**
+
+- Add test for \#296 [\#299](https://github.com/ZotPlus/zotero-better-bibtex/pull/299) ([gracile-fr](https://github.com/gracile-fr))
+
+## [1.2.16](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.16) (2015-08-07)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.15...1.2.16)
 
 ## [1.2.15](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.15) (2015-08-07)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.14...1.2.15)
