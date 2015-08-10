@@ -3,6 +3,21 @@ title: Change log
 ---
 # Change Log
 
+## [Unreleased](https://github.com/ZotPlus/zotero-better-bibtex/tree/HEAD)
+
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.18...HEAD)
+
+**Implemented enhancements:**
+
+- Quotation marks: add on option to replace them by \enquote{} on export [\#302](https://github.com/ZotPlus/zotero-better-bibtex/issues/302)
+
+## [1.2.18](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.18) (2015-08-08)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.17...1.2.18)
+
+**Implemented enhancements:**
+
+- Add more simple HTML/Zotero markup: small-caps [\#301](https://github.com/ZotPlus/zotero-better-bibtex/issues/301)
+
 ## [1.2.17](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.17) (2015-08-08)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.16...1.2.17)
 

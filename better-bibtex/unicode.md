@@ -12,4 +12,7 @@ in your references that Bib(La)TeX won't understand; BBT will
   &lt;sub&gt;&#8660;^{...} and &lt;sc&gt;&#8660;\\textsc{...}; more can
   be added on request.
 * The plugin contains a comprehensive list of LaTeX constructs, so stuff like \\"{o} or \\"o will be converted to their unicode equivalents on import.
+* `csquotes` support by hidden preference; if you open `about:config` and set
+  `extensions.zotero.translators.better-bibtex.csquotes` to a string of character pairs, each pair will be assumed to be
+  the open and close parts of a pair and will be replaced with a `\\enquote{...}` construct.
 
