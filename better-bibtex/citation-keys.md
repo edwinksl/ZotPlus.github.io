@@ -163,7 +163,7 @@ place:
 
 * By default, BBT only generates soft keys. You can generate a pinned key by right-clicking the reference and choosing
   'Generate BibTeX key'. You can clear this key either by editing the extra field, or right-clicking the reference and
-  selecting 'clear BibTeX key'.
+  selecting 'clear BibTeX key'. Clearing will immediately generate a fresh soft key.
 * If you want to make sure all your exported BibTeX files have pinned keys (very useful if you have a shared library, or
   you work from multiple workstations), go into the BBT preferences and select 'on export'. This option will be greyed out
   unless you have Zotero sync off, or, if enabled, have set it to auto-sync. Each pinned key change (or clearing of a
