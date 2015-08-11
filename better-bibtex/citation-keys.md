@@ -150,8 +150,10 @@ two flavors:
 1. 'soft' keys, which auto-update whenever the relevant data from the reference does, and
 2. 'pinned' or 'fixed' keys, which don't.
 
-The pinned keys show up in the 'extra' field of your references, and sync across libraries. You cannot see the soft keys
-(yet; being worked on), and the soft keys **do not sync** (yet; being worked on), but they're present in a separate
+The pinned keys show up in the 'extra' field of your references, and sync across libraries. The citation key is shown in
+the details pane of the reference, and in the `extra` column of the references list if you have enabled it in the BBT
+preferences. In the details pane, soft keys are displayed in italics; in the references list, soft keys have an asterix
+after the key. The soft keys **do not sync**, but they're present in a separate
 database so partial exports will know to generate keys not already in use (even if that is a 'soft' use), and so these
 soft keys will reliably survive restarts of Zotero.
 
@@ -169,7 +171,9 @@ place:
   amounts of key changes (which can easily happen if you have on-export and you export your full library) could
   overwhelm the Zotero sync service if presented in sudden bulk; automatic syncing ameliorates that problem. I'm working
   on a change so you can make this a per-library setting, and a change that syncs citekeys outside the Zotero servers.
-* If you always want pinned keys, go into the BBT preferences and select 'on change'.
+* If you always want pinned keys, go into the BBT preferences and select 'on change'. Mind that creation of a new
+  reference counts as a change, and thus any new reference created (e.g. through import by any means) will immediately
+  get a fixed key set which will *not* respond to subsequent edits of the reference.
 
 I am terribly sorry having to do this, but not doing this would risk sync being permanently impossible, as the Zotero
 server will kick you out if a sync takes too long.
