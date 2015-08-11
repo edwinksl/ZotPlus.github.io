@@ -5,7 +5,18 @@ title: Change log
 
 ## [Unreleased](https://github.com/ZotPlus/zotero-better-bibtex/tree/HEAD)
 
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.18...HEAD)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.19...HEAD)
+
+**Implemented enhancements:**
+
+- Clear a field / export as empty [\#303](https://github.com/ZotPlus/zotero-better-bibtex/issues/303)
+
+**Merged pull requests:**
+
+- test case for \#303 [\#305](https://github.com/ZotPlus/zotero-better-bibtex/pull/305) ([gracile-fr](https://github.com/gracile-fr))
+
+## [1.2.19](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.19) (2015-08-10)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.18...1.2.19)
 
 **Implemented enhancements:**
 
