@@ -3,6 +3,14 @@ title: Change log
 ---
 # Change Log
 
+## [1.2.21](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.21) (2015-08-11)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.20...1.2.21)
+
+**Fixed bugs:**
+
+- Export fails -- key + library ID fails to yield reference in 4.0.28 [\#306](https://github.com/ZotPlus/zotero-better-bibtex/issues/306)
+- Underscores break capital-preservation [\#300](https://github.com/ZotPlus/zotero-better-bibtex/issues/300)
+
 ## [1.2.20](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.20) (2015-08-11)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.19...1.2.20)
 
