@@ -9,18 +9,22 @@ of your favorite editor for Zotero integration! This is hot off the press, so th
 BBT now exposes (if you have HTTP export on in the preferences) an URL at http://localhost:23119/better-bibtex/cayw. The url accepts
 the following URL parameters:
 
+* `format`, default empty. If set to `mmd`, MultiMarkdown-formatted references will be returned, if set to `pandoc`, pandoc-formatted references will be returned. Pandoc references are the richest ones, supporting per-reference prefix, postfix, locator and omission of author.
+* `clipboard`, default empty, where any non-empty value will copy the results to the clipboard
+
+For testing, you can construct simple references yourself, using:
+
 * `citeprefix`, default empty, for text to put before the full citation.
 * `citepostfix`, default empty, for text to put after the full citation.
 * `keyprefix`, default empty, for text to put before each individual citekey
 * `keypostfix`, default empty, for text to put after each individual citekey
 * `separator`, default `,`, for text to put between citekeys
-* `clipboard`, default empty, where any non-empty value will copy the results to the clipboard
 
 So if you call up
 [http://localhost:23119/better-bibtex/cayw?keyprefix=%40&citeprefix=%5B&citepostfix=%5D&clipboard=yes](http://localhost:23119/better-bibtex/cayw?keyprefix=%40&citeprefix=%5B&citepostfix=%5D&clipboard=yes), the Zotero citation picker will pop up. If you then select two references that happen to have cite keys `adams2001` and `brigge2002`, then
 
-* the response body will be `[@adams2001,brigge2002]`, and
-* `[@adams2001,brigge2002]` will be left on the clipboard
+* the response body will be `[@adams2001,@brigge2002]`, and
+* `[@adams2001,@brigge2002]` will be left on the clipboard
 
 The first option is for editor authors, as it will allow them to paste the results right into the editor. The second you
 will probably want to bind to a hotkey, either system-wide (which is going to be platform-dependent, I know
@@ -29,29 +33,74 @@ do the job, and for Linux you could give [IronAHK](https://github.com/polyethene
 [autokey](https://code.google.com/p/autokey/) a shot), or application-specific (I know Cmd-Y works for Scrivener on
 OSX, haven't tried anything else yet).
 
+You can see how to create customized citekey at [Citation Keys] (https://zotplus.github.io/better-bibtex/citation-keys.html). In detail syntax can be found at [JabRef Syntax](http://jabref.sourceforge.net/help/LabelPatterns.php).
+
+The citation pattern should be added in the BetterBibTex preferences.
+
+In the picker you can use the build in options of adding page, suffix, prefix and suppress author and they will be automatically represented in the generated citation key.
+
+When you press Enter in the picker, click on the Scrivener document you work and by Paste (cmd+V) you add the citation key in your document.
+
 ## Scrivener 2.0 for Mac
 
 ### Picking references
 
-Download [zotpick-mmd.app](zotpick-mmd.zip) for MultiMarkdown or [zotpick-pandoc.app](zotpick-pandoc.zip) for Pandoc-Markdown, and configure Scrivener to call this as your bibliography command (cmd-Y).
-Before first use, double-click `zotpick-mmd.app` or `zotpick-pandoc.app`, and make sure you see no complaints from the security manager.
+Download [zotpick-mmd.app](zotpick-mmd.zip) for MultiMarkdown or [zotpick-pandoc.app](zotpick-pandoc.zip) for Pandoc-Markdown. Move the extracted zotpick app in Applications and configure Scrivener to call this as your bibliography command (cmd-Y) (in Scrivener/Preferences/General/Bibliography Manager).
+Before first use, double-click `zotpick-mmd.app` or `zotpick-pandoc.app`, and make sure you see no complaints from the security manager. If you get complaints go to System preferences/Security and Privacy and click open.
 
 ### Setting up Pandoc
 
 Install `Mac Installer 4.7.1` and `Mac Support` from the [MultiMarkdown](http://fletcherpenney.net/multimarkdown/download/) site
 
-Move `~/Library/Application Support/MultiMarkdown/bin/mmd-xslt` to `~/Library/Application Support/MultiMarkdown/bin/mmd-xslt.bak`.
+Go to `~/Library/Application Support/MultiMarkdown/bin/mmd-xslt` and make a duplicate of `mmd-xslt`, rename it to `mmd-xslt.bak`.
 
-[Install ZoTXT](https://bitbucket.org/egh/zotxt), both the Zotero extension and the command line script.
+[Install ZoTXT](https://bitbucket.org/egh/zotxt), both the Zotero extension and the command line script. If you can not instal it with the command line `sudo pip install pandoc-zotxt` then try with `sudo python setup.py install`. Before you execute the command make sure that in the Terminal you are in the pandoc-zotxt folder. If you download it in Downloads then the right command to go to the folder is `Cd ~/Downloads/pandoc-zotxt`
 
-Create a new file `~/Library/Application Support/MultiMarkdown/bin/mmd-xslt`, with the following contents:
+In mmd-xslt `~/Library/Application Support/MultiMarkdown/bin/mmd-xslt`, delete its content and add the following contents:
 
-    #!/bin/bash
-    pandoc -F pandoc-zotxt -F pandoc-citeproc --from markdown --to html
+     #!/bin/sh
+     pandoc --from markdown --to html -F pandoc-zotxt -F pandoc-citeproc --csl=/Applications/citation.csl
+
+You can open the mmd-xslt with TextEdit.
 
 You can pick whatever you want for the output format (passed with the `--to` parameter) as long as [pandoc supports
-it](http://pandoc.org/README.html) 
+it](http://pandoc.org/README.html)
 (Scrivener however wants the output to be written to stdout, so perhaps the
-[caveat](http://pandoc.org/demo/example19/Using-pandoc.html) for some output format applies).
+[caveat](http://pandoc.org/demo/example19/Using-pandoc.html) for some output format applies, like docx).
+
 In Scrivener, in the compile dialog, `MultiMarkdown -> Web Page (.html)`, select `All Options`, and under
 `Compatibility`, select `Use XSLT post-processing`.
+
+### Changing citations
+
+In order to be able to change the citations as you like you should follow this workflow.
+Download the citation from [Zotero Style Repository](https://www.zotero.org/styles), rename it to `citation.csl` and place it in the folder `Applications`. Now the citation style will be automatically used.
+
+In order to change the citation style, download the wanted citation style from Zotero Style Repository and when you save it, you save it in Applications with the name citation.csl. This overwrites the previous citation and now the new citation style will be used.
+
+### Conversion html to docx
+To convert the html to docx you need to use the Terminal (the existing GUIs make the conversion more complicate). However, because very often the html file is located somewhere in a folder that is in a folder that is in a folder (i.e. the folder where you have all your documents for the paper) and has empty spaces in the title it can be problematic to enter everything correctly in the Terminal. To minimize the possibility for mistakes the following procedure is proposed:
+
+Open Terminal and write
+
+* `pandoc` (leave one empty space after it)
+
+* than go in Finder and drag your html file in the Terminal. You will get something like this `/Users/username/Desktop/My\ Beautiful\ paper.html`
+
+* than leave empty space and write -o (also leave one empty space after it)
+
+* than again drag and drop the same html file in the terminal. However, now you delete .html (at the end) and write .docx and press enter. Then in the same folder you should have the `My Beautiful paper.docx` appropriately formatted and with citations.
+
+The content in the terminal should look like this:
+**pandoc** /Users/mijalce/Desktop/My\ Beautiful\ paper.html **-o** /Users/mijalce/Desktop/My\ Beautiful\ paper.**docx**
+(in bold is what you write)
+
+## Marked2
+The `mmd-xslt` can be used as a Custom processors and/or Preprocessor in [Marked2](http://marked2app.com/). So in the preview in Marked2 you immediately see the generated citation and bibliography in the style you have added.
+
+To do this the proposed procedure is:
+* Copy the `mmd-xslt` file
+* Paste it in the folder `Applications`
+* Rename it to `MarkedProcessor` (just to know what is it)
+* In Marked2 go to Preferences/Advanced/ and in Custom Processor and/or Preprocessor in the Path add `/Applications/MarkedProcessor`
+* Refresh preview
