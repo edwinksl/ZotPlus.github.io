@@ -3,6 +3,17 @@ title: Change log
 ---
 # Change Log
 
+## [1.2.22](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.22) (2015-08-15)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.21...1.2.22)
+
+**Implemented enhancements:**
+
+- thesis zotero entries always create `@phdthesis` bibtex entries [\#307](https://github.com/ZotPlus/zotero-better-bibtex/issues/307)
+
+**Fixed bugs:**
+
+- condense in cite key format not working [\#308](https://github.com/ZotPlus/zotero-better-bibtex/issues/308)
+
 ## [1.2.21](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.21) (2015-08-11)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.20...1.2.21)
 
