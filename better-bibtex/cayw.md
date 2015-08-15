@@ -12,26 +12,28 @@ the following URL parameters:
 * `format`, default empty. If set to `mmd`, MultiMarkdown-formatted references will be returned, if set to `pandoc`, pandoc-formatted references will be returned. Pandoc references are the richest ones, supporting per-reference prefix, postfix, locator and omission of author.
 * `clipboard`, default empty, where any non-empty value will copy the results to the clipboard
 
-For testing, you can construct simple references yourself, using:
+So if you call up
+[http://localhost:23119/better-bibtex/cayw?format=mmd&clipboard=yes](http://localhost:23119/better-bibtex/cayw?format=mmd&clipboard=yes), the Zotero citation picker will pop up. If you then select two references that happen to have cite keys `adams2001` and `brigge2002`, then
+
+* the response body will be `[#adams2001][][#brigge2002][]`, and
+* `[#adams2001][][#brigge2002][]` will be left on the clipboard
+
+The `clipboard` option can be used as a workaround for editors that haven't gotten around to integrating this yet, but
+for a really smooth workflow, the editor could instead call this URL on your behalf and paste the results at the
+insertion point. If you use the clipboard option you
+will probably want to bind to a hotkey, either system-wide (which is going to be platform-dependent, I know
+[AutoHotKey](http://www.autohotkey.com) works for windows, for OSX [Karabiner](https://pqrs.org/osx/karabiner/) ought to
+do the job, and for Linux you could give [IronAHK](https://github.com/polyethene/IronAHK) or
+[autokey](https://code.google.com/p/autokey/) a shot), or application-specific (I know Cmd-Y works for Scrivener on
+OSX, haven't tried anything else yet).
+
+For testing for other markdown formatters, you can construct simple references yourself, using:
 
 * `citeprefix`, default empty, for text to put before the full citation.
 * `citepostfix`, default empty, for text to put after the full citation.
 * `keyprefix`, default empty, for text to put before each individual citekey
 * `keypostfix`, default empty, for text to put after each individual citekey
 * `separator`, default `,`, for text to put between citekeys
-
-So if you call up
-[http://localhost:23119/better-bibtex/cayw?keyprefix=%40&citeprefix=%5B&citepostfix=%5D&clipboard=yes](http://localhost:23119/better-bibtex/cayw?keyprefix=%40&citeprefix=%5B&citepostfix=%5D&clipboard=yes), the Zotero citation picker will pop up. If you then select two references that happen to have cite keys `adams2001` and `brigge2002`, then
-
-* the response body will be `[@adams2001,@brigge2002]`, and
-* `[@adams2001,@brigge2002]` will be left on the clipboard
-
-The first option is for editor authors, as it will allow them to paste the results right into the editor. The second you
-will probably want to bind to a hotkey, either system-wide (which is going to be platform-dependent, I know
-[AutoHotKey](http://www.autohotkey.com) works for windows, for OSX [Karabiner](https://pqrs.org/osx/karabiner/) ought to
-do the job, and for Linux you could give [IronAHK](https://github.com/polyethene/IronAHK) or
-[autokey](https://code.google.com/p/autokey/) a shot), or application-specific (I know Cmd-Y works for Scrivener on
-OSX, haven't tried anything else yet).
 
 You can see how to create customized citekey at [Citation Keys] (https://zotplus.github.io/better-bibtex/citation-keys.html). In detail syntax can be found at [JabRef Syntax](http://jabref.sourceforge.net/help/LabelPatterns.php).
 
