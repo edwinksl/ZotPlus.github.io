@@ -58,7 +58,7 @@ Go to `~/Library/Application Support/MultiMarkdown/bin/mmd-xslt` and make a dupl
 
 [Install ZoTXT](https://bitbucket.org/egh/zotxt), both the Zotero extension and the command line script. If you can not instal it with the command line `sudo pip install pandoc-zotxt` then try with `sudo python setup.py install`. Before you execute the command make sure that in the Terminal you are in the pandoc-zotxt folder. If you download it in Downloads then the right command to go to the folder is `Cd ~/Downloads/pandoc-zotxt`
 
-In mmd-xslt `~/Library/Application Support/MultiMarkdown/bin/mmd-xslt`, delete its content and add the following contents:
+Open `~/Library/Application Support/MultiMarkdown/bin/mmd-xslt`, delete its content and add the following contents:
 
      #!/bin/sh
      pandoc --from markdown --to html -F pandoc-zotxt -F pandoc-citeproc --csl=/Applications/citation.csl
