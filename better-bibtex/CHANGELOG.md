@@ -3,6 +3,14 @@ title: Change log
 ---
 # Change Log
 
+## [1.2.23](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.23) (2015-08-17)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.22...1.2.23)
+
+**Fixed bugs:**
+
+- unfiltered fields leave punctuation in citation key [\#310](https://github.com/ZotPlus/zotero-better-bibtex/issues/310)
+- BibTeX variable support for journal titles. [\#309](https://github.com/ZotPlus/zotero-better-bibtex/issues/309)
+
 ## [1.2.22](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.22) (2015-08-15)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.21...1.2.22)
 
