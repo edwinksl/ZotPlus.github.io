@@ -3,6 +3,13 @@ title: Change log
 ---
 # Change Log
 
+## [1.2.24](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.24) (2015-08-18)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.23...1.2.24)
+
+**Closed issues:**
+
+- Zutilo 1.2.10.1 interferes with Quick Copy [\#311](https://github.com/ZotPlus/zotero-better-bibtex/issues/311)
+
 ## [1.2.23](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.23) (2015-08-17)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.22...1.2.23)
 
