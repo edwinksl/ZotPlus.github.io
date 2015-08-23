@@ -54,7 +54,9 @@ prefer fuzzy ones over missed ones.
 * sync citekey cleanly without abusing the "extra" field
 * faster journal abbreviator using the [LTWA](http://www.issn.org/services/online-services/access-to-the-ltwa/)
 
-Submission to Addons.Mozilla.Org is off the table -- AMO moves *much* to slow for my sometimes daily releases.
+BBT has traditionally not been hosted on addons.mozilla.org because the review process involved takes in the order of 10
+weeks -- a *little* too slow for my tastes. As of Firefox 42, addons.mozilla.org involvement is going to be mandatory,
+and miserable. I'm weighing my options.
 
 ## Known problems
 
