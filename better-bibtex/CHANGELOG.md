@@ -3,6 +3,20 @@ title: Change log
 ---
 # Change Log
 
+## [1.2.26](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.26) (2015-08-23)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.25...1.2.26)
+
+**Closed issues:**
+
+- Changes in Zotero do not invalidate serialisation cache. [\#316](https://github.com/ZotPlus/zotero-better-bibtex/issues/316)
+
+## [1.2.25](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.25) (2015-08-20)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.24...1.2.25)
+
+**Implemented enhancements:**
+
+- Enable ODF-scan format in CAYW [\#312](https://github.com/ZotPlus/zotero-better-bibtex/issues/312)
+
 ## [1.2.24](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.24) (2015-08-18)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.23...1.2.24)
 
