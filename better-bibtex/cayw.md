@@ -9,7 +9,14 @@ of your favorite editor for Zotero integration! This is hot off the press, so th
 BBT now exposes (if you have HTTP export on in the preferences) an URL at http://localhost:23119/better-bibtex/cayw. The url accepts
 the following URL parameters:
 
-* `format`, default empty. If set to `mmd`, MultiMarkdown-formatted references will be returned, if set to `pandoc`, pandoc-formatted references will be returned. Pandoc references are the richest ones, supporting per-reference prefix, postfix, locator and omission of author.
+* `format`, default empty. Possible values are:
+  * `mmd` for MultiMarkdown-formatted references
+  * `pandoc` for pandoc-formatted references
+  * `latex` for latex-formatted references. By default it will use the `cite` command, but you can override this by
+    adding a `command` parameter; alternately, you can use a format starting with `cite` for the same effect.
+  Pandoc references are the richest ones, supporting per-reference prefix, postfix, locator and omission of author.
+  LaTeX references are next richest, as LaTeX doesn't seem to have a good mechanism for combined citations that mix
+  different prefixes/suffixes/locators
 * `clipboard`, default empty, where any non-empty value will copy the results to the clipboard
 
 So if you call up

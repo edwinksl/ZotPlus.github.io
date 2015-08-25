@@ -3,6 +3,24 @@ title: Change log
 ---
 # Change Log
 
+## [1.2.28](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.28) (2015-08-25)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.27...1.2.28)
+
+**Fixed bugs:**
+
+- CAYW Not Copying Pandoc [\#320](https://github.com/ZotPlus/zotero-better-bibtex/issues/320)
+
+## [1.2.27](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.27) (2015-08-23)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.26...1.2.27)
+
+**Implemented enhancements:**
+
+- Scrivener support [\#263](https://github.com/ZotPlus/zotero-better-bibtex/issues/263)
+
+**Fixed bugs:**
+
+- Conflict check references undefined variable [\#319](https://github.com/ZotPlus/zotero-better-bibtex/issues/319)
+
 ## [1.2.26](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.26) (2015-08-23)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.25...1.2.26)
 
