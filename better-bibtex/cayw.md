@@ -27,8 +27,8 @@ The picker allows setting of various metadata:
 However not all formats supports these. Pandoc and scannable cite are the richest ones, supporting all 4. MultiMarkdown supports
 none. LaTeX supports all 4, in a way; if you choose `suppress author` for none or all of your references in a pick, you
 will get the citation as you would normally enter it, such as `\\cite{author1,author2}`, or
-`\\citeyear{author1,author2}`. If you use `locator`, `prefix`, `suffix` in any one of them, or you use `suppress author
-for some but not for others`, the picker will write them out all separate, like `\\cite[p.  1]{author1}\\cite{yearauthor2}`, 
+`\\citeyear{author1,author2}`. If you use `locator`, `prefix`, `suffix` in any one of them, or you use `suppress author`
+for some but not for others, the picker will write them out all separate, like `\\cite[p.  1]{author1}\\cite{yearauthor2}`, 
 as LaTeX doesn't seem to have a good mechanism for combined citations that mix different prefixes/suffixes/locators.
 
 For example, if you call up [http://localhost:23119/better-bibtex/cayw?format=mmd&clipboard=yes](http://localhost:23119/better-bibtex/cayw?format=mmd&clipboard=yes), the Zotero citation picker will pop up. If you then select two references that happen to have cite keys `adams2001` and `brigge2002`, then
