@@ -112,7 +112,9 @@ Open Terminal and write
 * than again drag and drop the same html file in the terminal. However, now you delete .html (at the end) and write .docx and press enter. Then in the same folder you should have the `My Beautiful paper.docx` appropriately formatted and with citations.
 
 The content in the terminal should look like this:
-`**pandoc** /Users/mijalce/Desktop/My\ Beautiful\ paper.html **-o** /Users/mijalce/Desktop/My\ Beautiful\ paper.**docx**`
+
+> **pandoc** /Users/mijalce/Desktop/My\ Beautiful\ paper.html **-o** /Users/mijalce/Desktop/My\ Beautiful\ paper.**docx**
+
 (in bold is what you write)
 
 ## Marked2
