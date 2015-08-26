@@ -119,6 +119,7 @@ The content in the terminal should look like this:
 The `mmd-xslt` can be used as a Custom processors and/or Preprocessor in [Marked2](http://marked2app.com/). So in the preview in Marked2 you immediately see the generated citation and bibliography in the style you have added.
 
 To do this the proposed procedure is:
+
 * Copy the `mmd-xslt` file
 * Paste it in the folder `Applications`
 * Rename it to `MarkedProcessor` (just to know what is it)
