@@ -53,7 +53,7 @@ For testing for other markdown formatters, you can construct simple references y
 * `keypostfix`, default empty, for text to put after each individual citekey
 * `separator`, default `,`, for text to put between citekeys
 
-You can see how to create customized citekey at [Citation Keys] (https://zotplus.github.io/better-bibtex/citation-keys.html). In detail syntax can be found at [JabRef Syntax](http://jabref.sourceforge.net/help/LabelPatterns.php).
+You can see how to create customized citekey at [Citation Keys](https://zotplus.github.io/better-bibtex/citation-keys.html). In detail syntax can be found at [JabRef Syntax](http://jabref.sourceforge.net/help/LabelPatterns.php).
 
 The citation pattern should be added in the BetterBibTex preferences.
 

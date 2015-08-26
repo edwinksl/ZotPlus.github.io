@@ -3,6 +3,17 @@ title: Change log
 ---
 # Change Log
 
+## [Unreleased](https://github.com/ZotPlus/zotero-better-bibtex/tree/HEAD)
+
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.29...HEAD)
+
+**Closed issues:**
+
+- Unable to submit ZotPlus errors: 'Invalid response from repository' [\#321](https://github.com/ZotPlus/zotero-better-bibtex/issues/321)
+
+## [1.2.29](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.29) (2015-08-26)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.28...1.2.29)
+
 ## [1.2.28](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.28) (2015-08-25)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.27...1.2.28)
 
