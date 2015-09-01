@@ -70,13 +70,21 @@ A sample implementation of real integration (rather than the working-but-clunky 
 
 Scrivener has no built-in way to call the picker, but you can easily create an app from an applescript using Automator to be called by Scrivener at cmd-Y. The following applescript has been reported to work:
 
-    if application id "org.zotero.zotero" is not running then
+    set zotRunning to do shell script "/usr/bin/curl 'http://localhost:23119/better-bibtex/probe=probe' 2>/dev/null; exit 0"
+    if zotRunning is "" then
         display alert "This script will not work unless Zotero is running. Please launch Zotero and try again"
         tell application "Scrivener"
             activate
         end tell
         error number -128
-    else if application id "org.zotero.zotero" is running then
+    else if zotRunning is "No endpoint found" then
+        display alert "This script will not work unless Better BibTeX is installed. Please make sure that Better BibTeX is
+    installed in the running instance of Zotero"
+        tell application "Scrivener"
+            activate
+        end tell
+        error number -128
+    else if zotRunning is "ready" then
         do shell script "/usr/bin/curl http://localhost:23119/better-bibtex/cayw?format=pandoc | pbcopy"
         tell application "Scrivener"
             activate

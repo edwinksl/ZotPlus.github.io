@@ -3,6 +3,20 @@ title: Change log
 ---
 # Change Log
 
+## [1.3.0](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.3.0) (2015-09-01)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.39...1.3.0)
+
+**Closed issues:**
+
+- CAYW probe: return stable "ready" rather than version number [\#336](https://github.com/ZotPlus/zotero-better-bibtex/issues/336)
+
+## [1.2.39](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.39) (2015-09-01)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.38...1.2.39)
+
+**Implemented enhancements:**
+
+- Allow probing for cayw support [\#335](https://github.com/ZotPlus/zotero-better-bibtex/issues/335)
+
 ## [1.2.38](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.38) (2015-09-01)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.37...1.2.38)
 
