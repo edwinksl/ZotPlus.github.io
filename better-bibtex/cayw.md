@@ -84,7 +84,7 @@ to be called by Scrivener at cmd-Y. The following applescript has been reported 
         end tell
         error number -128
     else if zotRunning is "ready" then
-        do shell script "/usr/bin/curl http://localhost:23119/better-bibtex/cayw?format=pandoc | pbcopy"
+        do shell script "/usr/bin/curl 'http://localhost:23119/better-bibtex/cayw?format=pandoc' | pbcopy"
         tell application "Scrivener"
             activate
             repeat until application "Scrivener" is frontmost
