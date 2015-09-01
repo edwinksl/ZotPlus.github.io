@@ -75,7 +75,7 @@ if application id "org.zotero.zotero" is not running then
         activate
     end tell
     error number -128
-else
+else if application id "org.zotero.zotero" is running then
     do shell script "/usr/bin/curl http://localhost:23119/better-bibtex/cayw?format=pandoc | pbcopy"
     tell application "Scrivener"
         activate
