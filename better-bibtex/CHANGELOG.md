@@ -3,12 +3,70 @@ title: Change log
 ---
 # Change Log
 
-## [Unreleased](https://github.com/ZotPlus/zotero-better-bibtex/tree/HEAD)
-
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.29...HEAD)
+## [1.2.38](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.38) (2015-09-01)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.37...1.2.38)
 
 **Closed issues:**
 
+- Bug with cayw search box when called with pandoc format [\#334](https://github.com/ZotPlus/zotero-better-bibtex/issues/334)
+
+## [1.2.37](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.37) (2015-09-01)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.36...1.2.37)
+
+**Closed issues:**
+
+- Better BibTeX requires Zotero 4.0.28+ [\#333](https://github.com/ZotPlus/zotero-better-bibtex/issues/333)
+
+## [1.2.36](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.36) (2015-08-30)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.35...1.2.36)
+
+**Closed issues:**
+
+- Command to force autoexport update [\#330](https://github.com/ZotPlus/zotero-better-bibtex/issues/330)
+
+**Merged pull requests:**
+
+- Allow state of columns in export list to persist [\#331](https://github.com/ZotPlus/zotero-better-bibtex/pull/331) ([gracile-fr](https://github.com/gracile-fr))
+
+## [1.2.35](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.35) (2015-08-30)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.34...1.2.35)
+
+## [1.2.34](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.34) (2015-08-28)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.33...1.2.34)
+
+**Implemented enhancements:**
+
+- cayw picker for zotero-atom-citations [\#328](https://github.com/ZotPlus/zotero-better-bibtex/issues/328)
+- @legislation: map code/container-title to journaltitle [\#327](https://github.com/ZotPlus/zotero-better-bibtex/issues/327)
+
+## [1.2.33](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.33) (2015-08-27)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.32...1.2.33)
+
+**Implemented enhancements:**
+
+- @jurisdiction: map court/authority to institution [\#326](https://github.com/ZotPlus/zotero-better-bibtex/issues/326)
+
+## [1.2.32](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.32) (2015-08-27)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.31...1.2.32)
+
+## [1.2.31](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.31) (2015-08-27)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.30...1.2.31)
+
+**Fixed bugs:**
+
+- Single letter capitals are no longer preserved [\#325](https://github.com/ZotPlus/zotero-better-bibtex/issues/325)
+
+## [1.2.30](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.30) (2015-08-26)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.29...1.2.30)
+
+**Fixed bugs:**
+
+- Collected Notes: translator not initialized [\#324](https://github.com/ZotPlus/zotero-better-bibtex/issues/324)
+- Citation cache needs to be primed before schomd searches can be reliable [\#323](https://github.com/ZotPlus/zotero-better-bibtex/issues/323)
+
+**Closed issues:**
+
+- Combining accents not normalized in export [\#322](https://github.com/ZotPlus/zotero-better-bibtex/issues/322)
 - Unable to submit ZotPlus errors: 'Invalid response from repository' [\#321](https://github.com/ZotPlus/zotero-better-bibtex/issues/321)
 
 ## [1.2.29](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.29) (2015-08-26)

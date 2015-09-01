@@ -68,26 +68,24 @@ A sample implementation of real integration (rather than the working-but-clunky 
 
 Scrivener has no built-in way to call the picker, but you can easily create an app from an applescript using Automator to be called by Scrivener at cmd-Y. The following applescript has been reported to work:
 
-```applescript
-if application id "org.zotero.zotero" is not running then
-    display alert "This script will not work unless Zotero is running. Please launch Zotero and try again"
-    tell application "Scrivener"
-        activate
-    end tell
-    error number -128
-else if application id "org.zotero.zotero" is running then
-    do shell script "/usr/bin/curl http://localhost:23119/better-bibtex/cayw?format=pandoc | pbcopy"
-    tell application "Scrivener"
-        activate
-        repeat until application "Scrivener" is frontmost
-        end repeat
-        tell application "System Events"
-            keystroke "v" using command down
+    if application id "org.zotero.zotero" is not running then
+        display alert "This script will not work unless Zotero is running. Please launch Zotero and try again"
+        tell application "Scrivener"
+            activate
         end tell
-        do shell script "/usr/bin/pbcopy < /dev/null"
-    end tell
-end if
-```
+        error number -128
+    else if application id "org.zotero.zotero" is running then
+        do shell script "/usr/bin/curl http://localhost:23119/better-bibtex/cayw?format=pandoc | pbcopy"
+        tell application "Scrivener"
+            activate
+            repeat until application "Scrivener" is frontmost
+            end repeat
+            tell application "System Events"
+                keystroke "v" using command down
+            end tell
+            do shell script "/usr/bin/pbcopy < /dev/null"
+        end tell
+    end if
 
 If you don't like the auto-paste (e.g. if you have multiple Scriveners open), just remove everything but the first line.
 Dave Smith has gracefully offered a [pre-built version](https://www.dropbox.com/sh/htybak3pb3uhfp0/AAAvozL5etMu7V9WSH-gx9Csa?dl=1).
