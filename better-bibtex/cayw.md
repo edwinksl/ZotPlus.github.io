@@ -9,7 +9,7 @@ of your favorite editor for Zotero integration! This is hot off the press, so th
 BBT now exposes (if you have HTTP export on in the preferences) an URL at http://localhost:23119/better-bibtex/cayw. The url accepts
 the following URL parameters:
 
-* `probe`, default empty. If set to any non-empty value, returns the BBT version. You can use this to test whether BBT
+* `probe`, default empty. If set to any non-empty value, returns `ready`. You can use this to test whether BBT
   CAYW picking is live; it will not pop up the picker.
 * `format`, default empty. Possible values are:
   * `mmd` for MultiMarkdown-formatted references.
