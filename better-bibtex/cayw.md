@@ -16,6 +16,7 @@ the following URL parameters:
     adding a `command` parameter; alternately, you can use a format starting with `cite` for the same effect.
   * `scannable-cite` for citations formatted for [RTF/ODF-Scan for Zotero](http://zotero-odf-scan.github.io/zotero-odf-scan/)
 * `clipboard`, default empty, where any non-empty value will copy the results to the clipboard
+* `minimize`, default empty, where any non-empty value minimize all Firefox windows after a pick
 
 The picker allows setting of various metadata:
 
