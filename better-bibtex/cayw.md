@@ -65,8 +65,20 @@ When you press Enter in the picker, click on the Scrivener document you work and
 
 ### Picking references
 
-Download [zotpick-mmd.app](zotpick-mmd.zip) for MultiMarkdown or [zotpick-pandoc.app](zotpick-pandoc.zip) for Pandoc-Markdown. Move the extracted zotpick app in Applications and configure Scrivener to call this as your bibliography command (cmd-Y) (in Scrivener/Preferences/General/Bibliography Manager).
-Before first use, double-click `zotpick-mmd.app` or `zotpick-pandoc.app`, and make sure you see no complaints from the security manager. If you get complaints go to System preferences/Security and Privacy and click open.
+Scrivener has no built-in way to call the picker, but you can easily [create an app using Automator](http://stackoverflow.com/questions/281372/executing-shell-scripts-from-the-os-x-dock) to can be called by Scrivener at cmd-Y. The following applescript has been reported to work:
+
+```
+do shell script "/usr/bin/curl 'http://localhost:23119/better-bibtex/cayw?format=pandoc' | /usr/bin/pbcopy"
+tell application "Scrivener"
+    activate
+    tell application "System Events"
+        keystroke "v" using {command down}
+    end tell
+end tell
+```
+
+If you don't like the auto-paste (e.g. if you have multiple Scriveners open), just remove everything but the first line.
+
 
 ### Setting up Pandoc
 
