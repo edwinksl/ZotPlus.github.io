@@ -9,29 +9,26 @@ of your favorite editor for Zotero integration! This is hot off the press, so th
 BBT now exposes (if you have HTTP export on in the preferences) an URL at http://localhost:23119/better-bibtex/cayw. The url accepts
 the following URL parameters:
 
-* `probe`, default empty. If set to any non-empty value, returns `ready`. You can use this to test whether BBT
-  CAYW picking is live; it will not pop up the picker.
-* `format`, default empty. Possible values are:
-  * `mmd` for MultiMarkdown-formatted references.
-  * `pandoc` for pandoc-formatted references
-  * `latex` for latex-formatted references. By default it will use the `cite` command, but you can override this by
-    adding a `command` parameter; alternately, you can use a format starting with `cite` for the same effect.
-  * `scannable-cite` for citations formatted for [RTF/ODF-Scan for Zotero](http://zotero-odf-scan.github.io/zotero-odf-scan/)
-* `clipboard`, default empty, where any non-empty value will copy the results to the clipboard
-* `minimize`, default empty, where any non-empty value minimize all Firefox windows after a pick
+| parameter |   |
+| --------- | - |
+| `probe`   | If set to any non-empty value, returns `ready`. You can use this to test whether BBT CAYW picking is live; it will not pop up the picker |
+| `format`  | Set the output format. Possible values are `mmd` (MultiMarkdown), `pandoc`, `scannable-cite` (for [RTF/ODF-Scan for Zotero](http://zotero-odf-scan.github.io/zotero-odf-scan/)), and `latex`. By default `latex` will use the `cite` command; you can override this by adding a `command` parameter; alternately, you can use a format starting with `cite` for the same effect |
+| `clipboard` | Any non-empty value will copy the results to the clipboard |
+| `minimize` | Any non-empty value minimize all Firefox windows after a pick |
 
-The picker allows setting of various metadata:
+The picker passes the following data along with your picked references if you filled them out:
 
-* `locator`, the place within the work (e.g. page number)
-* `prefix`, for stuff like "see ..."
-* `suffix`, for stuff after the citations
-* `suppress author`, if you only want the year.
+| -------- | --------- |
+| `locator` | the place within the work (e.g. page number) |
+| `prefix` | for stuff like "see ..." |
+| `suffix` | for stuff after the citations |
+| `suppress author` | if you only want the year |
 
-However not all formats supports these. Pandoc and scannable cite are the richest ones, supporting all 4. MultiMarkdown supports
+However not all output formats supports these. Pandoc and scannable cite are the richest ones, supporting all 4. MultiMarkdown supports
 none. LaTeX supports all 4, in a way; if you choose `suppress author` for none or all of your references in a pick, you
 will get the citation as you would normally enter it, such as `\\cite{author1,author2}`, or
 `\\citeyear{author1,author2}`. If you use `locator`, `prefix`, `suffix` in any one of them, or you use `suppress author`
-for some but not for others, the picker will write them out all separate, like `\\cite[p.  1]{author1}\\citeyear{author2}`, 
+for some but not for others, the picker will write them out all separate, like `\cite[p.  1]{author1}\citeyear{author2}`, 
 as LaTeX doesn't seem to have a good mechanism for combined citations that mix different prefixes/suffixes/locators.
 
 For example, if you call up [http://localhost:23119/better-bibtex/cayw?format=mmd&clipboard=yes](http://localhost:23119/better-bibtex/cayw?format=mmd&clipboard=yes), the Zotero citation picker will pop up. If you then select two references that happen to have cite keys `adams2001` and `brigge2002`, then
@@ -39,14 +36,7 @@ For example, if you call up [http://localhost:23119/better-bibtex/cayw?format=mm
 * the response body will be `[#adams2001][][#brigge2002][]`, and
 * `[#adams2001][][#brigge2002][]` will be left on the clipboard
 
-The `clipboard` option can be used as a workaround for editors that haven't gotten around to integrating this yet, but
-for a really smooth workflow, the editor could instead call this URL on your behalf and paste the results at the
-insertion point. If you use the clipboard option you
-will probably want to bind to a hotkey, either system-wide (which is going to be platform-dependent, I know
-[AutoHotKey](http://www.autohotkey.com) works for windows, for OSX [Karabiner](https://pqrs.org/osx/karabiner/) ought to
-do the job, and for Linux you could give [IronAHK](https://github.com/polyethene/IronAHK) or
-[autokey](https://code.google.com/p/autokey/) a shot), or application-specific (I know Cmd-Y works for Scrivener on
-OSX, haven't tried anything else yet).
+## Playing around
 
 For testing for other markdown formatters, you can construct simple references yourself, using:
 
@@ -56,13 +46,20 @@ For testing for other markdown formatters, you can construct simple references y
 * `keypostfix`, default empty, for text to put after each individual citekey
 * `separator`, default `,`, for text to put between citekeys
 
-You can see how to create customized citekey at [Citation Keys](https://zotplus.github.io/better-bibtex/citation-keys.html). In detail syntax can be found at [JabRef Syntax](http://jabref.sourceforge.net/help/LabelPatterns.php).
+# Editor integration
 
-The citation pattern should be added in the BetterBibTex preferences.
-
-In the picker you can use the build in options of adding page, suffix, prefix and suppress author and they will be automatically represented in the generated citation key.
+##  Zotero Citations for Atom
 
 A sample implementation of real integration (rather than the working-but-clunky workarounds using paste) can be found in the [Zotero Citations](https://atom.io/packages/zotero-citations) package for the [Atom](http://atom.io) editor.
+
+# Workarounds
+
+The `clipboard` option can be used as a workaround for editors that haven't gotten around to integrating this yet. If
+you use this option you will probably want to bind to a hotkey, either system-wide (which is going to be platform-dependent, I know
+[AutoHotKey](http://www.autohotkey.com) works for windows, for OSX [Karabiner](https://pqrs.org/osx/karabiner/) ought to
+do the job, and for Linux you could give [IronAHK](https://github.com/polyethene/IronAHK) or
+[autokey](https://code.google.com/p/autokey/) a shot), or application-specific (I know Cmd-Y works for Scrivener on
+OSX, haven't tried anything else yet).
 
 ## Scrivener 2.0 for Mac
 
@@ -101,7 +98,10 @@ to be called by Scrivener at cmd-Y. The following applescript has been reported 
 If you don't like the auto-paste (e.g. if you have multiple Scriveners open), just remove everything but the first line.
 Dave Smith has gracefully offered a [pre-built version](https://www.dropbox.com/sh/htybak3pb3uhfp0/AAAvozL5etMu7V9WSH-gx9Csa?dl=1).
 
-### Setting up Pandoc
+### Setting up Pandoc to replace MultiMarkdown
+
+Pandoc has much better support for scholarly markdown. Should you want to use this, you can trick Scrivener into calling
+pandoc.
 
 Install `Mac Installer 4.7.1` and `Mac Support` from the [MultiMarkdown](http://fletcherpenney.net/multimarkdown/download/) site
 
@@ -124,14 +124,14 @@ it](http://pandoc.org/README.html)
 In Scrivener, in the compile dialog, `MultiMarkdown -> Web Page (.html)`, select `All Options`, and under
 `Compatibility`, select `Use XSLT post-processing`.
 
-### Changing citations
+### Changing citation style
 
 In order to be able to change the citations as you like you should follow this workflow.
 Download the citation from [Zotero Style Repository](https://www.zotero.org/styles), rename it to `citation.csl` and place it in the folder `Applications`. Now the citation style will be automatically used.
 
 In order to change the citation style, download the wanted citation style from Zotero Style Repository and when you save it, you save it in Applications with the name citation.csl. This overwrites the previous citation and now the new citation style will be used.
 
-### Conversion html to docx
+### Conversion to docx
 To convert the html to docx you need to use the Terminal (the existing GUIs make the conversion more complicate). However, because very often the html file is located somewhere in a folder that is in a folder that is in a folder (i.e. the folder where you have all your documents for the paper) and has empty spaces in the title it can be problematic to enter everything correctly in the Terminal. To minimize the possibility for mistakes the following procedure is proposed:
 
 Open Terminal and write
@@ -151,6 +151,7 @@ The content in the terminal should look like this:
 (in bold is what you write)
 
 ## Marked2
+
 The `mmd-xslt` can be used as a Custom processors and/or Preprocessor in [Marked2](http://marked2app.com/). So in the preview in Marked2 you immediately see the generated citation and bibliography in the style you have added.
 
 To do this the proposed procedure is:
