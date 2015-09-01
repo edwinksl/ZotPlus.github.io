@@ -59,7 +59,7 @@ The citation pattern should be added in the BetterBibTex preferences.
 
 In the picker you can use the build in options of adding page, suffix, prefix and suppress author and they will be automatically represented in the generated citation key.
 
-When you press Enter in the picker, click on the Scrivener document you work and by Paste (cmd+V) you add the citation key in your document.
+A sample implementation of real integration (rather than the working-but-clunky workarounds using paste) can be found in the [Zotero Citations](https://atom.io/packages/zotero-citations) package for the [Atom](http://atom.io) editor.
 
 ## Scrivener 2.0 for Mac
 
