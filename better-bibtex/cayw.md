@@ -68,7 +68,8 @@ A sample implementation of real integration (rather than the working-but-clunky 
 
 ### Picking references
 
-Scrivener has no built-in way to call the picker, but you can easily create an app from an applescript using Automator to be called by Scrivener at cmd-Y. The following applescript has been reported to work:
+Scrivener has no built-in way to call the picker, but you can easily [create an app from a script using Automator](http://stackoverflow.com/a/281455/2541040)
+to be called by Scrivener at cmd-Y. The following applescript has been reported to work:
 
     set zotRunning to do shell script "/usr/bin/curl 'http://localhost:23119/better-bibtex/probe=probe' 2>/dev/null; exit 0"
     if zotRunning is "" then
