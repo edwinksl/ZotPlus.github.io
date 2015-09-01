@@ -69,7 +69,7 @@ OSX, haven't tried anything else yet).
 Scrivener has no built-in way to call the picker, but you can easily [create an app from a script using Automator](http://stackoverflow.com/a/281455/2541040)
 to be called by Scrivener at cmd-Y. The following applescript has been reported to work:
 
-    set zotRunning to do shell script "/usr/bin/curl 'http://localhost:23119/better-bibtex/probe=probe' 2>/dev/null; exit 0"
+    set zotRunning to do shell script "/usr/bin/curl 'http://localhost:23119/better-bibtex/cayw?probe=probe' 2>/dev/null; exit 0"
     if zotRunning is "" then
         display alert "This script will not work unless Zotero is running. Please launch Zotero and try again"
         tell application "Scrivener"
