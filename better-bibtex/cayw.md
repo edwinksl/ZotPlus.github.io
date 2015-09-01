@@ -78,7 +78,7 @@ Scrivener has no built-in way to call the picker, but you can easily [create an 
     end tell'
 
 If you don't like the auto-paste (e.g. if you have multiple Scriveners open), just remove everything but the first line.
-
+Dave Smith has gracefully offered a [pre-built version](https://www.dropbox.com/sh/htybak3pb3uhfp0/AAAvozL5etMu7V9WSH-gx9Csa?dl=1).
 
 ### Setting up Pandoc
 
