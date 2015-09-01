@@ -68,11 +68,17 @@ When you press Enter in the picker, click on the Scrivener document you work and
 Scrivener has no built-in way to call the picker, but you can easily [create an app using Automator](http://stackoverflow.com/questions/281372/executing-shell-scripts-from-the-os-x-dock) to can be called by Scrivener at cmd-Y. The following applescript has been reported to work:
 
     do shell script "/usr/bin/curl 'http://localhost:23119/better-bibtex/cayw?format=pandoc' | /usr/bin/pbcopy"
+    
     tell application "Scrivener"
+    
         activate
+        
         tell application "System Events"
+        
             keystroke "v" using {command down}
+            
         end tell
+        
     end tell
 
 If you don't like the auto-paste (e.g. if you have multiple Scriveners open), just remove everything but the first line.
