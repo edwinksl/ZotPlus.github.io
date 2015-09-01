@@ -65,7 +65,7 @@ A sample implementation of real integration (rather than the working-but-clunky 
 
 ### Picking references
 
-Scrivener has no built-in way to call the picker, but you can easily [create an app using Automator](http://stackoverflow.com/questions/281372/executing-shell-scripts-from-the-os-x-dock) to be called by Scrivener at cmd-Y. The following bash script has been reported to work:
+Scrivener has no built-in way to call the picker, but you can easily [create an app using Automator](http://stackoverflow.com/a/281455/2541040) to be called by Scrivener at cmd-Y. The following bash script has been reported to work:
 
     /usr/bin/curl "http://localhost:23119/better-bibtex/cayw?format=pandoc" | /usr/bin/pbcopy
     /usr/bin/osascript -e 'tell application "Scrivener"
