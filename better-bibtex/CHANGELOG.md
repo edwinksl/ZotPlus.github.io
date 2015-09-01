@@ -6,7 +6,7 @@ title: Change log
 ## [1.2.38](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.38) (2015-09-01)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.37...1.2.38)
 
-**Closed issues:**
+**Fixed bugs:**
 
 - Bug with cayw search box when called with pandoc format [\#334](https://github.com/ZotPlus/zotero-better-bibtex/issues/334)
 
@@ -20,7 +20,7 @@ title: Change log
 ## [1.2.36](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.36) (2015-08-30)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.35...1.2.36)
 
-**Closed issues:**
+**Implemented enhancements:**
 
 - Command to force autoexport update [\#330](https://github.com/ZotPlus/zotero-better-bibtex/issues/330)
 
@@ -66,7 +66,6 @@ title: Change log
 
 **Closed issues:**
 
-- Combining accents not normalized in export [\#322](https://github.com/ZotPlus/zotero-better-bibtex/issues/322)
 - Unable to submit ZotPlus errors: 'Invalid response from repository' [\#321](https://github.com/ZotPlus/zotero-better-bibtex/issues/321)
 
 ## [1.2.29](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.29) (2015-08-26)
@@ -93,7 +92,7 @@ title: Change log
 ## [1.2.26](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.26) (2015-08-23)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.25...1.2.26)
 
-**Closed issues:**
+**Fixed bugs:**
 
 - Changes in Zotero do not invalidate serialisation cache. [\#316](https://github.com/ZotPlus/zotero-better-bibtex/issues/316)
 
