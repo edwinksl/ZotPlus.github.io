@@ -16,6 +16,7 @@ the following URL parameters:
 | `clipboard` | Any non-empty value will copy the results to the clipboard |
 | `minimize` | Any non-empty value minimize all Firefox windows after a pick |
 
+
 The picker passes the following data along with your picked references if you filled them out:
 
 | -------- | --------- |
