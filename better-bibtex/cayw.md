@@ -66,17 +66,28 @@ A sample implementation of real integration (rather than the working-but-clunky 
 
 ### Picking references
 
-Scrivener has no built-in way to call the picker, but you can easily [create an app from a bash script using Automator](http://stackoverflow.com/a/281455/2541040) to be called by Scrivener at cmd-Y. The following bash script has been reported to work:
+Scrivener has no built-in way to call the picker, but you can easily create an app from an applescript using Automator to be called by Scrivener at cmd-Y. The following applescript has been reported to work:
 
-    /usr/bin/curl "http://localhost:23119/better-bibtex/cayw?format=pandoc" | /usr/bin/pbcopy
-    /usr/bin/osascript -e 'tell application "Scrivener"
+```applescript
+if application id "org.zotero.zotero" is not running then
+    display alert "This script will not work unless Zotero is running. Please launch Zotero and try again"
+    tell application "Scrivener"
+        activate
+    end tell
+    error number -128
+else
+    do shell script "/usr/bin/curl http://localhost:23119/better-bibtex/cayw?format=pandoc | pbcopy"
+    tell application "Scrivener"
         activate
         repeat until application "Scrivener" is frontmost
         end repeat
         tell application "System Events"
             keystroke "v" using command down
         end tell
-    end tell'
+        do shell script "/usr/bin/pbcopy < /dev/null"
+    end tell
+end if
+```
 
 If you don't like the auto-paste (e.g. if you have multiple Scriveners open), just remove everything but the first line.
 Dave Smith has gracefully offered a [pre-built version](https://www.dropbox.com/sh/htybak3pb3uhfp0/AAAvozL5etMu7V9WSH-gx9Csa?dl=1).
