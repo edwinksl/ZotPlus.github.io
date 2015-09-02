@@ -66,7 +66,7 @@ OSX, haven't tried anything else yet).
 
 ### Picking references
 
-Scrivener has no built-in way to call the picker, but you can easily use Script Editor and save as an application
+Scrivener has no built-in way to call the picker, but you can easily use [Script Editor and save as an application](https://github.com/davepwsmith/zotpick-applescript/tree/master/Saving%20Applescripts%20as%20Applications)
 to be called by Scrivener at cmd-Y. The following applescript has been reported to work:
 
     set zotRunning to do shell script "/usr/bin/curl 'http://localhost:23119/better-bibtex/cayw?probe=probe' 2>/dev/null; exit 0"
@@ -96,8 +96,11 @@ to be called by Scrivener at cmd-Y. The following applescript has been reported 
         end tell
     end if
 
-If you don't like the auto-paste (e.g. if you have multiple Scriveners open), just remove everything but the first line.
-Dave Smith has gracefully offered a [pre-built version](https://www.dropbox.com/sh/htybak3pb3uhfp0/AAAvozL5etMu7V9WSH-gx9Csa?dl=1).
+If you don't like the auto-paste (e.g. if you have multiple Scriveners open), just remove everything but:
+
+    do shell script "/usr/bin/curl 'http://localhost:23119/better-bibtex/cayw?format=pandoc' | pbcopy"
+
+Dave Smith has gracefully offered [pre-built versions](https://github.com/davepwsmith/zotpick-applescript/) for Pandoc, MultiMarkdown and Scannable Cite.
 
 ### Setting up Pandoc to replace MultiMarkdown
 
