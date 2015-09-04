@@ -55,3 +55,36 @@ Exchange
 and
 [here](http://tex.stackexchange.com/questions/55859/getting-origyear-to-work-in-biblatex).
 
+# You wanted customized... (1.4+)
+
+You got customized. It doesn't yet have a GUI, but as this really is a bit on the technical side, I feel warranted to go
+without for now.
+
+If you go into `about:config` you will find a preference `extensions.zotero.translators.better-bibtex.postscript`, which
+is empty by default. In this, preference, you can paste a javascript string which will be executed for each reference
+generated in the Bib(La)TeX exporter. In this code, you have access to the reference just before it will be written out
+and cached. This is the stable part which you can rely on. You could for example have
+
+    if (this.item.itemType === 'webpage' && Translator.BetterBibTeX) {
+      if (this.has.urldate) { this.add({ name: 'note', value: "(accessed " + this.has.urldate.value + ")" }); }
+      if (this.has.url) { this.add({ name: 'howpublished', bibtex: "{\\href" + this.has.url.bibtex + this.has.url.bibtex + "}" }); }
+    }
+
+in order to make your webpage exports a little more recognizable. In this code you can call all the code that the
+translator has access to. There is however no formal API, and things *will* occasionally change and break your scripts.
+This is unavoidable at this stage. There is also not much in terms of documentation right now. To explain the sample
+above:
+
+* `this.fields` is the full list of fields that will be written out. If you modify this list, you modify the reference.
+  It is an array that holds objects with these properties:
+  * **name**, the name of the field
+  * **value**, the value found in zotero. This is usually a string or a number. At this stage of processing, changing
+    this value has no effect (see below)
+  * **bibtex**, this is the actual value that will be written out. LaTeX escaping has already be applied to this.
+* `this.has` is an object that allows you to look up fields by name. If a field occurs multiple times, it will be the
+  last one.
+* `Translator.BetterBibTeX` tells you in what translator you're running. Either this, or `Translator.BetterBibLaTeX`,
+  will be `true`.
+
+For the rest you will have to trawl the code of the translator, but feel free to ask in the issue tracker, and I'll add
+stuff as such questions come in.

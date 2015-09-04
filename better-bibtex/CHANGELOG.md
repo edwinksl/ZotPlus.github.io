@@ -3,10 +3,25 @@ title: Change log
 ---
 # Change Log
 
+## [Unreleased](https://github.com/ZotPlus/zotero-better-bibtex/tree/HEAD)
+
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.3.1...HEAD)
+
+**Implemented enhancements:**
+
+- Export web page to "misc" type with "notes" and "howpublished" custom fields [\#329](https://github.com/ZotPlus/zotero-better-bibtex/issues/329)
+
+## [1.3.1](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.3.1) (2015-09-02)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.3.0...1.3.1)
+
+**Fixed bugs:**
+
+- preserve BibTeX Variables does not check for null values while escaping [\#337](https://github.com/ZotPlus/zotero-better-bibtex/issues/337)
+
 ## [1.3.0](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.3.0) (2015-09-01)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.39...1.3.0)
 
-**Closed issues:**
+**Implemented enhancements:**
 
 - CAYW probe: return stable "ready" rather than version number [\#336](https://github.com/ZotPlus/zotero-better-bibtex/issues/336)
 
@@ -84,6 +99,10 @@ title: Change log
 
 ## [1.2.29](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.29) (2015-08-26)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.28...1.2.29)
+
+**Implemented enhancements:**
+
+- \(non-\)dropping particle handling [\#313](https://github.com/ZotPlus/zotero-better-bibtex/issues/313)
 
 ## [1.2.28](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.28) (2015-08-25)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.27...1.2.28)
@@ -948,7 +967,7 @@ title: Change log
 ## [0.9.0](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.9.0) (2015-04-18)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.8.41...0.9.0)
 
-**Closed issues:**
+**Implemented enhancements:**
 
 - Feature Request: Option to emit relative paths for "file" field in Bib\(La\)Tex export [\#126](https://github.com/ZotPlus/zotero-better-bibtex/issues/126)
 
