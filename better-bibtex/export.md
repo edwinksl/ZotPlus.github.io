@@ -75,6 +75,7 @@ translator has access to. There is however no formal API, and things *will* occa
 This is unavoidable at this stage. There is also not much in terms of documentation right now. To explain the sample
 above:
 
+* `this.item` is the current Zotero item being exported.
 * `this.fields` is the full list of fields that will be written out. If you modify this list, you modify the reference.
   It is an array that holds objects with these properties:
   * **name**, the name of the field
