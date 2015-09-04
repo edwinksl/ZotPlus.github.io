@@ -83,6 +83,8 @@ above:
   * **bibtex**, this is the actual value that will be written out. LaTeX escaping has already be applied to this.
 * `this.has` is an object that allows you to look up fields by name. If a field occurs multiple times, it will be the
   last one.
+* `this.add` adds a new field. If you give it a `value`, it will be escaped; if you give it a `bibtex`, it will simply
+  trust you and use that.
 * `Translator.BetterBibTeX` tells you in what translator you're running. Either this, or `Translator.BetterBibLaTeX`,
   will be `true`.
 
