@@ -3,9 +3,8 @@ title: Change log
 ---
 # Change Log
 
-## [Unreleased](https://github.com/ZotPlus/zotero-better-bibtex/tree/HEAD)
-
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.3.1...HEAD)
+## [1.4.1](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.4.1) (2015-09-07)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.3.1...1.4.1)
 
 **Implemented enhancements:**
 

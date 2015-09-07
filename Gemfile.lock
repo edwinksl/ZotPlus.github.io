@@ -162,6 +162,3 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   github_changelog_generator
-
-BUNDLED WITH
-   1.10.6

@@ -55,7 +55,7 @@ Exchange
 and
 [here](http://tex.stackexchange.com/questions/55859/getting-origyear-to-work-in-biblatex).
 
-# You wanted customized... (1.4+)
+# You wanted customized...
 
 You got customized. It doesn't yet have a GUI, but as this really is a bit on the technical side, I feel warranted to go
 without for now.
