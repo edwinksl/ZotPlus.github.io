@@ -87,11 +87,6 @@
     project:
       slug: better-bibtex
       title: Better BibTeX
-  - title: Scripting
-    url: "/better-bibtex/scripting.html"
-    project:
-      slug: better-bibtex
-      title: Better BibTeX
   - title: Bundled translators
     url: "/better-bibtex/translators.html"
     project:
@@ -147,12 +142,6 @@
 "/better-bibtex/pull-export.html":
   title: Push/Pull Export
   url: "/better-bibtex/pull-export.html"
-  project:
-    slug: better-bibtex
-    title: Better BibTeX
-"/better-bibtex/scripting.html":
-  title: Scripting
-  url: "/better-bibtex/scripting.html"
   project:
     slug: better-bibtex
     title: Better BibTeX

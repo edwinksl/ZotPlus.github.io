@@ -71,11 +71,6 @@
     project:
       slug: better-bibtex
       title: Better BibTeX
-  - title: Scripting
-    url: "/better-bibtex/scripting.html"
-    project:
-      slug: better-bibtex
-      title: Better BibTeX
   - title: Bundled translators
     url: "/better-bibtex/translators.html"
     project:
