@@ -7,11 +7,22 @@
     <script src="https://bitbucket.org/fbennett/citeproc-js/raw/tip/src/util_name_particles.js"></script>
     <script>
       function parse() {
+        var family = document.getElementById('lastname').value;
+        var given = document.getElementById('firstname').value;
+
         var name = {
-          family: document.getElementById('lastname').value,
-          given: document.getElementById('firstname').value
+          family: family,
+          given: given
         }
         CSL.parseParticles(name);
+
+        if (name['non-dropping-particle'] && ! name['dropping-particle'] && document.getElementById('fudge').checked) {
+          var re = '\\s' + name['non-dropping-particle'] + '(\\s|$)';
+          if ((new RegExp(re)).test(given)) {
+            name['dropping-particle'] = name['non-dropping-particle'];
+            delete name['non-dropping-particle'];
+          }
+        }
 
         var output = document.getElementById('output');
         output.textContent = JSON.stringify(name, null, 2);
@@ -25,6 +36,7 @@
         <tr><td>Lastname:</td><td><input type="text" name="lastname" id="lastname"></td></tr>
         <tr><td>Firstname:</td><td><input type="text" name="firstname" id="firstname"></td></tr>
       </table>
+      <input type="checkbox" id="fudge" name="fudge" value="Fudge"> Fudge non-dropping particle<br>
       <input type="submit" vaue="Parse">
     </form>
     <div id="output"></div>
@@ -32,6 +44,7 @@
 
   <script>
     function decode(str) {
+      if (!str) { return str; }
       return decodeURIComponent(str.replace(/\+/g, ' '));
     }
 
