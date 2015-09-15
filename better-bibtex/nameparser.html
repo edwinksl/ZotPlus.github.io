@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>Name parser</title>
+    <script>
+      var CSL = {};
+    </script>
+    <script src="https://bitbucket.org/fbennett/citeproc-js/raw/f501a37e2b1a05aed4bf1d510b69d1cd5eb47c6d/src/util_name_particles.js"></script>
+    <script>
+      function parse() {
+        var name = {
+          given: document.getElementById('lastname').value,
+          family: document.getElementById('firstname').value
+        }
+        CSL.parseParticles(name);
+
+        var output = document.getElementById('output');
+        output.textContent = JSON.stringify(name, null, 2);
+        return false;
+      }
+    </script>
+  </head>
+  <body>
+    <form onsubmit="return parse();">
+      <table>
+        <tr><td>Lastname:</td><td><input type="text" name="lastname" id="lastname"></td></tr>
+        <tr><td>Firstname:</td><td><input type="text" name="firstname" id="firstname"></td></tr>
+      </table>
+      <input type="submit" vaue="Parse">
+    </form>
+    <div id="output"></div>
+  </body>
+</html>
