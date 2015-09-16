@@ -31,9 +31,7 @@ what is called "connector mode", which is currently [not
 supported](https://github.com/ZotPlus/zotero-better-bibtex/issues/143). Or, to be fully exact, you can have it installed
 in both, but running both at the same time will have BBT break at indeterminate occasions. Recoverable, but not fun.
 
-Start by downloading the [latest version](https://github.com/ZotPlus/zotero-better-bibtex/releases/download/{% include
-better-bibtex-version.html %}/zotero-better-bibtex-{% include better-bibtex-version.html %}.xpi) (**{% include
-better-bibtex-version.html %}**), and then
+Start by downloading the [latest version](https://github.com/ZotPlus/zotero-better-bibtex/releases/download/{% include better-bibtex-version.html %}/zotero-better-bibtex-{% include better-bibtex-version.html %}.xpi) (**{% include better-bibtex-version.html %}**), and then
 
 ## BBT for Zotero Firefox
 
