@@ -26,7 +26,7 @@ The Better BibTeX configuration pane can be found under the regular Zotero prefe
 # Installation (one-time)
 
 After installation, the plugin will auto-update to newer releases, so installation is a one-time procedure. You can
-install BBT in *either* Standalone or Firefox; installing Zotero in both puts Zotero Standalone and Zotero Firefox in
+install BBT in ***either*** Standalone or Firefox; installing Zotero in both puts Zotero Standalone and Zotero Firefox in
 what is called "connector mode", which is currently [not
 supported](https://github.com/ZotPlus/zotero-better-bibtex/issues/143). Or, to be fully exact, you can have it installed
 in both, but running both at the same time will have BBT break at indeterminate occasions. Recoverable, but not fun.
