@@ -16,6 +16,7 @@
         }
         CSL.parseParticles(name);
 
+        /*
         if (name['non-dropping-particle'] && ! name['dropping-particle'] && document.getElementById('fudge').checked) {
           var re = '\\s' + name['non-dropping-particle'] + '(\\s|$)';
           if ((new RegExp(re)).test(given)) {
@@ -23,6 +24,7 @@
             delete name['non-dropping-particle'];
           }
         }
+        */
 
         var output = document.getElementById('output');
         output.textContent = JSON.stringify(name, null, 2);
