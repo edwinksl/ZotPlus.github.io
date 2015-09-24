@@ -14,6 +14,7 @@
           family: family,
           given: given
         }
+        var source = JSON.stringify(name, null, 2);
         CSL.parseParticles(name);
 
         /*
@@ -27,7 +28,7 @@
         */
 
         var output = document.getElementById('output');
-        output.textContent = JSON.stringify(name, null, 2);
+        output.textContent = source + ' => ' + JSON.stringify(name, null, 2);
         return false;
       }
     </script>
