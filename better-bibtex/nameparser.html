@@ -24,15 +24,6 @@
           window.history.pushState(null, null, 'nameparser.html?lastname=' + encodeURIComponent(family) + '&firstname=' + encodeURIComponent(given) + '&fudge=' + (fudge ? 'true' : 'false'));
         }
 
-        var suffix = null;
-        if (document.getElementById('fudge').checked) {
-          suffix = given.split(',');
-          if (suffix.length == 2) {
-            given = suffix[0].trim();
-            suffix = suffix[1];
-          }
-        }
-
         var name = {
           family: family,
           given: given
@@ -40,10 +31,7 @@
         var source = JSON.stringify(name, null, 2);
 
         CSL.parseParticles(name);
-
-        if (suffix && !name.suffix) {
-          name.suffix = suffix;
-        }
+        if (fudge) { CSL.parseParticles(name); }
 
         var output = document.getElementById('output');
         output.textContent = source + ' => ' + JSON.stringify(name, null, 2);
