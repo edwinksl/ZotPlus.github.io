@@ -7,8 +7,21 @@
     <script src="https://bitbucket.org/fbennett/citeproc-js/raw/tip/src/util_name_particles.js"></script>
     <script>
       function parse() {
-        var family = document.getElementById('lastname').value;
-        var given = document.getElementById('firstname').value;
+        var fullname = document.getElementById('fullname').value;
+        var given, family;
+
+        if (fullname) {
+          var m = fullname.match(/\[([^\]]*)\]\s*\[([^\]]*)\]/);
+          if (m) {
+            family = m[1].trim();
+            given = m[2].trim();
+          }
+          window.history.pushState(null, null, 'nameparser.html?bracketed=' + encodeURIComponent(fullname));
+        } else {
+          family = document.getElementById('lastname').value;
+          given = document.getElementById('firstname').value;
+          window.history.pushState(null, null, 'nameparser.html?lastname=' + encodeURIComponent(family) + '&firstname=' + encodeURIComponent(given));
+        }
 
         var name = {
           family: family,
@@ -36,6 +49,7 @@
   <body>
     <form onsubmit="return parse();">
       <table>
+        <tr><td>Bracketed:</td><td><input type="text" name="fullname" id="fullname"></td></tr>
         <tr><td>Lastname:</td><td><input type="text" name="lastname" id="lastname"></td></tr>
         <tr><td>Firstname:</td><td><input type="text" name="firstname" id="firstname"></td></tr>
       </table>
@@ -76,7 +90,8 @@
 
     document.getElementById('lastname').value = QueryString.lastname || '';
     document.getElementById('firstname').value = QueryString.firstname || '';
+    document.getElementById('fullname').value = QueryString.bracketed || '';
 
-    if (QueryString.lastname || QueryString.firstname) { parse(); }
+    if (QueryString.lastname || QueryString.firstname || QueryString.bracketed) { parse(); }
   </script>
 </html>
