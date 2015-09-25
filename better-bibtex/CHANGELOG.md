@@ -3,6 +3,55 @@ title: Change log
 ---
 # Change Log
 
+## [1.4.7](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.4.7) (2015-09-25)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.4.6...1.4.7)
+
+**Implemented enhancements:**
+
+- Normalize date ranges in citekeys [\#356](https://github.com/ZotPlus/zotero-better-bibtex/issues/356)
+- Sort file attachments before snapshots for JabRef [\#355](https://github.com/ZotPlus/zotero-better-bibtex/issues/355)
+- Parse key-value pairs into Pandoc-CSL fields if the key is a CSL value [\#354](https://github.com/ZotPlus/zotero-better-bibtex/issues/354)
+- Recognize more CSL fields, better date parser/emitter [\#352](https://github.com/ZotPlus/zotero-better-bibtex/issues/352)
+- BibLaTeX; export CSL override 'issued' to date or year [\#351](https://github.com/ZotPlus/zotero-better-bibtex/issues/351)
+
+**Fixed bugs:**
+
+- Export single-field names as “literal” [\#357](https://github.com/ZotPlus/zotero-better-bibtex/issues/357)
+- Name particle parser always makes "van den" non-dropping [\#348](https://github.com/ZotPlus/zotero-better-bibtex/issues/348)
+
+**Merged pull requests:**
+
+- Typo: schmd -\> schomd [\#350](https://github.com/ZotPlus/zotero-better-bibtex/pull/350) ([davepwsmith](https://github.com/davepwsmith))
+
+## [1.4.6](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.4.6) (2015-09-14)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.4.5...1.4.6)
+
+**Fixed bugs:**
+
+- SCHOMD: don't resolve partially failed citation clusters [\#347](https://github.com/ZotPlus/zotero-better-bibtex/issues/347)
+
+## [1.4.5](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.4.5) (2015-09-13)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.4.4...1.4.5)
+
+**Implemented enhancements:**
+
+- SCHOMD citations need to be resolved all at once [\#346](https://github.com/ZotPlus/zotero-better-bibtex/issues/346)
+
+## [1.4.4](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.4.4) (2015-09-13)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.4.2...1.4.4)
+
+**Implemented enhancements:**
+
+- Cleanup for scholarly markdown [\#345](https://github.com/ZotPlus/zotero-better-bibtex/issues/345)
+- Collected notes: HTML is a cleaner format [\#342](https://github.com/ZotPlus/zotero-better-bibtex/issues/342)
+
+## [1.4.2](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.4.2) (2015-09-09)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.4.1...1.4.2)
+
+**Implemented enhancements:**
+
+- Have Collected Notes follow the BibLaTeX Unicode settings [\#341](https://github.com/ZotPlus/zotero-better-bibtex/issues/341)
+
 ## [1.4.1](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.4.1) (2015-09-07)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.3.1...1.4.1)
 
