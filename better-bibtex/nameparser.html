@@ -9,6 +9,7 @@
       function parse() {
         var fullname = document.getElementById('fullname').value;
         var given, family;
+        var fudge = document.getElementById('fudge').checked;
 
         if (fullname) {
           var m = fullname.match(/\[([^\]]*)\]\s*\[([^\]]*)\]/);
@@ -16,11 +17,11 @@
             family = m[1].trim();
             given = m[2].trim();
           }
-          window.history.pushState(null, null, 'nameparser.html?bracketed=' + encodeURIComponent(fullname));
+          window.history.pushState(null, null, 'nameparser.html?bracketed=' + encodeURIComponent(fullname) + '&fudge=' + (fudge ? 'true' : 'false'));
         } else {
           family = document.getElementById('lastname').value;
           given = document.getElementById('firstname').value;
-          window.history.pushState(null, null, 'nameparser.html?lastname=' + encodeURIComponent(family) + '&firstname=' + encodeURIComponent(given));
+          window.history.pushState(null, null, 'nameparser.html?lastname=' + encodeURIComponent(family) + '&firstname=' + encodeURIComponent(given) + '&fudge=' + (fudge ? 'true' : 'false'));
         }
 
         var suffix = null;
@@ -95,6 +96,7 @@
     document.getElementById('lastname').value = QueryString.lastname || '';
     document.getElementById('firstname').value = QueryString.firstname || '';
     document.getElementById('fullname').value = QueryString.bracketed || '';
+    document.getElementById('fudge').checked = (QueryString.fudge == 'true');
 
     if (QueryString.lastname || QueryString.firstname || QueryString.bracketed) { parse(); }
   </script>
