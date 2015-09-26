@@ -3,6 +3,18 @@ title: Change log
 ---
 # Change Log
 
+## [1.5.0](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.5.0) (2015-09-26)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.4.7...1.5.0)
+
+**Implemented enhancements:**
+
+- Omit square brackets for Pandoc Citation [\#358](https://github.com/ZotPlus/zotero-better-bibtex/issues/358)
+
+**Fixed bugs:**
+
+- Date export to “Pandoc JSON” [\#360](https://github.com/ZotPlus/zotero-better-bibtex/issues/360)
+- Serialization cache is not saved [\#359](https://github.com/ZotPlus/zotero-better-bibtex/issues/359)
+
 ## [1.4.7](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.4.7) (2015-09-25)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.4.6...1.4.7)
 
