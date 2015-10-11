@@ -3,6 +3,37 @@ title: Change log
 ---
 # Change Log
 
+## [1.5.4](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.5.4) (2015-10-11)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.5.3...1.5.4)
+
+**Implemented enhancements:**
+
+- Export of creator-type fields from embedded CSL variables + change authors to directors for CSL-JSON film+tvBroadcast + export tvBroadcast to biblatex video [\#365](https://github.com/ZotPlus/zotero-better-bibtex/issues/365)
+- change Preserve Capitalization default [\#364](https://github.com/ZotPlus/zotero-better-bibtex/issues/364)
+
+**Merged pull requests:**
+
+- Update Export of creator-type fields from embedded CSL variables \#365.json [\#368](https://github.com/ZotPlus/zotero-better-bibtex/pull/368) ([nickbart1980](https://github.com/nickbart1980))
+- Update Export of creator-type fields from embedded CSL variables \#365.csl.json [\#367](https://github.com/ZotPlus/zotero-better-bibtex/pull/367) ([nickbart1980](https://github.com/nickbart1980))
+- Update Export of creator-type fields from embedded CSL variables \#365.bib [\#366](https://github.com/ZotPlus/zotero-better-bibtex/pull/366) ([nickbart1980](https://github.com/nickbart1980))
+
+## [1.5.3](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.5.3) (2015-10-02)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.5.2...1.5.3)
+
+**Implemented enhancements:**
+
+- Commas in Bib\(La\)Tex keywords field [\#361](https://github.com/ZotPlus/zotero-better-bibtex/issues/361)
+
+## [1.5.2](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.5.2) (2015-09-30)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.5.1...1.5.2)
+
+**Fixed bugs:**
+
+- Date export to “Pandoc JSON” [\#360](https://github.com/ZotPlus/zotero-better-bibtex/issues/360)
+
+## [1.5.1](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.5.1) (2015-09-27)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.5.0...1.5.1)
+
 ## [1.5.0](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.5.0) (2015-09-26)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.4.7...1.5.0)
 
@@ -12,7 +43,6 @@ title: Change log
 
 **Fixed bugs:**
 
-- Date export to “Pandoc JSON” [\#360](https://github.com/ZotPlus/zotero-better-bibtex/issues/360)
 - Serialization cache is not saved [\#359](https://github.com/ZotPlus/zotero-better-bibtex/issues/359)
 
 ## [1.4.7](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.4.7) (2015-09-25)
