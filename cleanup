@@ -1,0 +1,19 @@
+#!/usr/bin/env ruby
+
+versions = {}
+version = nil
+
+IO.readlines('better-bibtex/CHANGELOG.md').each{|line|
+  if line =~ /^## \[([^\]]+)\]/
+    version = $1
+    versions[version] = 0
+    next
+  end
+
+  versions[version] += 1 if line =~ /^- /
+
+}
+
+skip = versions.keys.select{|v| versions[v] == 0}
+
+puts skip.inspect
