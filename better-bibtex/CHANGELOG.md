@@ -3,6 +3,13 @@ title: Change log
 ---
 # Change Log
 
+## [1.5.8](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.5.8) (2015-10-13)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.5.7...1.5.8)
+
+**Implemented enhancements:**
+
+- “Pandoc JSON” should be "Better CSL JSON" [\#369](https://github.com/ZotPlus/zotero-better-bibtex/issues/369)
+
 ## [1.5.7](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.5.7) (2015-10-13)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.5.5...1.5.7)
 
@@ -12,10 +19,6 @@ title: Change log
 
 ## [1.5.5](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.5.5) (2015-10-12)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.5.4...1.5.5)
-
-**Implemented enhancements:**
-
-- “Pandoc JSON” should be "Better CSL-JSON" [\#369](https://github.com/ZotPlus/zotero-better-bibtex/issues/369)
 
 **Fixed bugs:**
 
