@@ -3,6 +3,13 @@ title: Change log
 ---
 # Change Log
 
+## [1.5.9](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.5.9) (2015-10-13)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.5.8...1.5.9)
+
+**Implemented enhancements:**
+
+- BBT CSL JSON: shortTitle should be title-short; journalAbbreviation should be container-title-short [\#372](https://github.com/ZotPlus/zotero-better-bibtex/issues/372)
+
 ## [1.5.8](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.5.8) (2015-10-13)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.5.7...1.5.8)
 
