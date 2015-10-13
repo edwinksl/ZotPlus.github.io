@@ -86,10 +86,11 @@ end
 task :changelogs do
   sh "git pull"
 
-  open('better-bibtex/CHANGELOG.md', 'w'){|f| f.write("---\ntitle: Change log\n---\n") }
-  Tempfile.create('changelog') do |tmp|
-    sh "github_changelog_generator -u ZotPlus -p zotero-better-bibtex -o  #{Shellwords.escape(tmp.path)}"
-    open('better-bibtex/CHANGELOG.md', 'a'){|f|
+  Tempfile.create(['changelog', '.md'], 'better-bibtex') do |tmp|
+    skip = "--exclude-tags 1.5.1,1.2.35,1.2.32,1.2.16,1.2.7,1.2.3,1.2.1,1.0.18,1.0.13,1.0.11,1.0.1,1.0.0,0.14.16,0.14.13,0.14.10,0.14.8,0.14.2,0.14.1,0.13.15,0.13.14,0.13.13,0.13.11,0.13.9,0.13.7,0.13.6,0.13.3,0.13.2,0.13.1"
+    sh "github_changelog_generator -u ZotPlus -p zotero-better-bibtex #{skip} -o #{Shellwords.escape(tmp.path)}"
+    open('better-bibtex/CHANGELOG.md', 'w'){|f|
+      f.write("---\ntitle: Change log\n---\n")
       f << open(tmp.path).read
     }
   end

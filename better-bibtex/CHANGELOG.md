@@ -3,6 +3,24 @@ title: Change log
 ---
 # Change Log
 
+## [1.5.7](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.5.7) (2015-10-13)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.5.5...1.5.7)
+
+**Fixed bugs:**
+
+- cache statistics not initialised [\#371](https://github.com/ZotPlus/zotero-better-bibtex/issues/371)
+
+## [1.5.5](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.5.5) (2015-10-12)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.5.4...1.5.5)
+
+**Implemented enhancements:**
+
+- “Pandoc JSON” should be "Better CSL-JSON" [\#369](https://github.com/ZotPlus/zotero-better-bibtex/issues/369)
+
+**Fixed bugs:**
+
+- very slow export? [\#370](https://github.com/ZotPlus/zotero-better-bibtex/issues/370)
+
 ## [1.5.4](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.5.4) (2015-10-11)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.5.3...1.5.4)
 
@@ -25,14 +43,11 @@ title: Change log
 - Commas in Bib\(La\)Tex keywords field [\#361](https://github.com/ZotPlus/zotero-better-bibtex/issues/361)
 
 ## [1.5.2](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.5.2) (2015-09-30)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.5.1...1.5.2)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.5.0...1.5.2)
 
 **Fixed bugs:**
 
 - Date export to “Pandoc JSON” [\#360](https://github.com/ZotPlus/zotero-better-bibtex/issues/360)
-
-## [1.5.1](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.5.1) (2015-09-27)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.5.0...1.5.1)
 
 ## [1.5.0](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.5.0) (2015-09-26)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.4.7...1.5.0)
@@ -137,7 +152,7 @@ title: Change log
 - Better BibTeX requires Zotero 4.0.28+ [\#333](https://github.com/ZotPlus/zotero-better-bibtex/issues/333)
 
 ## [1.2.36](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.36) (2015-08-30)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.35...1.2.36)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.34...1.2.36)
 
 **Implemented enhancements:**
 
@@ -146,9 +161,6 @@ title: Change log
 **Merged pull requests:**
 
 - Allow state of columns in export list to persist [\#331](https://github.com/ZotPlus/zotero-better-bibtex/pull/331) ([gracile-fr](https://github.com/gracile-fr))
-
-## [1.2.35](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.35) (2015-08-30)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.34...1.2.35)
 
 ## [1.2.34](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.34) (2015-08-28)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.33...1.2.34)
@@ -159,14 +171,11 @@ title: Change log
 - @legislation: map code/container-title to journaltitle [\#327](https://github.com/ZotPlus/zotero-better-bibtex/issues/327)
 
 ## [1.2.33](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.33) (2015-08-27)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.32...1.2.33)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.31...1.2.33)
 
 **Implemented enhancements:**
 
 - @jurisdiction: map court/authority to institution [\#326](https://github.com/ZotPlus/zotero-better-bibtex/issues/326)
-
-## [1.2.32](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.32) (2015-08-27)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.31...1.2.32)
 
 ## [1.2.31](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.31) (2015-08-27)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.30...1.2.31)
@@ -286,7 +295,7 @@ title: Change log
 - Add more simple HTML/Zotero markup: small-caps [\#301](https://github.com/ZotPlus/zotero-better-bibtex/issues/301)
 
 ## [1.2.17](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.17) (2015-08-08)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.16...1.2.17)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.15...1.2.17)
 
 **Implemented enhancements:**
 
@@ -299,9 +308,6 @@ title: Change log
 **Merged pull requests:**
 
 - Add test for \#296 [\#299](https://github.com/ZotPlus/zotero-better-bibtex/pull/299) ([gracile-fr](https://github.com/gracile-fr))
-
-## [1.2.16](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.16) (2015-08-07)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.15...1.2.16)
 
 ## [1.2.15](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.15) (2015-08-07)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.14...1.2.15)
@@ -357,14 +363,11 @@ title: Change log
 - Fix book -\> mvbook \(multi-volume book\) export [\#288](https://github.com/ZotPlus/zotero-better-bibtex/pull/288) ([gracile-fr](https://github.com/gracile-fr))
 
 ## [1.2.8](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.8) (2015-08-02)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.7...1.2.8)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.6...1.2.8)
 
 **Fixed bugs:**
 
 - Default folding no longer applied, changing all keys with diacritics [\#286](https://github.com/ZotPlus/zotero-better-bibtex/issues/286)
-
-## [1.2.7](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.7) (2015-08-01)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.6...1.2.7)
 
 ## [1.2.6](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.6) (2015-08-01)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.5...1.2.6)
@@ -389,25 +392,19 @@ title: Change log
 - Prettier generate/clear keys confirm dialog [\#283](https://github.com/ZotPlus/zotero-better-bibtex/pull/283) ([gracile-fr](https://github.com/gracile-fr))
 
 ## [1.2.4](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.4) (2015-07-31)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.3...1.2.4)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.2...1.2.4)
 
 **Merged pull requests:**
 
 - New substring filter for custom BibTeX keys [\#281](https://github.com/ZotPlus/zotero-better-bibtex/pull/281) ([hfichtenberger](https://github.com/hfichtenberger))
 
-## [1.2.3](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.3) (2015-07-30)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.2...1.2.3)
-
 ## [1.2.2](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.2) (2015-07-28)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.1...1.2.2)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.0...1.2.2)
 
 **Fixed bugs:**
 
 - referencetype= does not work [\#278](https://github.com/ZotPlus/zotero-better-bibtex/issues/278)
 - BBT fails to start when invalid cite key pattern is configured [\#276](https://github.com/ZotPlus/zotero-better-bibtex/issues/276)
-
-## [1.2.1](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.1) (2015-07-28)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.2.0...1.2.1)
 
 ## [1.2.0](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.2.0) (2015-07-27)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.1.3...1.2.0)
@@ -464,14 +461,11 @@ title: Change log
 - Expand default skipwords list [\#265](https://github.com/ZotPlus/zotero-better-bibtex/pull/265) ([adunning](https://github.com/adunning))
 
 ## [1.0.19](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.0.19) (2015-07-20)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.0.18...1.0.19)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.0.17...1.0.19)
 
 **Implemented enhancements:**
 
 - Parsing extra variables from CSL notes [\#260](https://github.com/ZotPlus/zotero-better-bibtex/issues/260)
-
-## [1.0.18](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.0.18) (2015-07-20)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.0.17...1.0.18)
 
 ## [1.0.17](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.0.17) (2015-07-20)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.0.16...1.0.17)
@@ -499,25 +493,19 @@ title: Change log
 - Tags with \<italic\> rather than \<i\> throw an error during export [\#257](https://github.com/ZotPlus/zotero-better-bibtex/issues/257)
 
 ## [1.0.14](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.0.14) (2015-07-19)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.0.13...1.0.14)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.0.12...1.0.14)
 
 **Fixed bugs:**
 
 - DB schema upgrade failure [\#255](https://github.com/ZotPlus/zotero-better-bibtex/issues/255)
 
-## [1.0.13](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.0.13) (2015-07-18)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.0.12...1.0.13)
-
 ## [1.0.12](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.0.12) (2015-07-18)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.0.11...1.0.12)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.0.10...1.0.12)
 
 **Fixed bugs:**
 
 - BBT changes literally entered HTML entities into their decoded form [\#254](https://github.com/ZotPlus/zotero-better-bibtex/issues/254)
 - bibtex dislikes \textbackslash [\#251](https://github.com/ZotPlus/zotero-better-bibtex/issues/251)
-
-## [1.0.11](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.0.11) (2015-07-17)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.0.10...1.0.11)
 
 ## [1.0.10](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.0.10) (2015-07-17)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.0.9...1.0.10)
@@ -585,27 +573,18 @@ title: Change log
 - " conditions;" picked up as HTML entity [\#242](https://github.com/ZotPlus/zotero-better-bibtex/issues/242)
 
 ## [1.0.2](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.0.2) (2015-07-14)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.0.1...1.0.2)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.14.17...1.0.2)
 
 **Implemented enhancements:**
 
 - Show time of last auto-export in auto-export status [\#241](https://github.com/ZotPlus/zotero-better-bibtex/issues/241)
 
-## [1.0.1](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.0.1) (2015-07-14)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.0.0...1.0.1)
-
-## [1.0.0](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.0.0) (2015-07-14)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.14.17...1.0.0)
-
 ## [0.14.17](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.14.17) (2015-07-14)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.14.16...0.14.17)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.14.15...0.14.17)
 
 **Implemented enhancements:**
 
 - Cleaner HTML-\>LaTeX converter [\#240](https://github.com/ZotPlus/zotero-better-bibtex/issues/240)
-
-## [0.14.16](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.14.16) (2015-07-13)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.14.15...0.14.16)
 
 ## [0.14.15](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.14.15) (2015-07-13)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.14.14...0.14.15)
@@ -615,7 +594,7 @@ title: Change log
 - Ability to handle original publication date [\#237](https://github.com/ZotPlus/zotero-better-bibtex/issues/237)
 
 ## [0.14.14](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.14.14) (2015-07-13)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.14.13...0.14.14)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.14.12...0.14.14)
 
 **Implemented enhancements:**
 
@@ -626,9 +605,6 @@ title: Change log
 
 - Single-field author entries with commas generate invalid BibTex [\#235](https://github.com/ZotPlus/zotero-better-bibtex/issues/235)
 
-## [0.14.13](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.14.13) (2015-07-08)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.14.12...0.14.13)
-
 ## [0.14.12](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.14.12) (2015-07-08)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.14.11...0.14.12)
 
@@ -637,24 +613,18 @@ title: Change log
 - Handling Jr. in generated cite keys [\#236](https://github.com/ZotPlus/zotero-better-bibtex/issues/236)
 
 ## [0.14.11](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.14.11) (2015-07-08)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.14.10...0.14.11)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.14.9...0.14.11)
 
 **Fixed bugs:**
 
 - "Report ZotPlus errors" for item does not work [\#234](https://github.com/ZotPlus/zotero-better-bibtex/issues/234)
 
-## [0.14.10](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.14.10) (2015-07-06)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.14.9...0.14.10)
-
 ## [0.14.9](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.14.9) (2015-07-06)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.14.8...0.14.9)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.14.7...0.14.9)
 
 **Fixed bugs:**
 
 - Automatic export when idle triggered immediately at every change [\#232](https://github.com/ZotPlus/zotero-better-bibtex/issues/232)
-
-## [0.14.8](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.14.8) (2015-07-06)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.14.7...0.14.8)
 
 ## [0.14.7](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.14.7) (2015-07-05)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.14.6...0.14.7)
@@ -686,20 +656,14 @@ title: Change log
 - Toggling recursive export stops automatic export [\#228](https://github.com/ZotPlus/zotero-better-bibtex/issues/228)
 
 ## [0.14.3](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.14.3) (2015-07-02)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.14.2...0.14.3)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.14.0...0.14.3)
 
 **Fixed bugs:**
 
 - Collection name displayed as "collection:id" rather than actual name [\#227](https://github.com/ZotPlus/zotero-better-bibtex/issues/227)
 
-## [0.14.2](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.14.2) (2015-07-02)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.14.1...0.14.2)
-
-## [0.14.1](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.14.1) (2015-07-02)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.14.0...0.14.1)
-
 ## [0.14.0](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.14.0) (2015-07-01)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.13.15...0.14.0)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.13.12...0.14.0)
 
 **Fixed bugs:**
 
@@ -707,63 +671,33 @@ title: Change log
 - Better BibTeX disabled after automatic Zotero update [\#225](https://github.com/ZotPlus/zotero-better-bibtex/issues/225)
 - collection export URL not working for firefox [\#224](https://github.com/ZotPlus/zotero-better-bibtex/issues/224)
 
-## [0.13.15](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.13.15) (2015-07-01)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.13.14...0.13.15)
-
-## [0.13.14](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.13.14) (2015-07-01)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.13.13...0.13.14)
-
-## [0.13.13](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.13.13) (2015-07-01)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.13.12...0.13.13)
-
 ## [0.13.12](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.13.12) (2015-07-01)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.13.11...0.13.12)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.13.10...0.13.12)
 
 **Fixed bugs:**
 
 - BBT incompatible with Zotero 4.0.27 [\#220](https://github.com/ZotPlus/zotero-better-bibtex/issues/220)
 
-## [0.13.11](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.13.11) (2015-07-01)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.13.10...0.13.11)
-
 ## [0.13.10](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.13.10) (2015-06-30)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.13.9...0.13.10)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.13.8...0.13.10)
 
 **Implemented enhancements:**
 
 - Export mapping for reporter field [\#219](https://github.com/ZotPlus/zotero-better-bibtex/issues/219)
 
-## [0.13.9](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.13.9) (2015-06-30)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.13.8...0.13.9)
-
 ## [0.13.8](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.13.8) (2015-06-30)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.13.7...0.13.8)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.13.5...0.13.8)
 
 **Fixed bugs:**
 
 - "Preserve bibtex variables" error [\#218](https://github.com/ZotPlus/zotero-better-bibtex/issues/218)
 
-## [0.13.7](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.13.7) (2015-06-29)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.13.6...0.13.7)
-
-## [0.13.6](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.13.6) (2015-06-29)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.13.5...0.13.6)
-
 ## [0.13.5](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.13.5) (2015-06-23)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.13.3...0.13.5)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.13.0...0.13.5)
 
 **Implemented enhancements:**
 
 - support for saved searched [\#216](https://github.com/ZotPlus/zotero-better-bibtex/issues/216)
-
-## [0.13.3](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.13.3) (2015-06-23)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.13.2...0.13.3)
-
-## [0.13.2](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.13.2) (2015-06-22)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.13.1...0.13.2)
-
-## [0.13.1](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.13.1) (2015-06-22)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.13.0...0.13.1)
 
 ## [0.13.0](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.13.0) (2015-06-22)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.12.0...0.13.0)
