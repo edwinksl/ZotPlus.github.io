@@ -6,6 +6,11 @@
     slug: 
     title: Zotero++
   pages:
+  - title: I Can Haz PDF?
+    url: "/icanhazpdf.html"
+    project:
+      slug: 
+      title: Zotero++
   - title: pdf
     url: "/pdf.html"
     project:
@@ -16,6 +21,12 @@
     project:
       slug: 
       title: Zotero++
+"/icanhazpdf.html":
+  title: I Can Haz PDF?
+  url: "/icanhazpdf.html"
+  project:
+    slug: 
+    title: Zotero++
 "/pdf.html":
   title: pdf
   url: "/pdf.html"
