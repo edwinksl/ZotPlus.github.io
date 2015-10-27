@@ -24,10 +24,16 @@ the following URL parameters:
 | parameter |   |
 | --------- | - |
 | `probe`   | If set to any non-empty value, returns `ready`. You can use this to test whether BBT CAYW picking is live; it will not pop up the picker |
-| `format`  | Set the output format. Possible values are `mmd` (MultiMarkdown), `pandoc`, `scannable-cite` (for [RTF/ODF-Scan for Zotero](http://zotero-odf-scan.github.io/zotero-odf-scan/)), and `latex`. By default `latex` will use the `cite` command; you can override this by adding a `command` parameter; alternately, you can use a format starting with `cite` for the same effect |
+| `format`  | Set the output format. Possible values are `translate` (invoke a Zotero translator), `mmd` (MultiMarkdown), `pandoc`, `scannable-cite` (for [RTF/ODF-Scan for Zotero](http://zotero-odf-scan.github.io/zotero-odf-scan/)), and `latex`. By default `latex` will use the `cite` command; you can override this by adding a `command` parameter; alternately, you can use a format starting with `cite` for the same effect |
 | `clipboard` | Any non-empty value will copy the results to the clipboard |
 | `minimize` | Any non-empty value minimize all Firefox windows after a pick |
 
+If you picked the `translate` format, you can pass the following extra parameters:
+
+| -------- | --------- |
+| `translator` | stripped name of one of the BBT translators (lowercased, remove 'better', and only the letters, e.g.  `biblatex` or `csljson`), or a translator ID. Defaults to `biblatex`. |
+| `exportNotes` | set to `true` to export notes |
+| `useJournalAbbreviation` | set to `true` to use journal abbreviations |
 
 The picker passes the following data along with your picked references if you filled them out:
 
