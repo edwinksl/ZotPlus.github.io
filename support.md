@@ -41,7 +41,7 @@ are the breaks.
 * You can send off an error report for a specific collection or (selection of) items that fails to export by selecting those, right-clicking
   and choosing `Report ZotPlus Errors`
 
-That in itself will in many cases give me what I need. Don't forget to copy the generated public ID to paste it into the github
+That in itself will in many cases give me what I need. Don't forget to copy the generated ID to paste it into the github
 issue; you cannot call it up later (although you can just so it again). Still, if you want a faster fix:
 
 * **Please include *specifics* of what doesn't work**. I use this plugin every day myself, so "it doesn't work" is trivially
