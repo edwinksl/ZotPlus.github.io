@@ -3,6 +3,25 @@ title: Change log
 ---
 # Change Log
 
+## [1.6.0](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.6.0) (2015-10-27)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.5.10...1.6.0)
+
+**Fixed bugs:**
+
+- Caching overhaul, massive speedups. [\#385](https://github.com/ZotPlus/zotero-better-bibtex/issues/385)
+- biblatex: Language tag ‘xx’ is exported, ‘xx-XX’ is not [\#380](https://github.com/ZotPlus/zotero-better-bibtex/issues/380)
+
+**Merged pull requests:**
+
+- Fix typo [\#378](https://github.com/ZotPlus/zotero-better-bibtex/pull/378) ([nickbart1980](https://github.com/nickbart1980))
+
+## [1.5.10](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.5.10) (2015-10-15)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.5.9...1.5.10)
+
+**Fixed bugs:**
+
+- Non-ascii in dates is not matched by date parser [\#376](https://github.com/ZotPlus/zotero-better-bibtex/issues/376)
+
 ## [1.5.9](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.5.9) (2015-10-13)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.5.8...1.5.9)
 
