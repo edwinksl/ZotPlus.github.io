@@ -3,6 +3,17 @@ title: Change log
 ---
 # Change Log
 
+## [1.6.2](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.6.2) (2015-10-27)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.0...1.6.2)
+
+**Implemented enhancements:**
+
+- CSL title, volume-title, container-title → BL title, booktitle, maintitle [\#381](https://github.com/ZotPlus/zotero-better-bibtex/issues/381)
+
+**Fixed bugs:**
+
+- Cannot delete Automatic Export rules [\#388](https://github.com/ZotPlus/zotero-better-bibtex/issues/388)
+
 ## [1.6.0](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.6.0) (2015-10-27)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.5.10...1.6.0)
 
