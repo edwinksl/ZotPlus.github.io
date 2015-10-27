@@ -35,7 +35,9 @@ are the breaks.
 ## Better BibTeX
 
 * You can send off an error report by choosing `Report ZotPlus Errors` from the gear menu. Post the resulting url in a
-  github issue.
+  github issue. If you go into the BBT preferences and enable "extended debugging", I'll have more information to work
+  with, but don't keep it on indefinately as it'll slow doen Zotero. After you submit the error report, click continue
+  to confirm, and post the debug ID you get back in the [issue tracker](https://github.com/ZotPlus/zotero-better-bibtex/issues)
 * You can send off an error report for a specific collection or (selection of) items that fails to export by selecting those, right-clicking
   and choosing `Report ZotPlus Errors`
 
