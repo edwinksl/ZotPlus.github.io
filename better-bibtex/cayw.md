@@ -28,8 +28,10 @@ the following URL parameters:
 | `clipboard` | Any non-empty value will copy the results to the clipboard |
 | `minimize` | Any non-empty value minimize all Firefox windows after a pick |
 
+
 If you picked the `translate` format, you can pass the following extra parameters:
 
+| parameter |   |
 | -------- | --------- |
 | `translator` | stripped name of one of the BBT translators (lowercased, remove 'better', and only the letters, e.g.  `biblatex` or `csljson`), or a translator ID. Defaults to `biblatex`. |
 | `exportNotes` | set to `true` to export notes |
