@@ -1,5 +1,5 @@
-if true or windows.location.hash == 'show'
-  alert windows.location.hash
+if true or window.location.hash == 'show'
+  alert window.location.hash
 
   !((d, s, id) ->
     js = undefined
