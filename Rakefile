@@ -8,6 +8,8 @@ require 'tempfile'
 require 'open-uri'
 
 task :default do
+  Rake::Task["navigation"].invoke
+  Rake::Task["javascripts/icanhaz.js"].invoke
   puts "jekyll serve"
 end
 
@@ -41,6 +43,7 @@ task :navigation do
     File.join(d, pos).sub(/^\.\//, '')
   }.each{|md|
     next if File.dirname(md) == 'debug-bridge'
+    next if File.dirname(md) =~ /^node_modules\//
     next if File.basename(md) == 'icanhazpdf.md'
 
     fm = nil
@@ -115,9 +118,14 @@ task :changelogs do
   end
 end
 
+file "javascripts/icanhaz.js" => "javascripts/icanhaz.coffee" do |t|
+  sh "./node_modules/.bin/coffee -bcp #{t.source} | ./node_modules/.bin/uglifyjs --screw-ie8 -o #{t.name}"
+end
+
 task :publish do
   sh "git pull"
   Rake::Task["navigation"].invoke
+  Rake::Task["javascripts/icanhaz.js"].invoke
   sh "git add ."
   msg = []
   Dir['_includes/*version.html'].each{|version|

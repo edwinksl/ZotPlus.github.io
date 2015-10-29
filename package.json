@@ -1,0 +1,19 @@
+{
+  "name": "zotplus.github.io",
+  "version": "1.0.0",
+  "description": "Site",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZotPlus/ZotPlus.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZotPlus/ZotPlus.github.io/issues"
+  },
+  "homepage": "https://github.com/ZotPlus/ZotPlus.github.io#readme",
+  "dependencies": {
+    "coffee-script": "^1.10.0",
+    "uglify-js": "^2.5.0"
+  }
+}
