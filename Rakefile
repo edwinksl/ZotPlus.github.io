@@ -41,6 +41,7 @@ task :navigation do
     File.join(d, pos).sub(/^\.\//, '')
   }.each{|md|
     next if File.dirname(md) == 'debug-bridge'
+    next if File.basename(md) == 'icanhazpdf.md'
 
     fm = nil
     begin
