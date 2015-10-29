@@ -6,4 +6,4 @@ title: I Can Haz PDF?
 
 <a class="twitter-timeline" href="https://twitter.com/hashtag/icanhazpdf" data-widget-id="656961581427896324">#icanhazpdf tweets</a>
 
-<script src="/javascripts/icanhas.js"></script>
+<script src="/javascripts/icanhaz.js"></script>
