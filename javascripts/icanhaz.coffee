@@ -1,6 +1,6 @@
-if true or window.location.hash == 'show'
-  alert window.location.hash
-
+if window.location.hash != '#show'
+  alert("#{window.location.hash} => #show")
+else
   !((d, s, id) ->
     js = undefined
     fjs = d.getElementsByTagName(s)[0]
