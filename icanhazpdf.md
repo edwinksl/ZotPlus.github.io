@@ -1,6 +1,7 @@
 ---
 title: I Can Haz PDF?
 ---
+<a href="#" onclick="window.location='http://www.sci-hub.club/'; return false">Sci-Hub</a><br/>
 <a class="twitter-timeline" href="https://twitter.com/hashtag/icanhazpdf" data-widget-id="656961581427896324">#icanhazpdf Tweets</a>
 <script>
   !function(d,s,id){
