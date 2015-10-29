@@ -6,7 +6,7 @@ title: I Can Haz PDF?
 
 <a class="twitter-timeline" href="https://twitter.com/hashtag/icanhazpdf" data-widget-id="656961581427896324">#icanhazpdf Tweets</a>
 <script>
-  // if (windows.location.hash == 'show') {
+  if (true || windows.location.hash == 'show') {
     alert(windows.location.hash);
 
     !function(d,s,id){
@@ -42,5 +42,5 @@ title: I Can Haz PDF?
       a.setAttribute('href', 'http://' + host);
       a.appendChild(document.createTextNode(name));
     });
-  // }
+  }
 </script>
