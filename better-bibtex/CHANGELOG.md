@@ -3,6 +3,17 @@ title: Change log
 ---
 # Change Log
 
+## [1.6.3](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.6.3) (2015-10-30)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.2...1.6.3)
+
+**Implemented enhancements:**
+
+- Quick format citation dialog: Insert entire BibTeX record? [\#387](https://github.com/ZotPlus/zotero-better-bibtex/issues/387)
+
+**Fixed bugs:**
+
+- Auto-export doesn't work. [\#392](https://github.com/ZotPlus/zotero-better-bibtex/issues/392)
+
 ## [1.6.2](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.6.2) (2015-10-27)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.0...1.6.2)
 
