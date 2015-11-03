@@ -3,6 +3,20 @@ title: Change log
 ---
 # Change Log
 
+## [1.6.5](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.6.5) (2015-11-03)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.4...1.6.5)
+
+**Fixed bugs:**
+
+- Better BibTeX debug dump reverses options and preferences [\#395](https://github.com/ZotPlus/zotero-better-bibtex/issues/395)
+
+## [1.6.4](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.6.4) (2015-11-03)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.3...1.6.4)
+
+**Fixed bugs:**
+
+- Oriental dates trip up date parser [\#389](https://github.com/ZotPlus/zotero-better-bibtex/issues/389)
+
 ## [1.6.3](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.6.3) (2015-10-30)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.2...1.6.3)
 
