@@ -9,6 +9,7 @@ require 'open-uri'
 require 'aws-sdk'
 require 'json'
 require 'nokogiri'
+require 'csv'
 
 task :default do
   Rake::Task["navigation"].invoke
@@ -148,6 +149,7 @@ task :s3form do
   credentials = ENV['ZOTPLUSAWSCREDENTIALS']
 
   if !key || !secret && credentials && File.exist?(credentials)
+    puts credentials.inspect
     CSV.foreach(credentials, headers: true) do |row|
       next unless row['Access Key Id'] && row['Secret Access Key']
       next if row['Access Key Id'].strip == '' || row['Secret Access Key'].strip == ''
