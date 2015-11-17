@@ -169,7 +169,7 @@ task :s3form do
     bucket = s3.bucket('zotplus-964ec2b7-379e-49a4-9c8a-edcb20db343f')
     obj = bucket.object('KeyName')
     post = bucket.presigned_post({
-      signature_expiration: Time.now + (2*24*60*60), # two days from now
+      signature_expiration: Time.now + (6*24*60*60), # 6 days from now
       acl: 'private',
       key: '${filename}'
     })
