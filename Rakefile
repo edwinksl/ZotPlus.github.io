@@ -8,6 +8,7 @@ require 'tempfile'
 require 'open-uri'
 require 'aws-sdk'
 require 'json'
+require 'nokogiri'
 
 task :default do
   Rake::Task["navigation"].invoke
@@ -179,7 +180,27 @@ task :s3form do
       filefield: 'file',
       fields: post.fields
     }
-    form = JSON.pretty_generate(form)
-    open('s3.json', 'w'){|f| f.puts(form) }
+    open('s3.json', 'w'){|f| f.puts(JSON.pretty_generate(form)) }
+
+    builder = Nokogiri::HTML::Builder.new do |doc|
+      doc.html {
+        doc.head {
+          doc.meta(charset: 'utf-8')
+          doc.title { doc.text 'Upload' }
+        }
+        doc.body {
+          doc.form(action: form[:action], method: 'POST', enctype: "multipart/form-data") {
+            form[:fields].each_pair{|name, value|
+              doc.input(type: 'hidden', name: name, value: value)
+            }
+            doc.input(type: 'file', name: 'file')
+            doc.input(type: 'submit', value: 'Save')
+          }
+        }
+      }
+    end
+
+    open('s3.html', 'w'){|f| f.write(builder.to_html) }
   end
 end
+
