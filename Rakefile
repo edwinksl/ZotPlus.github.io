@@ -169,8 +169,9 @@ task :s3form do
     s3 = Aws::S3::Resource.new(region: 'eu-central-1', credentials: Aws::Credentials.new(key, secret))
     bucket = s3.bucket('zotplus-964ec2b7-379e-49a4-9c8a-edcb20db343f')
     obj = bucket.object('KeyName')
+    expires = Time.now + (6*24*60*60) # 6 days from now
     post = bucket.presigned_post({
-      signature_expiration: Time.now + (6*24*60*60), # 6 days from now
+      signature_expiration: expires,
       acl: 'private',
       key: '${filename}'
     })
@@ -189,6 +190,7 @@ task :s3form do
           doc.title { doc.text 'Upload' }
         }
         doc.body {
+          doc.h2 { doc.text "valid until #{expires}" }
           doc.form(action: form[:action], method: 'POST', enctype: "multipart/form-data") {
             form[:fields].each_pair{|name, value|
               doc.input(type: 'hidden', name: name, value: value)
