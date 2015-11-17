@@ -1,0 +1,13 @@
+{
+  "action": "https://zotplus-964ec2b7-379e-49a4-9c8a-edcb20db343f.s3.eu-central-1.amazonaws.com",
+  "filefield": "file",
+  "fields": {
+    "acl": "private",
+    "key": "${filename}",
+    "policy": "eyJleHBpcmF0aW9uIjoiMjAxNS0xMS0xOVQyMDo1Mzo1OVoiLCJjb25kaXRpb25zIjpbeyJidWNrZXQiOiJ6b3RwbHVzLTk2NGVjMmI3LTM3OWUtNDlhNC05YzhhLWVkY2IyMGRiMzQzZiJ9LHsiYWNsIjoicHJpdmF0ZSJ9LFsic3RhcnRzLXdpdGgiLCIka2V5IiwiIl0seyJ4LWFtei1jcmVkZW50aWFsIjoiQUtJQUk0Rkg1UVZXUEU3MkdEVVEvMjAxNTExMTcvZXUtY2VudHJhbC0xL3MzL2F3czRfcmVxdWVzdCJ9LHsieC1hbXotYWxnb3JpdGhtIjoiQVdTNC1ITUFDLVNIQTI1NiJ9LHsieC1hbXotZGF0ZSI6IjIwMTUxMTE3VDIwNTM1OVoifV19",
+    "x-amz-credential": "AKIAI4FH5QVWPE72GDUQ/20151117/eu-central-1/s3/aws4_request",
+    "x-amz-algorithm": "AWS4-HMAC-SHA256",
+    "x-amz-date": "20151117T205359Z",
+    "x-amz-signature": "2a6e6bdc4d81be9d1e1de8de0f36a757423fa89bf079f11b3eba83140599bb86"
+  }
+}
