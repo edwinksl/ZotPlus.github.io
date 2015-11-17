@@ -6,6 +6,8 @@ require 'pp'
 require 'shellwords'
 require 'tempfile'
 require 'open-uri'
+require 'aws-sdk'
+require 'json'
 
 task :default do
   Rake::Task["navigation"].invoke
@@ -126,6 +128,7 @@ task :publish do
   sh "git pull"
   Rake::Task["navigation"].invoke
   Rake::Task["javascripts/icanhaz.js"].invoke
+  Rake::Task["s3form"].invoke
   sh "git add ."
   msg = []
   Dir['_includes/*version.html'].each{|version|
@@ -136,4 +139,47 @@ task :publish do
   msg = msg.join(' / ')
   sh "git commit -m '#{msg}'"
   sh "git push"
+end
+
+task :s3form do
+  key = ENV['ZOTPLUSAWSKEY']
+  secret = ENV['ZOTPLUSAWSSECRET']
+  credentials = ENV['ZOTPLUSAWSCREDENTIALS']
+
+  if !key || !secret && credentials && File.exist?(credentials)
+    CSV.foreach(credentials, headers: true) do |row|
+      next unless row['Access Key Id'] && row['Secret Access Key']
+      next if row['Access Key Id'].strip == '' || row['Secret Access Key'].strip == ''
+      key = row['Access Key Id']
+      secret = row['Secret Access Key']
+    end
+  end
+
+  logs = Dir['*.debug'] + Dir['*.log']
+  logs = [] if ENV['CI'] == 'true' && ENV['LOGS2S3'] != 'true'
+
+  if (ENV['TRAVIS_PULL_REQUEST'] || 'false') != 'false'
+    puts "Logs 2 S3: Not logging pull requests"
+  elsif !key || !secret
+    puts "Logs 2 S3: No credentials"
+  elsif logs.size == 0
+    puts "Logs 2 S3: Nothing to do"
+  else
+    s3 = Aws::S3::Resource.new(region: 'eu-central-1', credentials: Aws::Credentials.new(key, secret))
+    bucket = s3.bucket('zotplus-964ec2b7-379e-49a4-9c8a-edcb20db343f')
+    obj = bucket.object('KeyName')
+    post = bucket.presigned_post({
+      signature_expiration: Time.now + (2*24*60*60), # two days from now
+      acl: 'private',
+      key: '${filename}'
+    })
+
+    form = {
+      action: post.url.to_s,
+      filefield: 'file',
+      fields: post.fields
+    }
+    form = JSON.pretty_generate(form)
+    open('s3.json', 'w'){|f| f.puts(form) }
+  end
 end
