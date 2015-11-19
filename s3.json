@@ -4,10 +4,11 @@
   "fields": {
     "acl": "private",
     "key": "${filename}",
-    "policy": "eyJleHBpcmF0aW9uIjoiMjAxNS0xMS0yNVQwMjowMDowN1oiLCJjb25kaXRpb25zIjpbeyJidWNrZXQiOiJ6b3RwbHVzLTk2NGVjMmI3LTM3OWUtNDlhNC05YzhhLWVkY2IyMGRiMzQzZiJ9LHsiYWNsIjoicHJpdmF0ZSJ9LFsic3RhcnRzLXdpdGgiLCIka2V5IiwiIl0seyJ4LWFtei1jcmVkZW50aWFsIjoiQUtJQUk0Rkg1UVZXUEU3MkdEVVEvMjAxNTExMTkvZXUtY2VudHJhbC0xL3MzL2F3czRfcmVxdWVzdCJ9LHsieC1hbXotYWxnb3JpdGhtIjoiQVdTNC1ITUFDLVNIQTI1NiJ9LHsieC1hbXotZGF0ZSI6IjIwMTUxMTE5VDAyMDAwN1oifV19",
+    "success_action_status": "204",
+    "policy": "eyJleHBpcmF0aW9uIjoiMjAxNS0xMS0yNVQyMDoyMjowNFoiLCJjb25kaXRpb25zIjpbeyJidWNrZXQiOiJ6b3RwbHVzLTk2NGVjMmI3LTM3OWUtNDlhNC05YzhhLWVkY2IyMGRiMzQzZiJ9LHsiYWNsIjoicHJpdmF0ZSJ9LFsic3RhcnRzLXdpdGgiLCIka2V5IiwiIl0seyJzdWNjZXNzX2FjdGlvbl9zdGF0dXMiOiIyMDQifSx7IngtYW16LWNyZWRlbnRpYWwiOiJBS0lBSTRGSDVRVldQRTcyR0RVUS8yMDE1MTExOS9ldS1jZW50cmFsLTEvczMvYXdzNF9yZXF1ZXN0In0seyJ4LWFtei1hbGdvcml0aG0iOiJBV1M0LUhNQUMtU0hBMjU2In0seyJ4LWFtei1kYXRlIjoiMjAxNTExMTlUMjAyMjA0WiJ9XX0=",
     "x-amz-credential": "AKIAI4FH5QVWPE72GDUQ/20151119/eu-central-1/s3/aws4_request",
     "x-amz-algorithm": "AWS4-HMAC-SHA256",
-    "x-amz-date": "20151119T020007Z",
-    "x-amz-signature": "ef8efa478be3f1867d17eb605bbeacb2b5709f0adbc5af7d7ca2a3083292ec8e"
+    "x-amz-date": "20151119T202204Z",
+    "x-amz-signature": "c1767f6cf5d5e6dba9d01df6e5c98c52aa73e3f01b20e4823fd138c1c3214180"
   }
 }

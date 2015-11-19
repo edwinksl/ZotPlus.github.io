@@ -174,7 +174,8 @@ task :s3form do
     post = bucket.presigned_post({
       signature_expiration: expires,
       acl: 'private',
-      key: '${filename}'
+      key: '${filename}',
+      success_action_status: '204'
     })
 
     form = {
