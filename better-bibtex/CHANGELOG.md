@@ -3,6 +3,51 @@ title: Change log
 ---
 # Change Log
 
+## [Unreleased](https://github.com/ZotPlus/zotero-better-bibtex/tree/HEAD)
+
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.13...HEAD)
+
+**Implemented enhancements:**
+
+- Add Bibtex field 'lastchecked' for websites. [\#401](https://github.com/ZotPlus/zotero-better-bibtex/issues/401)
+
+## [1.6.13](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.6.13) (2015-12-04)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.8...1.6.13)
+
+**Fixed bugs:**
+
+- dot-separated date not parsed [\#406](https://github.com/ZotPlus/zotero-better-bibtex/issues/406)
+
+## [1.6.8](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.6.8) (2015-12-04)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.6...1.6.8)
+
+**Implemented enhancements:**
+
+- Capitalization: Capitalize all title-fields for language "en" [\#383](https://github.com/ZotPlus/zotero-better-bibtex/issues/383)
+
+**Fixed bugs:**
+
+- Colon in bibtex key [\#405](https://github.com/ZotPlus/zotero-better-bibtex/issues/405)
+- Better bibtex: url export does not survive underscores [\#402](https://github.com/ZotPlus/zotero-better-bibtex/issues/402)
+
+## [1.6.6](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.6.6) (2015-11-18)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.5...1.6.6)
+
+**Implemented enhancements:**
+
+- Do not caps-protect literal lists [\#391](https://github.com/ZotPlus/zotero-better-bibtex/issues/391)
+- Capitalization: Don't caps-protect name fields [\#384](https://github.com/ZotPlus/zotero-better-bibtex/issues/384)
+
+**Fixed bugs:**
+
+- cache not changed after renaming attachments [\#403](https://github.com/ZotPlus/zotero-better-bibtex/issues/403)
+
+**Merged pull requests:**
+
+- Update Do not caps-protect name fields \#384.bibtex [\#398](https://github.com/ZotPlus/zotero-better-bibtex/pull/398) ([nickbart1980](https://github.com/nickbart1980))
+- Add ZWS to “de’ Medici” [\#397](https://github.com/ZotPlus/zotero-better-bibtex/pull/397) ([nickbart1980](https://github.com/nickbart1980))
+- Update Do not caps-protect name fields \#384.biblatex [\#396](https://github.com/ZotPlus/zotero-better-bibtex/pull/396) ([nickbart1980](https://github.com/nickbart1980))
+
 ## [1.6.5](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.6.5) (2015-11-03)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.4...1.6.5)
 
