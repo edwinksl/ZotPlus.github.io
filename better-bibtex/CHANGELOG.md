@@ -3,20 +3,20 @@ title: Change log
 ---
 # Change Log
 
-## [Unreleased](https://github.com/ZotPlus/zotero-better-bibtex/tree/HEAD)
+## [1.6.15](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.6.15) (2015-12-07)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.14...1.6.15)
 
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.13...HEAD)
+**Fixed bugs:**
+
+- CSL variables only recognized when in lowercase, DOI not read from extra [\#408](https://github.com/ZotPlus/zotero-better-bibtex/issues/408)
+- dot-separated date not parsed [\#406](https://github.com/ZotPlus/zotero-better-bibtex/issues/406)
+
+## [1.6.14](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.6.14) (2015-12-05)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.8...1.6.14)
 
 **Implemented enhancements:**
 
 - Add Bibtex field 'lastchecked' for websites. [\#401](https://github.com/ZotPlus/zotero-better-bibtex/issues/401)
-
-## [1.6.13](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.6.13) (2015-12-04)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.8...1.6.13)
-
-**Fixed bugs:**
-
-- dot-separated date not parsed [\#406](https://github.com/ZotPlus/zotero-better-bibtex/issues/406)
 
 ## [1.6.8](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.6.8) (2015-12-04)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.6...1.6.8)
