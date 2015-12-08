@@ -22,9 +22,8 @@ editors/processors, I'm pragmatic about implementing what works.
 # Configuration
 
 The Better BibTeX configuration pane can be found under the regular Zotero preferences pane, tab 'Better Bib(La)TeX'.
-The preferences will also open if you click [this
-link](chrome://zotero/content/preferences/preferences.xul#better-bibtex), or the preferences button in the [addons
-pane](about:addons).
+You can get also there by pasting [this link](chrome://zotero/content/preferences/preferences.xul#better-bibtex) in
+Firefox. Clicking the link won't work, sorry.
 
 # Installation (one-time)
 

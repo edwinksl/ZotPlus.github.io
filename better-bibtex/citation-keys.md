@@ -51,10 +51,11 @@ conflicts between them in the zotero report.
 
 # Configurable citekey generator
 
-BBT also implements a new citekey generator for those entries that don't have one set explicitly; the formatter
-follows the [JabRef key formatting syntax](http://jabref.sourceforge.net/help/LabelPatterns.php) in the [Better BibTeX
-preferences](chrome://zotero/content/preferences/preferences.xul#better-bibtex). A common pattern is
-`[auth:lower][year]`, which means
+BBT also implements a new citekey generator for those entries that don't have one set explicitly; the formatter follows
+the [JabRef key formatting syntax](http://jabref.sourceforge.net/help/LabelPatterns.php) in the Better BibTeX
+preferences (you can get there via the Zotero preferences, or by pasting [this
+link](chrome://zotero/content/preferences/preferences.xul#better-bibtex) in Firefox. Clicking the link won't work). A
+common pattern is `[auth:lower][year]`, which means
 
 1. last name of first author in lowercase
 2. year of publication if any,
