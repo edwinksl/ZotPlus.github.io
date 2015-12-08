@@ -5,9 +5,11 @@ title: Push/Pull Export
 # Push Export
 
 When exporting using Better Bib(La)Tex you will be offered a new export option: Keep Updated. Checking this option
-registers the export for automation; any changes to the collection after you've completed the current export will trigger an automatic re-export to update the bib file. You can review/remove exports from the BBT preferences.
-While I've gone to some lengths to make sure performance is OK, don't go overboard with the number of auto-exports you
-have going.
+registers the export for automation; any changes to the collection after you've completed the current export will
+trigger an automatic re-export to update the bib file. You can review/remove exports from the BBT preferences.  While
+I've gone to some lengths to make sure performance is OK, don't go overboard with the number of auto-exports you have
+going. Also, exporting only targeted selections over your whole library will get you better performance. You can set up
+separate exports for separate papers for example if you have set up a collection for each.
 
 # Pull Export
 You can fetch your library as part of your build, using curl (for example by using the included zoterobib.yaml arara
