@@ -61,11 +61,7 @@ common pattern is `[auth:lower][year]`, which means
 2. year of publication if any,
 3. a letter postfix in case of a clash (this part is always added, you can't disable it)
 
-The default key pattern is
-
-> [auth:lower][Title:fold:nopunct:skipwords:select,1,1:lower:alphanum:prefix,\_][year:prefix,\_][0]
-
-which means
+The default key pattern is `[auth:lower][Title:fold:nopunct:skipwords:select,1,1:lower:alphanum:prefix,\_][year:prefix,\_][0]`, which means
 
 1. last name of first author in lowercase
 2. Change any non-plaintext characters in the title to their plaintext equivalents (so no diacritics), remove some
