@@ -3,6 +3,20 @@ title: Change log
 ---
 # Change Log
 
+## [1.6.17](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.6.17) (2015-12-10)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.16...1.6.17)
+
+**Fixed bugs:**
+
+- Key update doesn't reset corresponding cache entry [\#410](https://github.com/ZotPlus/zotero-better-bibtex/issues/410)
+
+## [1.6.16](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.6.16) (2015-12-09)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.15...1.6.16)
+
+**Closed issues:**
+
+- Book sections have book title for journal in citekey [\#409](https://github.com/ZotPlus/zotero-better-bibtex/issues/409)
+
 ## [1.6.15](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.6.15) (2015-12-07)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.14...1.6.15)
 
