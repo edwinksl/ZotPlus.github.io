@@ -5,10 +5,10 @@
     "acl": "private",
     "key": "${filename}",
     "success_action_status": "204",
-    "policy": "eyJleHBpcmF0aW9uIjoiMjAxNS0xMi0xN1QxMjowOTo1MFoiLCJjb25kaXRpb25zIjpbeyJidWNrZXQiOiJ6b3RwbHVzLTk2NGVjMmI3LTM3OWUtNDlhNC05YzhhLWVkY2IyMGRiMzQzZiJ9LHsiYWNsIjoicHJpdmF0ZSJ9LFsic3RhcnRzLXdpdGgiLCIka2V5IiwiIl0seyJzdWNjZXNzX2FjdGlvbl9zdGF0dXMiOiIyMDQifSx7IngtYW16LWNyZWRlbnRpYWwiOiJBS0lBSTRGSDVRVldQRTcyR0RVUS8yMDE1MTIxMS9ldS1jZW50cmFsLTEvczMvYXdzNF9yZXF1ZXN0In0seyJ4LWFtei1hbGdvcml0aG0iOiJBV1M0LUhNQUMtU0hBMjU2In0seyJ4LWFtei1kYXRlIjoiMjAxNTEyMTFUMTIwOTUwWiJ9XX0=",
+    "policy": "eyJleHBpcmF0aW9uIjoiMjAxNS0xMi0xN1QxMjoxMDoyNVoiLCJjb25kaXRpb25zIjpbeyJidWNrZXQiOiJ6b3RwbHVzLTk2NGVjMmI3LTM3OWUtNDlhNC05YzhhLWVkY2IyMGRiMzQzZiJ9LHsiYWNsIjoicHJpdmF0ZSJ9LFsic3RhcnRzLXdpdGgiLCIka2V5IiwiIl0seyJzdWNjZXNzX2FjdGlvbl9zdGF0dXMiOiIyMDQifSx7IngtYW16LWNyZWRlbnRpYWwiOiJBS0lBSTRGSDVRVldQRTcyR0RVUS8yMDE1MTIxMS9ldS1jZW50cmFsLTEvczMvYXdzNF9yZXF1ZXN0In0seyJ4LWFtei1hbGdvcml0aG0iOiJBV1M0LUhNQUMtU0hBMjU2In0seyJ4LWFtei1kYXRlIjoiMjAxNTEyMTFUMTIxMDI1WiJ9XX0=",
     "x-amz-credential": "AKIAI4FH5QVWPE72GDUQ/20151211/eu-central-1/s3/aws4_request",
     "x-amz-algorithm": "AWS4-HMAC-SHA256",
-    "x-amz-date": "20151211T120950Z",
-    "x-amz-signature": "ae17281687b49cc1c308df670726aaba05eabea99d82a8e80c38b4de9fca5454"
+    "x-amz-date": "20151211T121025Z",
+    "x-amz-signature": "5c031a360b4cd8b794ea5049c8839492d9818420529aa62273c20c1619230123"
   }
 }

@@ -12,11 +12,8 @@ of your favorite editor for Zotero integration! This is hot off the press, so th
 
 Create a script called (e.g.) `cite` in your path with the following content:
 
-```
-#!/bin/sh
-
-curl -s http://localhost:23119/better-bibtex/cayw?format=citet
-```
+> #!/bin/sh
+> curl -s http://localhost:23119/better-bibtex/cayw?format=citet
 
 Now, in vi, you can execute `:r!cite` in command mode to get your references inserted
 
