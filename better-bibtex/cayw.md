@@ -8,6 +8,17 @@ of your favorite editor for Zotero integration! This is hot off the press, so th
 
 ## Editor integration
 
+### vim
+
+Create a script called (e.g.) `cite` in your path with the following content:
+
+```
+#!/bin/sh
+curl -s http://localhost:23119/better-bibtex/cayw?format=citet
+```
+
+Now, in vi, you can execute `:r!cite` in command mode to get your references inserted
+
 ###  Zotero Citations for Atom
 
 A sample implementation of real integration (rather than the working-but-clunky workarounds using paste) can be found in the [Zotero Citations](https://atom.io/packages/zotero-citations) package for the [Atom](http://atom.io) editor.
