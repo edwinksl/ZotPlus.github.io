@@ -3,6 +3,15 @@ title: Change log
 ---
 # Change Log
 
+## [1.6.18](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.6.18) (2015-12-11)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.17...1.6.18)
+
+**Implemented enhancements:**
+
+- Add `relax` support for given names [\#414](https://github.com/ZotPlus/zotero-better-bibtex/issues/414)
+- URL missing in bibtex for Book Section [\#412](https://github.com/ZotPlus/zotero-better-bibtex/issues/412)
+- Sorting and optional particle handling [\#411](https://github.com/ZotPlus/zotero-better-bibtex/issues/411)
+
 ## [1.6.17](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.6.17) (2015-12-10)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.16...1.6.17)
 
@@ -13,7 +22,7 @@ title: Change log
 ## [1.6.16](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.6.16) (2015-12-09)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.15...1.6.16)
 
-**Closed issues:**
+**Fixed bugs:**
 
 - Book sections have book title for journal in citekey [\#409](https://github.com/ZotPlus/zotero-better-bibtex/issues/409)
 
