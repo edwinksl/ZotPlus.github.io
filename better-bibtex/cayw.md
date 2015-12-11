@@ -14,6 +14,7 @@ Create a script called (e.g.) `cite` in your path with the following content:
 
 ```
 #!/bin/sh
+
 curl -s http://localhost:23119/better-bibtex/cayw?format=citet
 ```
 
