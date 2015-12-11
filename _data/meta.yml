@@ -92,7 +92,7 @@
     project:
       slug: better-bibtex
       title: Better BibTeX
-  - title: Unicode problems
+  - title: Unicode and markup
     url: "/better-bibtex/unicode.html"
     project:
       slug: better-bibtex
@@ -152,7 +152,7 @@
     slug: better-bibtex
     title: Better BibTeX
 "/better-bibtex/unicode.html":
-  title: Unicode problems
+  title: Unicode and markup
   url: "/better-bibtex/unicode.html"
   project:
     slug: better-bibtex
