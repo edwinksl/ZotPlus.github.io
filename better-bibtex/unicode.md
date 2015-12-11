@@ -15,4 +15,8 @@ in your references that Bib(La)TeX won't understand; BBT will
 * `csquotes` support by hidden preference; if you open `about:config` and set
   `extensions.zotero.translators.better-bibtex.csquotes` to a string of character pairs, each pair will be assumed to be
   the open and close parts of a pair and will be replaced with a `\\enquote{...}` construct.
+* In English titles, you can control capitalization by surrounding parts of the text in `<span
+  class="nocase">...</span>`. Text between these will not have their capitalization changed in any way.
+* In names, you can force first names like `Philippe` to be exported to `{\relax Ph}ilippe` by adding a [end of guarded
+  area](http://www.fileformat.info/info/unicode/char/0097/index.htm) character between `Ph` and `ilippe`
 
