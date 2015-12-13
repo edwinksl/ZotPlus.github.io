@@ -3,6 +3,20 @@ title: Change log
 ---
 # Change Log
 
+## [1.6.20](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.6.20) (2015-12-13)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.19...1.6.20)
+
+**Fixed bugs:**
+
+- Upgrade forgets to ask whether cache should be retained [\#413](https://github.com/ZotPlus/zotero-better-bibtex/issues/413)
+
+## [1.6.19](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.6.19) (2015-12-12)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.18...1.6.19)
+
+**Implemented enhancements:**
+
+- Duplicate citekeys generated in chronological order w.r.t. Date Added [\#415](https://github.com/ZotPlus/zotero-better-bibtex/issues/415)
+
 ## [1.6.18](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.6.18) (2015-12-11)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.17...1.6.18)
 
