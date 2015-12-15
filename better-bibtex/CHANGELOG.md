@@ -3,6 +3,13 @@ title: Change log
 ---
 # Change Log
 
+## [1.6.22](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.6.22) (2015-12-15)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.20...1.6.22)
+
+**Fixed bugs:**
+
+- Pandoc citations: Needs space after semicolon with multiple items [\#417](https://github.com/ZotPlus/zotero-better-bibtex/issues/417)
+
 ## [1.6.20](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.6.20) (2015-12-13)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.19...1.6.20)
 
