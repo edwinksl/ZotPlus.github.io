@@ -3,6 +3,21 @@ title: Change log
 ---
 # Change Log
 
+## [1.6.24](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.6.24) (2015-12-25)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.23...1.6.24)
+
+**Fixed bugs:**
+
+- LaTeX CAYW picker doesn't include page numbers [\#422](https://github.com/ZotPlus/zotero-better-bibtex/issues/422)
+
+## [1.6.23](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.6.23) (2015-12-24)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.22...1.6.23)
+
+**Fixed bugs:**
+
+- Error exporting files with BetterBibTex [\#421](https://github.com/ZotPlus/zotero-better-bibtex/issues/421)
+- Auto-export doesn't work. [\#392](https://github.com/ZotPlus/zotero-better-bibtex/issues/392)
+
 ## [1.6.22](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.6.22) (2015-12-15)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.20...1.6.22)
 
@@ -112,10 +127,6 @@ title: Change log
 **Implemented enhancements:**
 
 - Quick format citation dialog: Insert entire BibTeX record? [\#387](https://github.com/ZotPlus/zotero-better-bibtex/issues/387)
-
-**Fixed bugs:**
-
-- Auto-export doesn't work. [\#392](https://github.com/ZotPlus/zotero-better-bibtex/issues/392)
 
 ## [1.6.2](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.6.2) (2015-10-27)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.0...1.6.2)
