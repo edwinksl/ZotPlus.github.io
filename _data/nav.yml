@@ -51,6 +51,11 @@
     project:
       slug: better-bibtex
       title: Better BibTeX
+  - title: Configuration
+    url: "/better-bibtex/configuration.html"
+    project:
+      slug: better-bibtex
+      title: Better BibTeX
   - title: Customized Exports
     url: "/better-bibtex/export.html"
     project:
