@@ -16,6 +16,7 @@ switch window.location.hash
   
     links = 
       'www.sci-hub.club': 'Sci-Hub'
+      'sci-hub.io': 'Sci-Hub'
       'gen.lib.rus.ec': 'lg'
       'free-books.us.to': 'lg'
       'ebookfi.org': 'lg'
