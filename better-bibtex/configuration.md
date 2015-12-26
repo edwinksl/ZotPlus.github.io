@@ -168,7 +168,8 @@ will automatically clear after restart.
 
 # Hidden
 
-These preferences can be changed in `about:config` only. There's generally very little reason to change these.
+These preferences can be changed in `about:config` only. Some of these are here because the feature is still in
+progress, but there's generally very little reason to change these.
 
 ### autoExportIdleWait <!-- extensions.zotero.translators.better-bibtex.autoExportIdleWait -->
 
