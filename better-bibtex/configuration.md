@@ -69,7 +69,7 @@ two-part names (that is, names specified in separate `last name` and `first name
 `Gogh`, `Rembrandt van` will be exported (roughly) to `author = {van Gogh, Rembrandt}`. This is not always desirable, so
 you can disable this, in which case you will get (roughly) `author = {Gogh, Rembrandt van}`
 
-### Warn when changing citatin keys in bulk <!-- extensions.zotero.translators.better-bibtex.warnBulkModify -->
+### Warn when changing citation keys in bulk <!-- extensions.zotero.translators.better-bibtex.warnBulkModify -->
 
 For those who are curious about what the "Clear/Generate BibTeX key" right-click options do, this will warn you if you
 are doing this on more than 10 (default) at the same time, to prevent your curiosity from changing all your citation
