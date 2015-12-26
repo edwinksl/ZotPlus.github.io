@@ -102,7 +102,7 @@ exported, or either one of them.
 When enabled, single-word strings will be assumed to be externally-defined @string vars, and thus not surrounded by
 braces. If you don't know what this means, leave it off.
 
-### Exports attachments without metadata <!-- extensions.zotero.translators.better-bibtex.attachmentsNoMetadata -->
+### Export attachments without metadata <!-- extensions.zotero.translators.better-bibtex.attachmentsNoMetadata -->
 
 By default, Better BibTeX will export attachments including a title and their mimetype, in a format supported by JabRef.
 Many but not all BibTeX managers support this format, but if yours (like emacs ebib) doesn't, enable this to export only
