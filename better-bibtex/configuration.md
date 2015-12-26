@@ -178,7 +178,7 @@ auto-export is set to "When Idle". Defaults to 10 seconds.
 
 ### cacheFlushInterval <!-- extensions.zotero.translators.better-bibtex.cacheFlushInterval -->
 
-How often the Better BibTeX database should be saved to disk. Defaults to once every 5 seconds. Not that your database
+How often the Better BibTeX database should be saved to disk. Defaults to once every 5 seconds. Note that your database
 is always saved when your computer goes idle, or when you exit Zotero.
 
 ### cacheReset <!-- extensions.zotero.translators.better-bibtex.cacheReset -->
