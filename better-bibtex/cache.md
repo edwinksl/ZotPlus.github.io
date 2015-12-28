@@ -9,8 +9,8 @@ you will not likely notice this, but if you have several thousand references, an
 substantial parts of your library, this gets annoying really fast.
 
 To deal with this problem, Better BibTeX implements an extensive caching system. With a filled cache, Better BibTeX is
-substantially faster than the default Zotero exporters.  Specifically for automatic background exports, a filled cache
-is a good thing to have, as they may occur frequently.
+substantially faster than the default Zotero exporters.  Specifically for [automatic background
+exports](pull-export.html), a filled cache is a good thing to have, as they may occur frequently.
 
 For technical reasons, if you export the file attachments as part of your export, the cache is skipped altogether, so
 this will always be slow. This is also why you cannot set up auto-exports with file exports.
