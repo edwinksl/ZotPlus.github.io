@@ -49,8 +49,8 @@ affected specifically. Keep this in mind for large libraries; if you want to mak
 
 The same applies to upgrades. As the export behavior quite frequently changes between versions, Better BibTeX will drop
 the cache during first startup of the newer version. This can be a nuisance if you have a large library, so if you have
-a substantial cache (where 'substantial' is [configurable](configuration.html#hidden)), you will be asked whether you
-want to drop or retain your cache at this point.
+a substantial cache (where 'substantial' is [configurable](configuration.html#hidden) by changing
+`confirmCacheResetSize`), you will be asked whether you want to drop or retain your cache at this point.
 
 Please *do keep in mind* that some new settings will not be reflected in your exports until the cache entry is
 refreshed. This is a trade-off you will have to make. If you want to refresh a single entry, just change anything (and
