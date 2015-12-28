@@ -36,6 +36,11 @@
     project:
       slug: better-bibtex
       title: Better BibTeX
+  - title: Caching
+    url: "/better-bibtex/cache.html"
+    project:
+      slug: better-bibtex
+      title: Better BibTeX
   - title: Cite As You Write
     url: "/better-bibtex/cayw.html"
     project:

@@ -5,9 +5,8 @@ title: Configuration
 The configuration of Better BibTeX is a little baroque compared to the standard Zotero Bib(La)TeX exporters (which only
 have hidden preferences). The defaults should just work, but here's an attempt to describe what they do.
 
-**Note that making any change here will drop your export cache. If you have a large library, don't experiment with these
-setting too often, as exports can get *really* slow on large librarues until the cache has been refilled by the first
-export after a cache clear.**
+**Making any change here will drop your entire export cache.** This is usually not a problem unless you have a really large
+library, but you can read about what is involved [here](cache.html).
 
 # Citation
 
