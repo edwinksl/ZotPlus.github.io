@@ -2,20 +2,30 @@
 title: Caching
 ---
 
+# Caching
+
 The Better BibTeX exporters are a lot slower than the standard Zotero Bib(La)TeX exporters. If you have a small library,
 you will not likely notice this, but if you have several thousand references, and you are in the habit of exporting
-substantial parts of your library, this gets annoying really fast. To deal with this problem, Better BibTeX implements
-an extensive caching system. With a filled cache, Better BibTeX is substantially faster than the default Zotero
-exporters. Here are some numbers from a recent test with a library consisting of 1241 references with 284 attachments
-(the attachments are only linked to, not exported):
+substantial parts of your library, this gets annoying really fast.
 
-|                             |                      |
+To deal with this problem, Better BibTeX implements an extensive caching system. With a filled cache, Better BibTeX is
+substantially faster than the default Zotero exporters.  Specifically for automatic background exports, a filled cache
+is a good thing to have, as they may occur frequently.
+
+For technical reasons, if you export the file attachments as part of your export, the cache is skipped altogether, so
+this will always be slow. This is also why you cannot set up auto-exports with file exports.
+
+Here are some numbers from a recent test with a library
+consisting of 1241 references with 284 attachments (the attachments are only linked to, not exported):
+
+| Exporter                    |                      |
 | --------------------        | -------------------- |
 | Zotero                      | 14.1s                |
 | Better BibTeX, empty cache  | 53.0s                |
 | Better BibTeX, filled cache |  3.7s                |
 
-Specifically for automatic background exports, a filled cache is a good thing to have, as they may occur frequently.
+
+### Initial state
 
 Initially, your cache will be empty. The first export of any reference using Better BibTeX will therefore be a little
 over 14 times as slow as subsequent exports. After that, it gets pretty zippy, as the process of exporting a reference
@@ -24,13 +34,14 @@ notes (one of the options in the export popup), you will hit an empty cache twic
 the export you do that registers it for auto-update will already be the first export, so if your references weren't
 cached already, they will be before subsequent auto-exports.
 
-For technical reasons, if you export the file attachments as part of your export, the cache is skipped altogether, so
-this will always be slow. This is also why you cannot set up auto-exports with file exports.
+### Cache refresh
 
 The cache entry for a reference is retained as long as you do not make any changes to that reference. Any change you
 make will drop all cache entries for that reference (so all variants you had for different export options). The cache
 for that reference will be refreshed as soon as you export it again, either manually or
 [automatically](pull-export.html).
+
+### Cache drop
 
 *Any* change you make to the Better BibTeX [preferences](configuration.html) will drop the whole cache. The behavior of
 the Better BibTeX exporters are highly configurable, and it is impossible for me to figure out which entries would be
