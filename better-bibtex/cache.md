@@ -45,7 +45,7 @@ for that reference will be refreshed as soon as you export it again, either manu
 
 *Any* change you make to the Better BibTeX [preferences](configuration.html) will drop the whole cache. The behavior of
 the Better BibTeX exporters are highly configurable, and it is impossible for me to figure out which entries would be
-affected specifically. Keep this in mind for large libraries; if you want to make changes, make them all at once.
+affected specifically. Keep this in mind for large libraries; if you want to make changes to your configuration, make them all at once.
 
 The same applies to upgrades. As the export behavior quite frequently changes between versions, Better BibTeX will drop
 the cache during first startup of the newer version. This can be a nuisance if you have a large library, so if you have
