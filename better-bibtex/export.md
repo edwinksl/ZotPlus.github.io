@@ -20,6 +20,9 @@ Through the configuration pane of BBT you can customize the BibTeX file that wil
   zoterobib.yaml arara rule), or with a BiblaTeX remote statement like
   \addbibresource[location=remote]{http://localhost:23119/better-bibtex/collection?/0/8CV58ZVD.biblatex}.  For Zotero
   standalone this is enabled by default; for Zotero embedded, this enables the embedded webserver.
+* Add other custom BibLaTeX fields
+* Scan your AUX files to get a list of references specifically for your article (and incidentally list missing
+  references) by importing it.
 
 BBT http export uses the general Zotero HTTP facility; please note that disabling this will disable ALL http
 facilities in zotero -- including the non-Firefox plugins provided by Zotero.

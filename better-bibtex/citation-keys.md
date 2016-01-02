@@ -16,16 +16,16 @@ For a LaTeX author, the citation keys have their own meaning, fully separate fro
 people usually pick a naming scheme related to them. As the citation key is *the* piece of data that connects your
 bibliography, this is a piece of data you want to have control over. BBT offers you this control:
 
-* Set your own, fixed **[citation keys](citation-keys.html)**
-* Stable **[citation keys](citation-keys.html)**, without key clashes. BBT generates citation keys that take into
-* account other existing keys in your library
+* Set your own, fixed citation keys
+* Stable citation keys, without key clashes. BBT generates citation keys that take into
+  account other existing keys in your library
   in a deterministic way, regardless of what part of your library you export, or the order in which you do it.
-* Drag and drop LaTeX citations to your favorite LaTeX editor
 * Generate citation keys from JabRef patterns
-* Shows both pinned (fixed) citation keys and dynamically generated ones in the reference list view
-* Add other custom BibLaTeX fields
-* Scan your AUX files to get a list of references specifically for your article (and incidentally list missing
-  references) by importing it.
+
+You can also
+
+* Drag and drop LaTeX citations to your favorite LaTeX editor
+* Show both pinned (fixed) citation keys and dynamically generated ones in the reference list view
 
 # Set your own, fixed citation keys
 
