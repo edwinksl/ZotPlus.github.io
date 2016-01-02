@@ -64,12 +64,13 @@ common pattern is `[auth:lower][year]`, which means
 The default key pattern is `[auth:lower][Title:fold:nopunct:skipwords:select,1,1:lower:alphanum:prefix,\_][year:prefix,\_][0]`, which means
 
 1. last name of first author without spaces, in lowercase
-2. Change any non-plaintext characters in the title to their plaintext equivalents (so no diacritics), remove some
-   common words like 'the', 'a', select the first word, lowercase that, remove any non-alphanumeric text like dashes, and
+2. Change any non-plaintext characters in the title to their plaintext equivalents (so no diacritics), remove all
+   punctuation, remove some
+   common words like 'the', 'a', select the first word, lowercase that, remove any non-alphanumeric text, and
    if that still leaves anything (not all references have a sensible title), add an underscore in front of the selected
    word
 3. Add the year, and if present, prefix it with an underscore
-4. If this yields a duplicate key, disambiguate with '-number' instead of a letter
+4. If this yields a duplicate key, disambiguate with `-<number>` instead of a letter
 
 This aims to replicate Zotero's original key generation (even though having underscores in your keys is not handled
 gracefully by all versions of LaTeX's bibliography processors) in order to ease migration from existing exports
