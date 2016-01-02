@@ -57,13 +57,13 @@ preferences (you can get there via the Zotero preferences, or by pasting [this
 link](chrome://zotero/content/preferences/preferences.xul#better-bibtex) in Firefox. Clicking the link won't work). A
 common pattern is `[auth:lower][year]`, which means
 
-1. last name of first author in lowercase
+1. last name of first author without spaces, in lowercase
 2. year of publication if any,
 3. a letter postfix in case of a clash (this part is always added, you can't disable it)
 
 The default key pattern is `[auth:lower][Title:fold:nopunct:skipwords:select,1,1:lower:alphanum:prefix,\_][year:prefix,\_][0]`, which means
 
-1. last name of first author in lowercase
+1. last name of first author without spaces, in lowercase
 2. Change any non-plaintext characters in the title to their plaintext equivalents (so no diacritics), remove some
    common words like 'the', 'a', select the first word, lowercase that, remove any non-alphanumeric text like dashes, and
    if that still leaves anything (not all references have a sensible title), add an underscore in front of the selected
@@ -152,7 +152,7 @@ BBT adds a few fields, flags and filter functions that JabRef (perhaps wisely) d
   it is supposed to prefix isn't empty. If you want to use a reserved character (such as `:` or `\`), you'll need to add a
   backslash (`\`) in front of it.
 
-*Usage note*: the functions `skipwords`, `capitalize` and `select` rely on whitespaces for word handling. The JabRef functions strip
+*Usage note*: the functions `condense`, `skipwords`, `capitalize` and `select` rely on whitespaces for word handling. The JabRef functions strip
 whitespace and thereby make these filter functions sort of useless. You will in general want to use the fields from the
 table above, which give you the values from Zotero without any changes.
 
