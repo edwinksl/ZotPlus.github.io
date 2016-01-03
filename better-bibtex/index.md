@@ -33,7 +33,7 @@ what is called "connector mode", which is currently [not
 supported](https://github.com/ZotPlus/zotero-better-bibtex/issues/143). Or, to be fully exact, you can have it installed
 in both, but running both at the same time will have BBT break at indeterminate occasions. Recoverable, but not fun.
 
-Start by downloading the [latest version](https://github.com/ZotPlus/zotero-better-bibtex/releases/download/{% include better-bibtex-version.html %}/zotero-better-bibtex-{% include better-bibtex-version.html %}.xpi) (**{% include better-bibtex-version.html %}**), and then
+Start by downloading the <a href="" class="version">latest version</a> (**<span class="version"/>**), and then
 
 ## BBT for Zotero Firefox
 
@@ -77,14 +77,33 @@ or there are problems preventing me from implementing a fix.
   utf-8 format before importing.
 
 <script type="text/javascript">
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.overrideMimeType('text/xml');
+  xmlhttp.onreadystatechange = function() {
+    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+      var version = xmlhttp.responseXML.getElementsByTagNameNS('http://www.mozilla.org/2004/em-rdf#', 'version');
+      if (version.length === 0) { return; }
+      version = version[0].textContent;
 
-  switch (window.location.hash.trim()) {
-    case '#xpi':
-      window.location = 'https://github.com/ZotPlus/zotero-better-bibtex/releases/download/{% include better-bibtex-version.html %}/zotero-better-bibtex-{% include better-bibtex-version.html %}.xpi';
-      break;
-    case '#debug':
-      window.location = 'https://drive.google.com/a/iris-advies.com/folderview?id=0B8tW4NMPfEosfkFETUV0V2l0N3NHZHEyQk5SUm03TjZmS1RoVmlBTmdHclUtcTRzZ2VHclU&usp=drive_web#list';
-      break;
-  }
+      var download = 'https://github.com/ZotPlus/zotero-better-bibtex/releases/download/' + version + '/zotero-better-bibtex-' + version + '.xpi';
+      if (window.location.hash.trim() == '#xpi') {
+        window.location = download;
+        return;
+      }
 
+      [].forEach.call(document.getElementsByClassName('version'), function(element) {
+        switch (element.nodeName.toLowerCase()) {
+          case 'a':
+            element.setAttribute('href', download);
+            break;
+          case 'span':
+            element.textContent = version;
+            break;
+        }
+      });
+    }
+  };
+  // xmlhttp.open('GET', 'https://github.com/ZotPlus/zotero-better-bibtex/releases/download/update.rdf/update.rdf' , true);
+  xmlhttp.open('GET', 'https://crossorigin.me/https://github.com/ZotPlus/zotero-better-bibtex/releases/download/update.rdf/update.rdf' , true);
+  xmlhttp.send();
 </script>
