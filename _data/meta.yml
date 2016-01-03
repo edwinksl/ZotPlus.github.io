@@ -52,11 +52,6 @@
     project:
       slug: better-bibtex
       title: Better BibTeX
-  - title: Caching
-    url: "/better-bibtex/cache.html"
-    project:
-      slug: better-bibtex
-      title: Better BibTeX
   - title: Cite As You Write
     url: "/better-bibtex/cayw.html"
     project:
@@ -92,6 +87,11 @@
     project:
       slug: better-bibtex
       title: Better BibTeX
+  - title: Performance
+    url: "/better-bibtex/performance.html"
+    project:
+      slug: better-bibtex
+      title: Better BibTeX
   - title: Push/Pull Export
     url: "/better-bibtex/pull-export.html"
     project:
@@ -110,12 +110,6 @@
 "/better-bibtex/CHANGELOG.html":
   title: Change log
   url: "/better-bibtex/CHANGELOG.html"
-  project:
-    slug: better-bibtex
-    title: Better BibTeX
-"/better-bibtex/cache.html":
-  title: Caching
-  url: "/better-bibtex/cache.html"
   project:
     slug: better-bibtex
     title: Better BibTeX
@@ -158,6 +152,12 @@
 "/better-bibtex/niceties.html":
   title: Niceties
   url: "/better-bibtex/niceties.html"
+  project:
+    slug: better-bibtex
+    title: Better BibTeX
+"/better-bibtex/performance.html":
+  title: Performance
+  url: "/better-bibtex/performance.html"
   project:
     slug: better-bibtex
     title: Better BibTeX

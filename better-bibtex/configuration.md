@@ -6,7 +6,7 @@ The configuration of Better BibTeX is a little baroque compared to the standard 
 have hidden preferences). The defaults should just work, but here's an attempt to describe what they do.
 
 **Making any change here will drop your entire export cache.** This is usually not a problem unless you have a really large
-library, but you can read about what is involved [here](cache.html).
+library, but you can read about what is involved [here](performance.html).
 
 # Citation
 

@@ -36,11 +36,6 @@
     project:
       slug: better-bibtex
       title: Better BibTeX
-  - title: Caching
-    url: "/better-bibtex/cache.html"
-    project:
-      slug: better-bibtex
-      title: Better BibTeX
   - title: Cite As You Write
     url: "/better-bibtex/cayw.html"
     project:
@@ -73,6 +68,11 @@
       title: Better BibTeX
   - title: Niceties
     url: "/better-bibtex/niceties.html"
+    project:
+      slug: better-bibtex
+      title: Better BibTeX
+  - title: Performance
+    url: "/better-bibtex/performance.html"
     project:
       slug: better-bibtex
       title: Better BibTeX

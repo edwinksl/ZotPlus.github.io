@@ -1,8 +1,8 @@
 ---
-title: Caching
+title: Performance
 ---
 
-# Caching
+# Performance
 
 The Better BibTeX exporters are a lot slower than the standard Zotero Bib(La)TeX exporters. If you have a small library,
 you will not likely notice this, but if you have several thousand references, and you are in the habit of exporting
@@ -10,19 +10,27 @@ substantial parts of your library, this gets annoying really fast.
 
 To deal with this problem, Better BibTeX implements an extensive caching system. With a filled cache, Better BibTeX is
 substantially faster than the default Zotero exporters.  Specifically for [automatic background
-exports](pull-export.html), a filled cache is a good thing to have, as they may occur frequently.
+exports](pull-export.html) or [Markdown citation scanning](https://atom.io/packages/zotero-citations), a filled cache is
+a good thing to have.
 
 For technical reasons, if you export the file attachments as part of your export, the cache is skipped altogether, so
 this will always be slow. This is also why you cannot set up auto-exports with file exports.
 
-Here are some numbers from a recent test with a library
-consisting of 1241 references with 284 attachments (the attachments are only linked to, not exported):
+### TL;DR
+
+There's a more technical explanation below, but the TL;DR version is that you want to have a filled cached. If you want
+to get it over with, export your entire library (once, no need to tick 'Keep Updated') using the 'Better BibTeX' format
+and go grab coffee (or lunch, depending on the size of your library). After that, things should be *much* better.
+
+Here are some numbers from a recent test with a library consisting of 1241 references with 284 attachments (the attachments are only linked to, not exported):
 
 | Exporter                    |                      |
 | --------------------        | -------------------- |
 | Zotero                      | 14.1s                |
 | Better BibTeX, empty cache  | 53.0s                |
 | Better BibTeX, filled cache |  3.7s                |
+
+# Caching
 
 
 ### Initial state
