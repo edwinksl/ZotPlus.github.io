@@ -3,6 +3,53 @@ title: Change log
 ---
 # Change Log
 
+## [1.6.32](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.6.32) (2016-01-19)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.31...1.6.32)
+
+**Fixed bugs:**
+
+- Fatal error when checking for cache preserval [\#437](https://github.com/ZotPlus/zotero-better-bibtex/issues/437)
+
+## [1.6.31](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.6.31) (2016-01-18)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.30...1.6.31)
+
+**Implemented enhancements:**
+
+- biblatex export of phdthesis does not case-protect "type" [\#435](https://github.com/ZotPlus/zotero-better-bibtex/issues/435)
+
+## [1.6.30](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.6.30) (2016-01-13)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.29...1.6.30)
+
+**Closed issues:**
+
+- return full date for `year` in the citekey if no year is returned \("forthcoming"\) [\#434](https://github.com/ZotPlus/zotero-better-bibtex/issues/434)
+
+## [1.6.29](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.6.29) (2016-01-09)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.27...1.6.29)
+
+**Implemented enhancements:**
+
+- yaml output for usage with pandoc-citeproc [\#432](https://github.com/ZotPlus/zotero-better-bibtex/issues/432)
+- Issue citing website [\#430](https://github.com/ZotPlus/zotero-better-bibtex/issues/430)
+
+## [1.6.27](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.6.27) (2016-01-03)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.25...1.6.27)
+
+**Implemented enhancements:**
+
+- Atom Zotero Scan [\#429](https://github.com/ZotPlus/zotero-better-bibtex/issues/429)
+
+## [1.6.25](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.6.25) (2015-12-30)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.24...1.6.25)
+
+**Fixed bugs:**
+
+- BBT doesn't work with zotero 4.0.22, notification of this is blank.  [\#425](https://github.com/ZotPlus/zotero-better-bibtex/issues/425)
+
+**Merged pull requests:**
+
+- Clarify button labels for cache reset dialog [\#424](https://github.com/ZotPlus/zotero-better-bibtex/pull/424) ([briandk](https://github.com/briandk))
+
 ## [1.6.24](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.6.24) (2015-12-25)
 [Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.23...1.6.24)
 
@@ -11,15 +58,15 @@ title: Change log
 - LaTeX CAYW picker doesn't include page numbers [\#422](https://github.com/ZotPlus/zotero-better-bibtex/issues/422)
 
 ## [1.6.23](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.6.23) (2015-12-24)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.22...1.6.23)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.21...1.6.23)
 
 **Fixed bugs:**
 
 - Error exporting files with BetterBibTex [\#421](https://github.com/ZotPlus/zotero-better-bibtex/issues/421)
 - Auto-export doesn't work. [\#392](https://github.com/ZotPlus/zotero-better-bibtex/issues/392)
 
-## [1.6.22](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.6.22) (2015-12-15)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.20...1.6.22)
+## [1.6.21](https://github.com/ZotPlus/zotero-better-bibtex/tree/1.6.21) (2015-12-15)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/1.6.20...1.6.21)
 
 **Fixed bugs:**
 
@@ -1000,14 +1047,14 @@ title: Change log
 - Zotfile-like rename PDF using bibkey [\#189](https://github.com/ZotPlus/zotero-better-bibtex/issues/189)
 
 ## [0.9.30](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.9.30) (2015-05-19)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.9.29...0.9.30)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.9.28...0.9.30)
 
 **Implemented enhancements:**
 
 - autoexported collections not displayed in preferences [\#188](https://github.com/ZotPlus/zotero-better-bibtex/issues/188)
 
-## [0.9.29](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.9.29) (2015-05-16)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.9.25...0.9.29)
+## [0.9.28](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.9.28) (2015-05-16)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.9.25...0.9.28)
 
 **Implemented enhancements:**
 
@@ -1039,14 +1086,14 @@ title: Change log
 - Import not working anymore due to better-bibtex [\#184](https://github.com/ZotPlus/zotero-better-bibtex/issues/184)
 
 ## [0.9.22](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.9.22) (2015-05-04)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.9.18...0.9.22)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.9.17...0.9.22)
 
 **Fixed bugs:**
 
 - Auto export collection hangs in 0.9.18 [\#183](https://github.com/ZotPlus/zotero-better-bibtex/issues/183)
 
-## [0.9.18](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.9.18) (2015-05-02)
-[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.9.14...0.9.18)
+## [0.9.17](https://github.com/ZotPlus/zotero-better-bibtex/tree/0.9.17) (2015-05-02)
+[Full Changelog](https://github.com/ZotPlus/zotero-better-bibtex/compare/0.9.14...0.9.17)
 
 **Fixed bugs:**
 

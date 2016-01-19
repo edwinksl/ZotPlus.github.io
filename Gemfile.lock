@@ -171,5 +171,6 @@ PLATFORMS
 DEPENDENCIES
   aws-sdk (~> 2)
   github-pages
+  github_api
   github_changelog_generator
   nokogiri
