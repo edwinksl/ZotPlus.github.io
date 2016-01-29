@@ -25,11 +25,6 @@
   project:
     slug: auto-index
     title: Auto Index
-- title: Link local files
-  url: "/link-local-files/index.html"
-  project:
-    slug: link-local-files
-    title: Link local files
 - title: Zotero OPDS server
   url: "/opds/index.html"
   project:
