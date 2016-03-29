@@ -8,13 +8,13 @@ layout: nil
       <RDF:Seq>
         <RDF:li>
           <RDF:Description>
-            <em:version>{% include report-customizer-version.html %}</em:version>
+            <em:version>0.2.26</em:version>
             <em:targetApplication>
               <RDF:Description>
                 <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
                 <em:minVersion>17.0</em:minVersion>
-                <em:maxVersion>23.*</em:maxVersion>
-                <em:updateLink>https://github.com/ZotPlus/zotero-report-customizer/releases/download/{% include report-customizer-version.html %}/zotero-report-customizer-{% include report-customizer-version.html %}.xpi</em:updateLink>
+                <em:maxVersion>45.*</em:maxVersion>
+                <em:updateLink>https://github.com/retorquere/zotero-report-customizer/releases/download/0.2.26/zotero-report-customizer-0.2.26.xpi</em:updateLink>
                 <em:updateInfoURL>https://zotplus.github.io/report-customizer</em:updateInfoURL>
               </RDF:Description>
             </em:targetApplication>
@@ -23,7 +23,7 @@ layout: nil
                 <em:id>zotero@chnm.gmu.edu</em:id>
                 <em:minVersion>3.0</em:minVersion>
                 <em:maxVersion>4.0.*</em:maxVersion>
-                <em:updateLink>https://github.com/ZotPlus/zotero-report-customizer/releases/download/{% include report-customizer-version.html %}/zotero-report-customizer-{% include report-customizer-version.html %}.xpi</em:updateLink>
+                <em:updateLink>https://github.com/retorquere/zotero-report-customizer/releases/download/0.2.26/zotero-report-customizer-0.2.26.xpi</em:updateLink>
                 <em:updateInfoURL>https://zotplus.github.io/report-customizer</em:updateInfoURL>
               </RDF:Description>
             </em:targetApplication>
