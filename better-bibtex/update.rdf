@@ -8,13 +8,13 @@ layout: nil
       <RDF:Seq>
         <RDF:li>
           <RDF:Description>
-            <em:version>{% include better-bibtex-version.html %}</em:version>
+            <em:version>1.6.39</em:version>
             <em:targetApplication>
               <RDF:Description>
                 <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
                 <em:minVersion>17.0</em:minVersion>
-                <em:maxVersion>23.*</em:maxVersion>
-                <em:updateLink>https://github.com/ZotPlus/zotero-better-bibtex/releases/download/{% include better-bibtex-version.html %}/zotero-better-bibtex-{% include better-bibtex-version.html %}.xpi</em:updateLink>
+                <em:maxVersion>45.*</em:maxVersion>
+                <em:updateLink>https://github.com/retorquere/zotero-better-bibtex/releases/download/1.6.39/zotero-better-bibtex-1.6.39.xpi</em:updateLink>
                 <em:updateInfoURL>https://zotplus.github.io/better-bibtex</em:updateInfoURL>
               </RDF:Description>
             </em:targetApplication>
@@ -23,7 +23,7 @@ layout: nil
                 <em:id>zotero@chnm.gmu.edu</em:id>
                 <em:minVersion>3.0</em:minVersion>
                 <em:maxVersion>4.0.*</em:maxVersion>
-                <em:updateLink>https://github.com/ZotPlus/zotero-better-bibtex/releases/download/{% include better-bibtex-version.html %}/zotero-better-bibtex-{% include better-bibtex-version.html %}.xpi</em:updateLink>
+                <em:updateLink>https://github.com/retorquere/zotero-better-bibtex/releases/download/1.6.39/zotero-better-bibtex-1.6.39.xpi</em:updateLink>
                 <em:updateInfoURL>https://zotplus.github.io/better-bibtex</em:updateInfoURL>
               </RDF:Description>
             </em:targetApplication>
