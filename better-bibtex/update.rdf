@@ -1,6 +1,3 @@
----
-layout: nil
----
 <?xml version="1.0"?>
 <RDF:RDF xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
   <RDF:Description about="urn:mozilla:extension:better-bibtex@iris-advies.com">
@@ -12,10 +9,10 @@ layout: nil
             <em:targetApplication>
               <RDF:Description>
                 <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-                <em:minVersion>17.0</em:minVersion>
-                <em:maxVersion>45.*</em:maxVersion>
-                <em:updateLink>https://github.com/retorquere/zotero-better-bibtex/releases/download/1.6.39/zotero-better-bibtex-1.6.39.xpi</em:updateLink>
-                <em:updateInfoURL>https://zotplus.github.io/better-bibtex</em:updateInfoURL>
+                <em:minVersion>40.0</em:minVersion>
+                <em:maxVersion>48.*</em:maxVersion>
+                <em:updateLink>https://github.com/Zotplus/zotero-better-bibtex/releases/download/1.6.39/zotero-better-bibtex-1.6.39.xpi</em:updateLink>
+                <em:updateInfoURL>https://zotplus.github.io/zotero-better-bibtex/CHANGELOG.html</em:updateInfoURL>
               </RDF:Description>
             </em:targetApplication>
             <em:targetApplication>
@@ -23,8 +20,8 @@ layout: nil
                 <em:id>zotero@chnm.gmu.edu</em:id>
                 <em:minVersion>3.0</em:minVersion>
                 <em:maxVersion>4.0.*</em:maxVersion>
-                <em:updateLink>https://github.com/retorquere/zotero-better-bibtex/releases/download/1.6.39/zotero-better-bibtex-1.6.39.xpi</em:updateLink>
-                <em:updateInfoURL>https://zotplus.github.io/better-bibtex</em:updateInfoURL>
+                <em:updateLink>https://github.com/Zotplus/zotero-better-bibtex/releases/download/1.6.39/zotero-better-bibtex-1.6.39.xpi</em:updateLink>
+                <em:updateInfoURL>https://zotplus.github.io/zotero-better-bibtex/CHANGELOG.html</em:updateInfoURL>
               </RDF:Description>
             </em:targetApplication>
           </RDF:Description>
