@@ -1,7 +1,7 @@
 ---
 title: Going hardcore.md
 redirect_from:
-- hardcore.md.html
+- hardcore.html
 ---
 #Going hardcore.md
 If you'd really just rather hand-code your LaTeX constructs, BBT makes that possible:
