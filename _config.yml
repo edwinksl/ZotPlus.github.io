@@ -1,4 +1,6 @@
 permalink: /:categories/:title
+gems:
+- jekyll-redirect-from
 auto: true
 url: http://www.google.com
 name: "Zotero: Better BibTeX"
