@@ -3,6 +3,7 @@ title: Configuration.md
 redirect_from:
 - configuration.html
 ---
+#Configuration.md
 The Better BibTeX [[Configuration]] can be found under the regular Zotero preferences pane, tab 'Better Bib(La)TeX'.
 
 The configuration of Better BibTeX is a little baroque compared to the standard Zotero Bib(La)TeX exporters (which only
