@@ -4,6 +4,7 @@ redirect_from:
 - niceties.html
 ---
 # Niceties.md
+
 * [Cite as you Write] for text-based editors such as Vi (or emacs, if you swing that way), and several others
 * Integration with **[Report Customizer](citation-keys.html)**
 * Integration with **[Zotfile](citation-keys.html)**
