@@ -1,7 +1,8 @@
 permalink: /:categories/:title
 gems:
 - jekyll-redirect-from
-auto: true
+whitelist:
+- jekyll-redirect-from
 url: http://www.google.com
 name: "Zotero: Better BibTeX"
 description: Better BibTeX support for Zotero

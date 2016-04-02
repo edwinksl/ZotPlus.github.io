@@ -1,10 +1,7 @@
 #ruby=2.2
-#ruby-gemset=zotero
+#ruby-gemset=gh-pages
 
 source 'https://rubygems.org'
 
-gem 'nokogiri'
-gem 'github-pages'
-gem 'github_changelog_generator'
-gem 'github_api'
-gem 'aws-sdk', '~> 2'
+gem 'jekyll'
+gem 'jekyll-redirect-from'
