@@ -1,9 +1,8 @@
 ---
-title: Going hardcore.md
-redirect_from:
-- hardcore.html
+title: Going hardcore
+redirect_from: "/better-bibtex/hardcore.html"
 ---
-# Going hardcore.md
+# Going hardcore
 
 If you'd really just rather hand-code your LaTeX constructs, BBT makes that possible:
 

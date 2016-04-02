@@ -1,9 +1,8 @@
 ---
-title: Configuration.md
-redirect_from:
-- configuration.html
+title: Configuration
+redirect_from: "/better-bibtex/configuration.html"
 ---
-# Configuration.md
+# Configuration
 
 The Better BibTeX [[Configuration]] can be found under the regular Zotero preferences pane, tab 'Better Bib(La)TeX'.
 

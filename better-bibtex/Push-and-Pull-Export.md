@@ -1,9 +1,8 @@
 ---
-title: Push and Pull Export.md
-redirect_from:
-- pull-export.html
+title: Push and Pull Export
+redirect_from: "/better-bibtex/pull-export.html"
 ---
-# Push and Pull Export.md
+# Push and Pull Export
 
 # Push Export
 

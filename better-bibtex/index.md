@@ -1,9 +1,8 @@
 ---
-title: Home.md
+title: Better BibTeX
 ---
-# Home.md
-
 <!-- WARNING: GENERATED FROM https://github.com/retorquere/zotero-better-bibtex/blob/master/README.md. EDITS WILL BE OVERWRITTEN -->
+
 # Zotero: Better Bib(La)TeX [![Circle CI](https://circleci.com/gh/retorquere/zotero-better-bibtex.svg?style=shield)](https://circleci.com/gh/retorquere/zotero-better-bibtex)
 
 This extension aims to make Zotero effective for us LaTeX holdouts. To get started, read the [[Installation]]

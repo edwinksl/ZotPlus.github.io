@@ -1,7 +1,7 @@
 ---
-title: Scripting API.md
+title: Scripting API
 ---
-# Scripting API.md
+# Scripting API
 
 
 

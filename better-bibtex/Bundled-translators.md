@@ -1,10 +1,10 @@
 ---
-title: Bundled translators.md
+title: Bundled translators
 redirect_from:
-- collected-notes.html
-- translators.html
+- "/better-bibtex/collected-notes.html"
+- "/better-bibtex/translators.html"
 ---
-# Bundled translators.md
+# Bundled translators
 
 Better BibTeX bundles 6 translators you might care about:
 

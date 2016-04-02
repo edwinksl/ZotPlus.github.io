@@ -1,7 +1,7 @@
 ---
-title: Scripting examples.md
+title: Scripting examples
 ---
-# Scripting examples.md
+# Scripting examples
 
 # You wanted customized...
 

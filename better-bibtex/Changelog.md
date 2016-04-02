@@ -1,7 +1,6 @@
 ---
-title: Changelog.md
-redirect_from:
-- CHANGELOG.html
+title: Changelog
+redirect_from: "/better-bibtex/CHANGELOG.html"
 ---
-# Changelog.md
+# Changelog
 

@@ -1,9 +1,8 @@
 ---
-title: Performance.md
-redirect_from:
-- performance.html
+title: Performance
+redirect_from: "/better-bibtex/performance.html"
 ---
-# Performance.md
+# Performance
 
 The Better BibTeX exporters are a lot slower than the standard Zotero Bib(La)TeX exporters. If you have a small library,
 you will not likely notice this, but if you have several thousand references, and you are in the habit of exporting
