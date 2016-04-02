@@ -4,7 +4,7 @@ redirect_from:
 - collected-notes.html
 - translators.html
 ---
-#Bundled translators.md
+# Bundled translators.md
 Better BibTeX bundles 6 translators you might care about:
 
 ## Export

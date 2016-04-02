@@ -3,7 +3,7 @@ title: Support.md
 redirect_from:
 - support.html
 ---
-#Support.md
+# Support.md
 <!-- WARNING: GENERATED FROM https://github.com/retorquere/zotero-better-bibtex/blob/master/CONTRIBUTING.md. EDITS WILL BE OVERWRITTEN -->
 Before all else, ***thank you for taking the time for submitting an issue***, and I'm sorry that I've probably
 interrupted your flow.

@@ -3,7 +3,7 @@ title: Going hardcore.md
 redirect_from:
 - hardcore.html
 ---
-#Going hardcore.md
+# Going hardcore.md
 If you'd really just rather hand-code your LaTeX constructs, BBT makes that possible:
 
 * You can add literal LaTeX anywhere in your reference by surrounding it with &lt;pre&gt;....&lt;/pre&gt; tags. BBT will
