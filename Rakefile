@@ -212,6 +212,7 @@ require 'cgi'
 task :wishlist do
   wishlist = JSON.parse(open('http://www.justinscarpetti.com/projects/amazon-wish-lister/api/?id=24III8CQP4LI7').read)
   open('wishlist.md', 'w'){|f|
+    f.puts({'title' => 'Wishlist'}.to_yaml + '---') 
     wishlist.each{|item|
       name = item['name']
 
