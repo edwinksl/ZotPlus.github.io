@@ -220,7 +220,7 @@ task :wishlist do
       f.print "![#{label}](#{item['picture']} \"#{label}\") " if item['picture']
 
       q = CGI.escape(name)
-      f.print "[#{label}](http://www.bookfinder.com/search/?title=#{q}&submitBtn=Search&new_used=*&destination=nl&currency=EUR&binding=*&isbn=&keywords=&minprice=&maxprice=&min_year=&max_year=&mode=advanced&st=sr&ac=qr"
+      f.print "[#{label}](http://www.bookfinder.com/search/?title=#{q}&submitBtn=Search&new_used=*&destination=nl&currency=EUR&binding=*&isbn=&keywords=&minprice=&maxprice=&min_year=&max_year=&mode=advanced&st=sr&ac=qr)"
 
       f.puts
       f.puts
