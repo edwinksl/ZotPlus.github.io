@@ -208,3 +208,21 @@ task :s3form do
   end
 end
 
+require 'cgi'
+task :wishlist do
+  wishlist = JSON.parse(open('http://www.justinscarpetti.com/projects/amazon-wish-lister/api/?id=24III8CQP4LI7').read)
+  open('wishlist.md', 'w'){|f|
+    wishlist.each{|item|
+      name = item['name']
+
+      label = name.gsub('[', '(').gsub(']', ')')
+      f.print "![#{label}](#{item['picture']} \"#{label}\") " if item['picture']
+
+      q = CGI.escape(name)
+      f.print "[#{label}](http://www.bookfinder.com/search/?title=#{q}&submitBtn=Search&new_used=*&destination=nl&currency=EUR&binding=*&isbn=&keywords=&minprice=&maxprice=&min_year=&max_year=&mode=advanced&st=sr&ac=qr"
+
+      f.puts
+      f.puts
+    }
+  }
+end
